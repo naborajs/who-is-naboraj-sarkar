@@ -216,13 +216,22 @@ Above all, my biggest dream ❤️
 is to give my **family the best life they deserve**.
 
 ---
-
 ## 📬 Contact & Collaboration
+
+For discussions, collaboration, or ideas, use the channels below:
 
 - 📧 Email: **nishant.ns.business@gmail.com**
 - 💬 Telegram: **@Nishantsarkar10k**
 - 🌐 GitHub: https://github.com/naborajs
-- 💹 Binance: **@naborajs**
+
+---
+
+## 💹 Platform Presence (Non-Contact)
+
+These platforms represent my activity, learning, or ecosystem presence:
+
+- 💹 Binance Profile: **@naborajs**
+- 🔥 Instagram: **naborajs**
 
 ---
 
