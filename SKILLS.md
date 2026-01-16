@@ -2,17 +2,17 @@
 
 <p align="center">
   <em>
-    “Skills are not built overnight. They are earned through curiosity, consistency, and courage.”
+    “Skills are not built overnight. They are earned through curiosity, consistency, discipline, and courage.”
   </em>
 </p>
 
 <p align="center">
-  <strong>Role Focus:</strong> Programmer • Developer • Learner • Small Team Manager
+  <strong>Role Focus:</strong> Programmer • Developer • AI Builder • Content Creator • Team Leader • Self-Disciplined Learner
 </p>
 
 ---
 
-## 💻 Programming & Development
+## 💻 Programming & Software Development
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-Advanced-3776AB?style=for-the-badge&logo=python&logoColor=white">
@@ -30,83 +30,104 @@
   <img src="https://img.shields.io/badge/Flask-API_Development-000000?style=for-the-badge&logo=flask&logoColor=white">
 </p>
 
-**What this means in practice:**
-- Writing clean, logical code  
-- Building real backend systems  
-- Working with APIs and integrations  
-- Turning ideas into working software  
+**Strengths in practice:**
+- Writing clean, logical, maintainable code  
+- Backend systems, APIs & integrations  
+- Deployment on Vercel & Netlify  
+- Turning ideas into working systems  
 
 ---
 
-## 🤖 AI, Automation & Emerging Tech
+## 🤖 AI, LLMs, Automation & Cybersecurity
 
 <p align="center">
-  <img src="https://img.shields.io/badge/AI-Experiments-412991?style=for-the-badge&logo=openai&logoColor=white">
-  <img src="https://img.shields.io/badge/Prompt_Engineering-Active-8E44AD?style=for-the-badge">
+  <img src="https://img.shields.io/badge/LLMs-Advanced_Usage-412991?style=for-the-badge&logo=openai&logoColor=white">
+  <img src="https://img.shields.io/badge/Prompt_Engineering-Advanced-8E44AD?style=for-the-badge">
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/AI_Agents-Building-2ECC71?style=for-the-badge">
-  <img src="https://img.shields.io/badge/n8n-Automation_Learning-FF6D00?style=for-the-badge&logo=n8n&logoColor=white">
+  <img src="https://img.shields.io/badge/n8n-Automation_Expertise-FF6D00?style=for-the-badge&logo=n8n&logoColor=white">
 </p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Image_Generation-AI_Tools-9B59B6?style=for-the-badge">
-</p>
-
-**Focus Areas:**
-- Building AI-powered workflows  
-- Designing automation that replaces repetitive tasks  
-- Experimenting with AI agents & co-generative tools  
-- Learning how intelligent systems behave in real conditions  
-
-> “Automation is not about replacing humans — it’s about freeing them.”
-
----
-
-## 🛡️ Cybersecurity & System Thinking
 
 <p align="center">
   <img src="https://img.shields.io/badge/Cybersecurity-Fundamentals-1ABC9C?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Ethical_Hacking-Learning-D35400?style=for-the-badge">
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/System_Vulnerabilities-Understanding-C0392B?style=for-the-badge">
 </p>
 
 **What I focus on:**
-- Understanding how systems fail  
-- Security-first thinking  
-- Basic ethical hacking concepts  
-- Learning defense before offense  
+- Using AI models (Gemini, OpenAI, Anthropic) effectively  
+- Advanced prompt engineering for accuracy & reasoning  
+- Building AI agents that learn from data  
+- Automating workflows (AI + manual logic combined)  
+- Security-first thinking in systems & automation  
 
-> “If you understand how something breaks, you understand how to protect it.”
+> *“Automation works best when intelligence and control work together.”*
 
 ---
 
-## 📊 Management, Marketing & Digital Skills
+## 🎥 YouTube, Editing & Content Systems
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Team_Management-Small_Teams-34495E?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Community_Management-Experience-16A085?style=for-the-badge">
+  <img src="https://img.shields.io/badge/YouTube-Content_Creation-FF0000?style=for-the-badge&logo=youtube&logoColor=white">
+  <img src="https://img.shields.io/badge/Video_Editing-Advanced-7F8C8D?style=for-the-badge">
+</p>
+
+**Experience includes:**
+- 3+ years of YouTube creation  
+- Growth to **50K+ subscribers (past)**  
+- Rebuilding after hacks & setbacks  
+- Strong understanding of editing, pacing & storytelling  
+- Planning content workflows & consistency systems  
+
+---
+
+## 📊 Leadership, Planning & Problem Solving
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Leadership-Group_Handling-34495E?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Self_Management-Highly_Disciplined-2C3E50?style=for-the-badge">
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Content_Creation-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white">
-  <img src="https://img.shields.io/badge/Video_Editing-Skilled-7F8C8D?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Problem_Solving-Cross_Domain-16A085?style=for-the-badge">
 </p>
+
+**Capabilities:**
+- Leading and managing full groups & communities  
+- Handling pressure situations calmly  
+- Planning long-term goals and execution  
+- Finding solutions across tech, content, and people  
+
+---
+
+## 🧘 Fitness, Discipline & Mental Control
 
 <p align="center">
-  <img src="https://img.shields.io/badge/SEO-Digital_Identity-0A66C2?style=for-the-badge&logo=google&logoColor=white">
-  <img src="https://img.shields.io/badge/Marketing-Basic_Knowledge-F39C12?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Fitness-Physically_Active-27AE60?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Mental_Strength-Calm_&_Focused-2980B9?style=for-the-badge">
 </p>
 
-**Experience Includes:**
-- Managing small teams & communities  
-- Growing YouTube & Telegram platforms  
-- Understanding audience psychology  
-- Building personal brand & search presence  
+**Focus areas:**
+- Maintaining proper physical fitness  
+- Training discipline & consistency  
+- Staying calm under pressure  
+- Handling different situations with peace and control  
+- Understanding that mental strength supports technical performance  
+
+> *“A strong body supports a strong mind — and a strong mind builds great systems.”*
+
+---
+
+## 🚀 Curiosity-Driven Learning & Exploration
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Aerospace-Basic_Knowledge-0B3D91?style=for-the-badge">
+</p>
+
+- Interest in aerospace engineering fundamentals  
+- Curiosity about rockets, propulsion & systems  
+- Limited travel experience but high exposure through learning & exploration  
+- Learning for understanding, not certificates  
 
 ---
 
@@ -118,14 +139,14 @@
   </em>
 </p>
 
-- Passionate about learning new technologies  
-- Comfortable with experimentation & failure  
+- Learns continuously and adapts fast  
+- Comfortable with failure & iteration  
+- Strong self-discipline and focus  
 - Believes in long-term compounding of skills  
-- Constantly improving systems, not just tools  
 
 ---
 
 <p align="center">
   <strong>Digital Identity:</strong> <code>@naborajs</code><br>
-  <em>Programmer by skill • Developer by practice • Learner by nature</em>
+  <em>Builder by habit • Disciplined by choice • Learner by nature</em>
 </p>
