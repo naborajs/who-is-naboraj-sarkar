@@ -16,34 +16,6 @@
 
 ---
 
-## 🌐 Official & Verified Online Presence
-
-<p align="center">
-  <a href="https://github.com/naborajs">
-    <img src="https://img.shields.io/badge/GitHub-@naborajs-181717?style=for-the-badge&logo=github&logoColor=white">
-  </a>
-  <a href="https://instagram.com/naborajs">
-    <img src="https://img.shields.io/badge/Instagram-@naborajs-E4405F?style=for-the-badge&logo=instagram&logoColor=white">
-  </a>
-  <a href="https://youtube.com/@Nishant_sarkar">
-    <img src="https://img.shields.io/badge/YouTube-Nishant__Sarkar-FF0000?style=for-the-badge&logo=youtube&logoColor=white">
-  </a>
-  <a href="https://x.com/NSGAMMING699">
-    <img src="https://img.shields.io/badge/X-@NSGAMMING699-000000?style=for-the-badge&logo=x&logoColor=white">
-  </a>
-  <a href="https://nsgamming.xyz">
-    <img src="https://img.shields.io/badge/Website-nsgamming.xyz-0A66C2?style=for-the-badge&logo=google-chrome&logoColor=white">
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://app.binance.com/uni-qr/cpro/naborajs?l=en&r=KVU71VWR&uc=web_square_share_link&us=copylink">
-    <img src="https://img.shields.io/badge/Binance-@naborajs-F3BA2F?style=for-the-badge&logo=binance&logoColor=black">
-  </a>
-</p>
-
----
-
 ## 👤 About Naboraj Sarkar
 
 Hey 👋 I’m **Naboraj Sarkar**, a student from Siliguri, West Bengal, India 🇮🇳.
@@ -251,6 +223,34 @@ is to give my **family the best life they deserve**.
 - 💬 Telegram: **@Nishantsarkar10k**
 - 🌐 GitHub: https://github.com/naborajs
 - 💹 Binance: **@naborajs**
+
+---
+
+## 🌐 Official & Verified Online Presence
+
+<p align="center">
+  <a href="https://github.com/naborajs">
+    <img src="https://img.shields.io/badge/GitHub-@naborajs-181717?style=for-the-badge&logo=github&logoColor=white">
+  </a>
+  <a href="https://instagram.com/naborajs">
+    <img src="https://img.shields.io/badge/Instagram-@naborajs-E4405F?style=for-the-badge&logo=instagram&logoColor=white">
+  </a>
+  <a href="https://youtube.com/@Nishant_sarkar">
+    <img src="https://img.shields.io/badge/YouTube-Nishant__Sarkar-FF0000?style=for-the-badge&logo=youtube&logoColor=white">
+  </a>
+  <a href="https://x.com/NSGAMMING699">
+    <img src="https://img.shields.io/badge/X-@NSGAMMING699-000000?style=for-the-badge&logo=x&logoColor=white">
+  </a>
+  <a href="https://nsgamming.xyz">
+    <img src="https://img.shields.io/badge/Website-nsgamming.xyz-0A66C2?style=for-the-badge&logo=google-chrome&logoColor=white">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://app.binance.com/uni-qr/cpro/naborajs?l=en&r=KVU71VWR&uc=web_square_share_link&us=copylink">
+    <img src="https://img.shields.io/badge/Binance-@naborajs-F3BA2F?style=for-the-badge&logo=binance&logoColor=black">
+  </a>
+</p>
 
 ---
 
