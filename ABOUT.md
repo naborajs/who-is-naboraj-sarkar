@@ -1,6 +1,6 @@
 # About Naboraj Sarkar
 
-**Naboraj Sarkar** (also known as **Nishant**, online identity **@naborajs**) is an Indian student,
+**Naboraj Sarkar** (also known as **Nishant**, online identity **NS GAMMING/NISHANT**) is an Indian student,
 digital creator, and emerging technologist from **Siliguri, West Bengal, India 🇮🇳**.
 
 This document exists to provide a **deep, transparent, and long-form understanding**
