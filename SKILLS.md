@@ -34,7 +34,8 @@
 - Writing clean, logical, maintainable code  
 - Backend systems, APIs & integrations  
 - Deployment on Vercel & Netlify  
-- Turning ideas into working systems  
+- Turning ideas into working systems 
+- Learning proper use of Ai & Agents
 
 ---
 
