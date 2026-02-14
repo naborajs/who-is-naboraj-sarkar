@@ -156,3 +156,29 @@ honestly, transparently, and without exaggeration.
 **Digital Identity:** `@naborajs`  
 **Name:** Naboraj Sarkar  
 **Location:** Siliguri, West Bengal, India 🇮🇳
+
+---
+
+## Expanded Profile — Technical & SEO Summary
+
+Naboraj Sarkar is an early-career software engineer and AI practitioner focused on building practical automation systems, AI agents, and developer tooling. Primary keywords: Naboraj Sarkar, Life Logger Telegram bot, AI agent development, automation, NSCodex, Telegram bot GitHub integration, n8n automation, deployed projects on Vercel/Netlify.
+
+### Core Competencies
+
+- AI and LLM systems: prompt engineering, agent design, memory & retrieval pipelines.
+- Automation: n8n workflows, webhooks, scheduled jobs, and reliable monitoring.
+- Integrations: Telegram/WhatsApp bots, GitHub logging, REST APIs, and lightweight dashboards.
+- Backend engineering: Python and Node.js services with deployable patterns.
+
+---
+
+## Latest Achievements (Selected)
+
+- Life Logger — built a Telegram bot that logs user activities and events to structured files and pushes them to a GitHub repo for versioned audit trails.
+- AI Agent Systems — prototyped self-improving conversational agents used for sales and support automation; integrated with Telegram and admin panels for live monitoring and manual override.
+- Production Automations — multiple live automations running on n8n and custom runners handling posting, monitoring, and business logic with retry and alerting.
+- NSCodex — an educational initiative and growing knowledge base for independent learners focused on project-based learning and reproducible code examples.
+
+---
+
+If you want the technical README for any project (architecture diagram, code links, deployment notes), open an issue on my GitHub or message via Telegram.

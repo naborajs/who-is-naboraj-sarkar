@@ -1,56 +1,33 @@
-# 📬 Contact Naboraj Sarkar
+# Contact & Collaboration — Naboraj Sarkar
 
-<p align="center">
-  <img src="https://avatars.githubusercontent.com/naborajs" width="120" style="border-radius:50%;" alt="Naboraj Sarkar GitHub Profile">
-</p>
-
-<p align="center">
-  I’m open to meaningful conversations, collaboration, ideas, and discussions related to  
-  <strong>technology, AI, automation, development, and future-focused projects</strong>.
-</p>
+I’m available for technical partnerships, pilot projects, mentoring, and NSCodex collaborations. For code reviews, PR discussions or deployment access, prefer GitHub issues/PRs. For quick demos and bot walkthroughs, Telegram is the fastest channel.
 
 ---
 
-## 🌐 Reach Me On
+## Primary Contact Methods
 
-<p align="center">
-  <a href="mailto:nishant.ns.business@gmail.com">
-    <img src="https://img.shields.io/badge/Email-nishant.ns.business%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white">
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://t.me/Nishantsarkar10k">
-    <img src="https://img.shields.io/badge/Telegram-@Nishantsarkar10k-26A5E4?style=for-the-badge&logo=telegram&logoColor=white">
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://wa.me/918900653250">
-    <img src="https://img.shields.io/badge/WhatsApp-+91%208900653250-25D366?style=for-the-badge&logo=whatsapp&logoColor=white">
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/naborajs">
-    <img src="https://img.shields.io/badge/GitHub-naborajs-181717?style=for-the-badge&logo=github&logoColor=white">
-  </a>
-</p>
+- Email: nishant.ns.business@gmail.com — business inquiries, demos, security reports
+- Telegram: @Nishantsarkar10k — demonstrations, bot testing, quick technical chats
+- WhatsApp: +91 8900653250 — urgent messages and short proposals
+- GitHub: https://github.com/naborajs — source code, issues, pull requests
 
 ---
 
-## 🤝 Collaboration & Communication
+## What I Take On
 
-- Open to **tech discussions**
-- Open to **learning-based collaborations**
-- Open to **automation & AI ideas**
-- Open to **community & education initiatives (NSCodex)**
-
-I may not reply instantly, but I do reply **thoughtfully**.
+- AI/ML integrations and agent prototypes
+- Automation & workflow design (n8n, webhooks, cron jobs)
+- Telegram/WhatsApp bot integrations and GitHub logging systems
+- Mentoring and technical guidance for builders
 
 ---
 
-<p align="center">
-  <strong>Digital Identity:</strong> <code>@naborajs</code><br>
-  <em>Building skills, systems, and independence — step by step.</em>
-</p>
+## Responsible Disclosure
+
+If you discover a security vulnerability in any of my projects, please email me directly with reproduction steps: nishant.ns.business@gmail.com. I prefer private, responsible disclosure and will respond promptly.
+
+---
+
+**Digital Identity:** @naborajs
+
+If you want a project walkthrough, include the project name and preferred contact channel in your message.

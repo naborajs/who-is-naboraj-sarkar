@@ -1,32 +1,36 @@
-# NSCodex
+# NSCodex — Practical tech education and open projects
 
-NSCodex is an initiative founded by Naboraj Sarkar.
+NSCodex is a project-first learning initiative focused on practical education for independent builders. It emphasizes project-based lessons, reproducible deployments, and clear technical documentation.
 
-It is not a large agency.
-It is a small, focused initiative mainly operated and built by me,
-with help from a small team when needed.
+---
 
-## Purpose of NSCodex
+## Mission
 
-- Provide free technological education
-- Show real skills through real projects
-- Build tools and systems in public
-- Help learners understand modern tech practically
+- Teach modern development through projects (automation, AI agents, integrations).
+- Provide reproducible templates and architecture blueprints for learners.
+- Showcase honest, audit-ready deployments and instrumentation.
 
-## What NSCodex Is NOT
-- Not a fake agency
-- Not a marketing company
-- Not selling false promises
+---
 
-## Current Status
-- Planning & foundation stage
-- Social media accounts created
-- No official launch yet
+## What We Publish
 
-## Future Vision
-- Open learning platform
-- Automation & AI education
-- Project-based learning
-- Real proof over certificates
+- Project walkthroughs with architecture diagrams and code links.
+- Starter kits: Telegram bot + GitHub logging, n8n automation templates, simple agent scaffolds.
+- Curriculum: short, focused modules that teach one practical skill per project.
 
-NSCodex represents my long-term vision.
+---
+
+## How to Contribute or Collaborate
+
+- Open-source contributions: submit PRs on GitHub repositories.
+- Content partners: propose a short project or lesson and I’ll help convert it into a reproducible guide.
+- Mentors and reviewers: technical reviews for curriculum and project reliability.
+
+---
+
+## Current Status & Roadmap
+
+- Status: Early-stage, public experiments and templates available.
+- Roadmap: curated curriculum, curated learning paths, small cohort workshops, and deployment templates for learners.
+
+If you’d like to see a particular topic in NSCodex, open an issue on GitHub or message on Telegram.

@@ -147,6 +147,34 @@
 
 ---
 
+## Skills matrix (technical)
+
+- Languages: Python (advanced), JavaScript/Node.js (strong), C++ (learning), HTML/CSS
+- Backend & APIs: Flask, Express, REST APIs, webhook design
+- AI & LLMs: prompt engineering, retrieval systems, memory stacks for agents
+- Automation & orchestration: n8n, cron jobs, webhook automation, scheduled runners
+- DevOps & deployment: Vercel, Netlify, simple CI patterns, logging & monitoring basics
+- Data & tooling: JSON/CSV processing, basic visualization, lightweight analytics
+
+---
+
+## Practical strengths
+
+- Building deployable bots with audit trails and Git-backed logs (e.g., Life Logger)
+- Designing memory-enabled AI agents for conversational tasks and sales automation
+- Rapid integration work: Telegram, WhatsApp, GitHub, and third-party APIs
+- Teaching through reproducible projects: starter kits, templates, and clear docs
+
+---
+
+## Current learning goals
+
+- Scale backend reliability: retry strategies, testing, and CI/CD for agents
+- Improve observability: structured logs, metrics, and alerts for live automations
+- Expand NSCodex curriculum with hands-on labs and mini-cohorts
+
+---
+
 <p align="center">
   <strong>Digital Identity:</strong> <code>@naborajs</code><br>
   <em>Builder by habit • Disciplined by choice • Learner by nature</em>

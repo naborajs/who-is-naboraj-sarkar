@@ -270,6 +270,62 @@ If you want to **explore**, **try something**, **collaborate**, or **understand 
 These projects are not the end result —  
 they are **checkpoints in an ongoing journey**.
 
+---
+
+## Featured Projects — technical summaries (SEO friendly)
+
+### Life Logger — Telegram bot with GitHub logging
+
+Type: Bot / Integration
+
+Summary: A lightweight Telegram bot that captures structured user activity and pushes JSON/MD logs to a GitHub repository. The architecture uses a webhook-based capture layer, a logging service (Python/Node), and GitHub REST API to create versioned commits for every log entry — providing auditable timelines for habits and activity.
+
+Tech: Python, Node.js, Telegram Bot API, GitHub REST API, simple JSON storage
+
+Use cases: personal habit tracking, team activity logs, reproducible notes, compliance traces
+
+---
+
+### AI Pro Sales Assistant — deployed sales/support agent
+
+Type: AI Agent / Automation
+
+Summary: An AI-driven assistant that ingests business context (chat history, product docs) and orchestrates multi-channel responses. Includes admin dashboard for live monitoring, manual overrides, and analytics. Designed with memory layers and retrievers to keep conversations contextual and relevant.
+
+Tech: LLMs (various providers), retrieval layer, Telegram/WhatsApp integrations, admin UI
+
+---
+
+### CODE — AI-assisted IDE (prototype)
+
+Type: Web app / Productivity tool
+
+Summary: An experimental online IDE that supports multiple LLM providers and provides rapid scaffolding for small websites and scripts. Focuses on developer productivity and prompt-driven code generation workflows.
+
+Tech: Frontend (React), backend APIs, LLM integrations, optional user-provided API keys
+
+---
+
+### NS Fin — finance & crypto intelligence (experimental)
+
+Type: Data aggregation / dashboard
+
+Summary: Aggregates market data, sentiment, and news to produce contextual insights for research and learning. Emphasizes transparency and educational commentary rather than trading advice.
+
+Tech: Market APIs, data pipelines, visualization libraries
+
+---
+
+## Deployments & Operations
+
+- Hosting: Vercel, Netlify for static and lightweight apps
+- Automations: n8n and small custom runners for scheduled jobs and webhooks
+- Logging & Audit: GitHub-based logging for reproducible history (Life Logger)
+
+---
+
+If you want architecture diagrams, code links, or deployment notes for any project, open an issue on GitHub or message on Telegram.
+
 Progress > perfection.  
 Learning > pretending.  
 Building > waiting.

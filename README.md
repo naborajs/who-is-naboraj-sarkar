@@ -1,287 +1,143 @@
-# Who is Naboraj Sarkar?
+# Naboraj Sarkar — Developer Portfolio
 
 <p align="center">
-  <strong>Naboraj Sarkar</strong> (also known as <strong>Nishant</strong>) is an Indian student,
-  digital creator, and emerging technologist from
-  <strong>Siliguri, West Bengal, India 🇮🇳</strong>.
+  <strong>Naboraj Sarkar</strong> (Nishant) — Developer, AI practitioner, and automation engineer.
+  <br>
+  Location: Siliguri, West Bengal, India 🇮🇳 • Online: @naborajs
 </p>
 
-<p align="center">
-  Coding 💻 • Artificial Intelligence 🤖 • Automation ⚙️ • Cybersecurity 🛡️ • Finance 💹 • Gaming 🎮 • Content Creation 🎥
-</p>
-
-<p align="center">
-  <strong>Primary Online Identity:</strong> <code>@naborajs</code>
-</p>
+I build audit-friendly automations, Telegram/WhatsApp bots with GitHub logging, and AI agents used in real-world deployments. This repository is a public, searchable record of those projects, technical notes, and learning resources (NSCodex).
 
 ---
 
-## 👤 About Naboraj Sarkar
+## Table of contents
 
-Hey 👋 I’m **Naboraj Sarkar**, a student from Siliguri, West Bengal, India 🇮🇳.
-
-I’m deeply interested in **coding, artificial intelligence, automation systems, neural networks,
-cybersecurity, finance, and long-term independent growth**. My journey into technology didn’t
-start with expensive devices or formal institutions — it started with **curiosity, limitations,
-and the desire to build something real**.
-
-This repository exists as a **public, transparent, and searchable digital identity**
-to help people and search engines clearly understand **who I am, what I’ve built,
-what I’m learning, and what I plan to build next**.
+- About — who I am and what I build
+- Featured projects — technical summaries and stacks
+- Architecture highlights — diagrams and example flows
+- Deployments & operations — hosting, monitoring, and reliability
+- Skills & tech stack — concrete technologies I use
+- How to collaborate — contact, demos, and contribution
+- SEO keywords & meta suggestions (for web landing pages)
+- License
 
 ---
 
-## 🌱 Early Beginnings & Growth
+## About
 
-My first exposure to technology came from playing **Free Fire 🎮 on my grandmother’s mobile phone**.
-Later, I moved to using my **father’s phone**. What began as gaming slowly turned into curiosity
-about **how apps, servers, and systems actually work**.
+I’m a pragmatic builder who prefers reproducible work and measurable outcomes. I publish my experiments publicly so others can learn from the design, failure modes, and operational details. I focus on:
 
-Before owning my own device, I was already:
-- Observing app behavior
-- Experimenting with settings
-- Understanding system responses
+- AI agents and retrieval-based memory systems
+- Automation with n8n and custom runners
+- Integrations: Telegram, WhatsApp, GitHub-based logging
+- Education through NSCodex: project-first, hands-on learning
 
-Eventually, I bought my **first personal mobile phone using my own money** 💰.
-That moment marked the beginning of my **independent learning journey** — and I never stopped.
+Quote: “Build in public, document the failures, and make tools that others can reuse.”
 
 ---
 
-## 🎮 From Gaming to Development & Security
+## Recent highlights (quick)
 
-Gaming was my **starting point**, not my end goal.
-
-Starting with Free Fire, I moved from:
-- Playing → understanding mechanics  
-- Understanding → automation curiosity  
-- Curiosity → building tools and bots  
-
-I built and experimented with **Free Fire automation bots**, which introduced me to:
-- APIs 🔗
-- Automation logic
-- System limitations
-- Security risks and vulnerabilities  
-
-This phase pushed me toward **development and cybersecurity**, where I began learning
-how systems fail — not just how they work.
+- Life Logger — Telegram bot → captures structured activity, creates commits in a GitHub repo for every entry (audit-ready personal logs).
+- AI Pro Sales Assistant — memory-enabled agent for sales/support with admin dashboard and multi-channel integration.
+- CODE — experimental AI-powered IDE for rapid scaffolding using multiple LLM providers.
+- NS Fin — crypto & market intelligence dashboard (educational, not financial advice).
 
 ---
 
-## 🎥 YouTube, Telegram & Community Building
+## Featured projects — technical summaries
 
-### YouTube
-- Active content creator for **3+ years**
-- First channel reached **~50,000 subscribers**
-- Channel was unfortunately **hacked**
-- Restarted again from zero instead of quitting
+### Life Logger — Telegram bot with GitHub integration
 
-Current channel **NS GAMMiNG**:
-- **~8,000+ subscribers**
-- Growing consistently through discipline and learning
+- Type: Bot / Integration
+- Stack: Python/Node.js, Telegram Bot API, GitHub REST API, webhooks
+- Architecture (summary): Telegram webhook → capture service → normalization → GitHub commit API (JSON/MD) → optional static UI on Vercel
+- Value: auditable personal logs, versioned notes for habits and compliance
 
-### Telegram
-- Built a Telegram community of **~40,000 members**
-- Channel was later **banned due to fake reports**
-- Restarted again
-- Currently managing **~20,000+ members**
+### AI Pro Sales Assistant
 
-These experiences taught me:
-- Community management
-- Platform dependency risks
-- The importance of backups, adaptability, and resilience
+- Type: AI agent / Automation
+- Stack: LLMs (OpenAI/Gemini/Anthropic), retrieval (vector DB), webhook connectors (Telegram/WhatsApp), admin UI (React)
+- Features: memory layers, human-in-the-loop overrides, analytics, continuous updates from new conversations
 
----
+### CODE — AI-assisted online IDE (prototype)
 
-## 🎓 Education Background
+- Type: Web app / Productivity tool
+- Stack: React frontend, Node/Flask backend, configurable LLM providers
+- Notes: supports user-supplied API keys, multi-model prompt orchestration, scaffold generation
 
-- Student (India 🇮🇳)
-- ICSE board till **Class 8**
-- Shifted to **CBSE board** for board-level education
-- Balancing school with deep self-learning
+### NS Fin — Finance & Crypto Intelligence (educational)
 
-I may not be a topper in every subject 🎒,
-but when it comes to **computers, logic, AI, automation, and systems thinking** —
-I genuinely stand out 🏆.
+- Type: Data aggregation & dashboard
+- Stack: Market APIs, data pipelines, visualization, sentiment analysis
+- Focus: research and education — not investment advice
 
 ---
 
-## 🧠 Skills, Projects & Active Learning
+## Architecture highlights — examples
 
-### Programming & Development
-- Python 🐍
-- JavaScript ⚡
-- C++
-- HTML, CSS
-- Node.js, Flask
-- APIs & integrations
+Life Logger flow (example):
 
-### AI, Neural Networks & Automation
-- Neural network fundamentals 🧠
-- Prompt engineering 🤖
-- AI agents & workflows
-- Image generation tools
-- Actively learning **n8n** for advanced automation
-- Continuous daily experimentation and improvement
+1. Telegram bot receives message → webhook posts to capture endpoint
+2. Capture service normalizes message to JSON and validates schema
+3. Commit generator prepares a content file and calls GitHub REST API to create a commit in a dedicated logging repo
+4. Optional: static UI renders logs from the repo via Vercel for quick browsing
 
-### Cybersecurity
-- Cybersecurity fundamentals 🛡️
-- Ethical hacking concepts (learning stage)
-- Security-first system thinking
-
-### Notable Experiments & Projects
-- Social media automation systems
-- AI agent experiments
-- Neural network trials
-- Advanced **finance & crypto tracker**
-- Productivity and automation tools
-- Digital identity & SEO-focused systems
+Design principles: idempotence for webhooks, small single-purpose services, clear auditability (git commits), and defensive retries.
 
 ---
 
-## 🚀 NSCodex (New Initiative)
+## Deployments & operations
 
-**NSCodex** is a newly created initiative founded by **Naboraj Sarkar**.
-
-NSCodex is **not a big agency** and does not present itself as one.
-It is a **small, focused initiative**, mainly **designed, built, and operated by me**,
-with support from a small team when needed.
-
-### What NSCodex Stands For
-- Providing **free technological education**
-- Sharing **real, practical knowledge** — not theory only
-- Showing **how my skills work in real life**
-- Building tools, projects, and systems in public
-- Helping learners understand modern tech clearly
-
-NSCodex is **based on my name and identity** and represents my
-long-term vision in technology.
-
-### Current Status
-- NSCodex is **planned and structured**
-- Social media accounts have been created
-- Work has not officially launched yet
-- Focus is currently on learning, preparation, and foundation
-
-### Future Vision
-NSCodex aims to grow into:
-- A trusted tech education platform
-- A place to showcase real projects
-- A learning hub for automation, AI, and development
-- Proof that **independent builders can create meaningful impact**
+- Hosting: Vercel / Netlify for static sites and lightweight front-ends
+- Automations: n8n hosted or self-hosted runners for scheduled workflows
+- Monitoring: structured logs, Git-backed changes, and simple alerting (email/Telegram)
+- Reliability: exponential backoff on external APIs, circuit-breakers for LLM calls, minimal privileged credentials
 
 ---
 
-## 💹 Finance, Crypto & Independence
+## Skills & tech stack
 
-I actively explore:
-- Finance fundamentals
-- Cryptocurrency ecosystems
-- Market psychology
-- Risk management
-
-I use platforms like **Binance (@naborajs)** primarily for **learning and observation**.
-
-Almost everything I use today —
-from **headphones 🎧 to tablet 📱** —
-has been bought using **my own money**.
-
-This reflects my strong belief in **financial independence and discipline**.
+- Languages: Python (primary), JavaScript/Node.js, basic C++
+- Web: HTML/CSS, React for small admin UIs
+- APIs: REST, webhooks, GitHub API, Telegram Bot API
+- Automation: n8n, cron, webhook orchestration
+- AI: prompt engineering, retrieval systems, multi-model orchestration
+- Deployment: Vercel, Netlify, simple CI patterns
 
 ---
 
-## 🧍‍♂️ Mindset & Personal Values
+## How to collaborate
 
-- Small, trusted friend circle
-- Still enjoys playing **Free Fire**
-- Main focus: **development, AI, cybersecurity**
-- Chosen to stay **single and focused**
+- Quick demo / bot walkthrough: Telegram — @Nishantsarkar10k
+- Business/proposal: nishant.ns.business@gmail.com
+- Code, issues, PRs: https://github.com/naborajs
 
-Core beliefs:
-- Skills > shortcuts  
-- Consistency > motivation  
-- Independence > validation  
+If you want a technical walkthrough (architecture diagram, deployment notes, or code pointers), open an issue in the relevant repository and tag me.
 
 ---
 
-## 🎯 Vision & Long-Term Goals
+## SEO keywords & meta suggestions (for publishing this page on a website)
 
-- Pursue **Computer Science 🎓**
-- Deep expertise in **AI & Cybersecurity**
-- Master automation systems
-- Build impactful software 💡
-- Grow NSCodex into something meaningful
-- Launch a startup 🚀 or tech-driven business 🏢
-
-Above all, my biggest dream ❤️  
-is to give my **family the best life they deserve**.
-
----
-## 📬 Contact & Collaboration
-
-For discussions, collaboration, or ideas, use the channels below:
-
-- 📧 Email: **nishant.ns.business@gmail.com**
-- 💬 Telegram: **@Nishantsarkar10k**
-- 🌐 GitHub: https://github.com/naborajs
+- Meta title suggestion: "Naboraj Sarkar — Developer Portfolio · AI Agents · Automation · NSCodex"
+- Meta description suggestion: "Naboraj Sarkar (Nishant) — Developer focused on AI agents, Telegram bots with GitHub logging, and automation. Projects: Life Logger, AI Pro Sales Assistant, NSCodex."
+- Primary keywords: Naboraj Sarkar, Life Logger Telegram bot, AI agent development, n8n automation, NSCodex, Telegram GitHub integration
+- Structured data suggestion (JSON-LD): add Organization/Person schema on your website landing page to improve search visibility
 
 ---
 
-## 💹 Platform Presence (Non-Contact)
+## Getting started (for contributors)
 
-These platforms represent my activity, learning, or ecosystem presence:
+1. Browse `PROJECTS.md` to find a project you want to work on.
+2. Open an issue describing the improvement or feature.
+3. Fork, implement, and open a pull request with a clear description and a short deployment checklist.
 
-- 💹 Binance Profile: **@naborajs**
-- 🔥 Instagram: **naborajs**
-
----
-
-## 🌐 Official & Verified Online Presence
-
-<p align="center">
-  <a href="https://github.com/naborajs">
-    <img src="https://img.shields.io/badge/GitHub-@naborajs-181717?style=for-the-badge&logo=github&logoColor=white">
-  </a>
-  <a href="https://instagram.com/naborajs">
-    <img src="https://img.shields.io/badge/Instagram-@naborajs-E4405F?style=for-the-badge&logo=instagram&logoColor=white">
-  </a>
-  <a href="https://youtube.com/@Nishant_sarkar">
-    <img src="https://img.shields.io/badge/YouTube-Nishant__Sarkar-FF0000?style=for-the-badge&logo=youtube&logoColor=white">
-  </a>
-  <a href="https://x.com/NSGAMMING699">
-    <img src="https://img.shields.io/badge/X-@NSGAMMING699-000000?style=for-the-badge&logo=x&logoColor=white">
-  </a>
-  <a href="https://nsgamming.xyz">
-    <img src="https://img.shields.io/badge/Website-nsgamming.xyz-0A66C2?style=for-the-badge&logo=google-chrome&logoColor=white">
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://app.binance.com/uni-qr/cpro/naborajs?l=en&r=KVU71VWR&uc=web_square_share_link&us=copylink">
-    <img src="https://img.shields.io/badge/Binance-@naborajs-F3BA2F?style=for-the-badge&logo=binance&logoColor=black">
-  </a>
-</p>
+Contribution preferences: small, focused PRs, clear tests or manual verification steps, and documentation updates.
 
 ---
 
-## 🔍 SEO & Search Identity
+## License
 
-Associated search terms:
-- Naboraj Sarkar
-- Who is Naboraj Sarkar
-- Naboraj Sarkar GitHub
-- Naboraj Sarkar AI
-- Naboraj Sarkar automation
-- Naboraj Sarkar cybersecurity
-- NSCodex
-- @naborajs
+This repository content is provided under the MIT License.
 
-This repository helps search engines build a **clear, trusted entity**
-around **Naboraj Sarkar**.
-
----
-
-## 📜 License
-
-Licensed under the **MIT License**.
-
-© Naboraj Sarkar. All rights reserved.
+© 2026 Naboraj Sarkar
