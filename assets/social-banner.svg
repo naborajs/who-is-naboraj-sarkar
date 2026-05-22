@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070b17" />
+      <stop offset="100%" stop-color="#121827" />
+    </linearGradient>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="360" fill="url(#bg)" />
+  <circle cx="250" cy="220" r="90" fill="#2d334c" opacity="0.7" />
+  <circle cx="980" cy="120" r="110" fill="#1f2937" opacity="0.65" />
+  <rect x="64" y="52" width="520" height="230" rx="32" fill="#0f172a" stroke="url(#grad)" stroke-width="2" />
+  <text x="100" y="114" font-family="Inter, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700">Digital Identity</text>
+  <text x="100" y="162" font-family="Inter, Arial, sans-serif" font-size="22" fill="#94a3b8">Choose where to connect.</text>
+  <g transform="translate(100, 190)">
+    <rect x="0" y="0" width="170" height="34" rx="16" fill="#111827" />
+    <text x="20" y="22" font-family="Inter, Arial, sans-serif" font-size="14" fill="#38bdf8">GitHub</text>
+    <rect x="190" y="0" width="200" height="34" rx="16" fill="#111827" />
+    <text x="210" y="22" font-family="Inter, Arial, sans-serif" font-size="14" fill="#7c3aed">AI · Automation</text>
+    <rect x="410" y="0" width="220" height="34" rx="16" fill="#111827" />
+    <text x="430" y="22" font-family="Inter, Arial, sans-serif" font-size="14" fill="#38bdf8">Telegram · Workflow</text>
+  </g>
+  <path d="M640 210 C700 180 760 220 820 200" fill="none" stroke="#38bdf8" stroke-width="3" opacity="0.65" />
+  <path d="M640 240 C700 210 760 250 820 230" fill="none" stroke="#7c3aed" stroke-width="3" opacity="0.65" />
+</svg>

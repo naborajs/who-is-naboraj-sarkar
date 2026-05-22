@@ -1,143 +1,199 @@
-# Naboraj Sarkar — Developer Portfolio
+# Naboraj Sarkar — Active Learning Lab
+
+<div align="center">
+  <img src="assets/hero-banner.svg" width="100%" alt="Hero banner" />
+</div>
+
+<div align="center" style="margin: 1rem 0;">
+  <img src="assets/LOGO.png" width="240" alt="Naboraj Sarkar logo" />
+</div>
 
 <p align="center">
-  <strong>Naboraj Sarkar</strong> (Nishant) — Developer, AI practitioner, and automation engineer.
-  <br>
-  Location: Siliguri, West Bengal, India 🇮🇳 • Online: @naborajs
+  <strong>Learning by building. Testing ideas. Understanding systems.</strong>
 </p>
 
-I build audit-friendly automations, Telegram/WhatsApp bots with GitHub logging, and AI agents used in real-world deployments. This repository is a public, searchable record of those projects, technical notes, and learning resources (NSCodex).
+<div align="center" style="max-width: 820px; margin: 1rem auto 2rem auto; padding: 1.1rem 1.2rem; border-radius: 20px; background: rgba(15, 23, 42, 0.05); border: 1px solid rgba(124, 58, 237, 0.18);">
+  <p style="margin: 0 0 0.7rem 0; font-size: 1rem; font-weight: 700; color: #111;">About the journey</p>
+  <p style="margin: 0 0 1rem 0; color: #333; line-height: 1.6;">This repo is a living portfolio of every experiment, lesson, and idea. It starts with my love for systems and grows into the deeper story of why I build, learn, and keep going.</p>
+  <p style="margin: 0;">
+    <a href="ABOUT.md"><img src="https://img.shields.io/badge/Read%20the%20Story-About%20Naboraj-7c3aed?style=for-the-badge&logo=ghost&logoColor=white" alt="Read the story" /></a>
+    <a href="ABOUT.md"><img src="https://img.shields.io/badge/More%20Life%20Experience-Learn%20More-0ea5e9?style=for-the-badge&logo=npm&logoColor=white" alt="More life experience" /></a>
+  </p>
+</div>
+
+<p align="center">
+  <a href="https://github.com/naborajs"><img src="https://img.shields.io/github/followers/naborajs?label=Followers&style=for-the-badge" alt="GitHub followers" /></a>
+  <img src="https://img.shields.io/github/last-commit/naborajs/who-is-naboraj-sarkar?style=for-the-badge" alt="Last commit" />
+  <img src="https://img.shields.io/github/license/naborajs/who-is-naborajs-sarkar?style=for-the-badge" alt="License" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=naborajs.who-is-naboraj-sarkar" alt="Profile views" />
+</p>
+
+<div align="center" style="margin-top: 1rem; padding: 1rem; border: 1px solid #444; border-radius: 18px; background: rgba(124, 58, 237, 0.08); max-width: 760px;">
+  <p style="margin: 0 0 0.6rem 0; font-weight: 700; color: #111;">Premium Contact & Social Hub</p>
+  <p style="margin: 0 0 0.8rem 0; color: #333;">Open the full connection page for GitHub, messaging, channels, and community access.</p>
+  <a href="socials.md"><img src="https://img.shields.io/badge/Explore%20Social%20Hub-Open%20Now-0ea5e9?style=for-the-badge&logo=webhooks&logoColor=white" alt="Explore Social Hub" /></a>
+</div>
 
 ---
 
-## Table of contents
+## What this lab shows
 
-- About — who I am and what I build
-- Featured projects — technical summaries and stacks
-- Architecture highlights — diagrams and example flows
-- Deployments & operations — hosting, monitoring, and reliability
-- Skills & tech stack — concrete technologies I use
-- How to collaborate — contact, demos, and contribution
-- SEO keywords & meta suggestions (for web landing pages)
-- License
+- **Active learning** through experiments, prototypes, and iterations
+- **Engineering practice** with automation, APIs, and system design
+- **Visible progress** through diagrams, logs, and project summaries
+
+> Learn → Test → Build → Repeat
 
 ---
 
-## About
+## Now learning
 
-I’m a pragmatic builder who prefers reproducible work and measurable outcomes. I publish my experiments publicly so others can learn from the design, failure modes, and operational details. I focus on:
-
-- AI agents and retrieval-based memory systems
-- Automation with n8n and custom runners
-- Integrations: Telegram, WhatsApp, GitHub-based logging
-- Education through NSCodex: project-first, hands-on learning
-
-Quote: “Build in public, document the failures, and make tools that others can reuse.”
+- AI agent orchestration and prompt workflows
+- Git-based automation, webhook pipelines, and n8n
+- Hardware interfaces, sensors, serial telemetry, and device feedback
+- System architecture, request flow, and integration design
 
 ---
 
-## Recent highlights (quick)
+## Current experiments
 
-- Life Logger — Telegram bot → captures structured activity, creates commits in a GitHub repo for every entry (audit-ready personal logs).
-- AI Pro Sales Assistant — memory-enabled agent for sales/support with admin dashboard and multi-channel integration.
-- CODE — experimental AI-powered IDE for rapid scaffolding using multiple LLM providers.
-- NS Fin — crypto & market intelligence dashboard (educational, not financial advice).
+<div align="center">
+  <img src="assets/project-grid.svg" width="100%" alt="Project showcase" />
+</div>
 
----
-
-## Featured projects — technical summaries
-
-### Life Logger — Telegram bot with GitHub integration
-
-- Type: Bot / Integration
-- Stack: Python/Node.js, Telegram Bot API, GitHub REST API, webhooks
-- Architecture (summary): Telegram webhook → capture service → normalization → GitHub commit API (JSON/MD) → optional static UI on Vercel
-- Value: auditable personal logs, versioned notes for habits and compliance
-
-### AI Pro Sales Assistant
-
-- Type: AI agent / Automation
-- Stack: LLMs (OpenAI/Gemini/Anthropic), retrieval (vector DB), webhook connectors (Telegram/WhatsApp), admin UI (React)
-- Features: memory layers, human-in-the-loop overrides, analytics, continuous updates from new conversations
-
-### CODE — AI-assisted online IDE (prototype)
-
-- Type: Web app / Productivity tool
-- Stack: React frontend, Node/Flask backend, configurable LLM providers
-- Notes: supports user-supplied API keys, multi-model prompt orchestration, scaffold generation
-
-### NS Fin — Finance & Crypto Intelligence (educational)
-
-- Type: Data aggregation & dashboard
-- Stack: Market APIs, data pipelines, visualization, sentiment analysis
-- Focus: research and education — not investment advice
+| Project | Why it matters | Stack |
+| --- | --- | --- |
+| **Life Logger** | Telegram → Git logging, audit-ready automation | Python · Node.js · GitHub API · webhooks |
+| **Auto Contribution Bot** | GitHub Actions and repo workflow automation | GitHub Actions · scripting · CI/CD |
+| **Birthday Bloom** | frontend interaction, motion, emotional UI | HTML · CSS · JavaScript |
+| **CODE** | browser IDE prototype for AI-assisted development | JavaScript · AI APIs · tooling |
+| **NS Fin** | finance dashboard with research-focused data flows | APIs · visualization · analytics |
 
 ---
 
-## Architecture highlights — examples
+## System playground
 
-Life Logger flow (example):
+<div align="center">
+  <img src="assets/system-bridge.svg" width="100%" alt="System bridge" />
+</div>
 
-1. Telegram bot receives message → webhook posts to capture endpoint
-2. Capture service normalizes message to JSON and validates schema
-3. Commit generator prepares a content file and calls GitHub REST API to create a commit in a dedicated logging repo
-4. Optional: static UI renders logs from the repo via Vercel for quick browsing
+```text
+Browser → Server → API → Device → Feedback
+```
 
-Design principles: idempotence for webhooks, small single-purpose services, clear auditability (git commits), and defensive retries.
+### Ideas in motion
 
----
-
-## Deployments & operations
-
-- Hosting: Vercel / Netlify for static sites and lightweight front-ends
-- Automations: n8n hosted or self-hosted runners for scheduled workflows
-- Monitoring: structured logs, Git-backed changes, and simple alerting (email/Telegram)
-- Reliability: exponential backoff on external APIs, circuit-breakers for LLM calls, minimal privileged credentials
+- Smart Device Dashboard
+- Experiment Control Panel
+- Hardware + Software Bridge
+- AI + Automation Lab
+- Learning Sandbox
 
 ---
 
-## Skills & tech stack
+## Hardware exploration
 
-- Languages: Python (primary), JavaScript/Node.js, basic C++
-- Web: HTML/CSS, React for small admin UIs
-- APIs: REST, webhooks, GitHub API, Telegram Bot API
-- Automation: n8n, cron, webhook orchestration
-- AI: prompt engineering, retrieval systems, multi-model orchestration
-- Deployment: Vercel, Netlify, simple CI patterns
+<div align="center">
+  <img src="assets/hardware-lab.svg" width="100%" alt="Hardware lab" />
+</div>
 
----
-
-## How to collaborate
-
-- Quick demo / bot walkthrough: Telegram — @Nishantsarkar10k
-- Business/proposal: nishant.ns.business@gmail.com
-- Code, issues, PRs: https://github.com/naborajs
-
-If you want a technical walkthrough (architecture diagram, deployment notes, or code pointers), open an issue in the relevant repository and tag me.
+- device communication and sensor telemetry
+- basic electronics, signal mapping, and control loops
+- building small IoT concepts with web interfaces
 
 ---
 
-## SEO keywords & meta suggestions (for publishing this page on a website)
+## AI & automation
 
-- Meta title suggestion: "Naboraj Sarkar — Developer Portfolio · AI Agents · Automation · NSCodex"
-- Meta description suggestion: "Naboraj Sarkar (Nishant) — Developer focused on AI agents, Telegram bots with GitHub logging, and automation. Projects: Life Logger, AI Pro Sales Assistant, NSCodex."
-- Primary keywords: Naboraj Sarkar, Life Logger Telegram bot, AI agent development, n8n automation, NSCodex, Telegram GitHub integration
-- Structured data suggestion (JSON-LD): add Organization/Person schema on your website landing page to improve search visibility
+<div align="center">
+  <img src="assets/automation-flow.svg" width="100%" alt="Automation flow" />
+</div>
 
----
+<div align="center">
+  <img src="assets/ai-flow.svg" width="100%" alt="AI workflow" />
+</div>
 
-## Getting started (for contributors)
-
-1. Browse `PROJECTS.md` to find a project you want to work on.
-2. Open an issue describing the improvement or feature.
-3. Fork, implement, and open a pull request with a clear description and a short deployment checklist.
-
-Contribution preferences: small, focused PRs, clear tests or manual verification steps, and documentation updates.
+- automation flow: trigger, parse, commit, monitor
+- AI flow: input, orchestration, output
+- focus on real behavior over polished stories
 
 ---
 
-## License
+## Build log
 
-This repository content is provided under the MIT License.
+- **Today**: upgraded repository into a living lab with new visuals, system diagrams, and a cleaner structure.
+- **This week**: added hardware and system architecture diagrams, merged duplicate docs, and refocused the portfolio on active experimentation.
+- **Next**: wire a device dashboard concept, add real telemetry prototypes, and capture failure lessons in the log.
 
-© 2026 Naboraj Sarkar
+---
+
+## What changed recently
+
+- removed old duplicate documentation
+- centralized learning and experiment notes into a single portfolio
+- upgraded README with visual storytelling and system cards
+- added real architecture visuals for automation and hardware
+
+---
+
+## Future concepts
+
+- Smart Device Dashboard with real-time controls
+- Experiment Control Panel for simulation and replay
+- Hardware + Software Bridge for sensor-driven apps
+- AI + Automation Lab with chaining and observability
+- Learning Sandbox for repeatable experiments
+
+---
+
+## Failures & lessons
+
+- not every experiment is a finished project
+- broken automations reveal assumptions faster than success
+- hardware timing issues require data validation and buffering
+- public learning is stronger when failures are documented
+
+---
+
+## Learning timeline
+
+<div align="center">
+  <img src="assets/roadmap.svg" width="100%" alt="Roadmap" />
+</div>
+
+- **Explore**: build systems, not only features
+- **Prototype**: test quickly with real inputs
+- **Deploy**: make workflows observable and stable
+- **Improve**: learn from usage and failures
+- **Scale**: move from demos to architecture
+
+> See the full timeline in [LEARNING_TIMELINE.md](LEARNING_TIMELINE.md)
+
+---
+
+## Stats
+
+| Metric | Value |
+| --- | --- |
+| GitHub repo | `naborajs/who-is-naboraj-sarkar` |
+| Last commit | ![Last commit](https://img.shields.io/github/last-commit/naborajs/who-is-naboraj-sarkar?style=flat-square) |
+| Followers | ![Followers](https://img.shields.io/github/followers/naborajs?label=Followers&style=flat-square) |
+| License | ![License](https://img.shields.io/github/license/naborajs/who-is-naboraj-sarkar?style=flat-square) |
+
+---
+
+## Connect
+
+| Channel | Handle |
+| --- | --- |
+| GitHub | [@naborajs](https://github.com/naborajs) |
+| Telegram | [@Nishantsarkar10k](https://t.me/Nishantsarkar10k) |
+| Email | nishant.ns.business@gmail.com |
+| WhatsApp | +91 8900653250 |
+| Social Hub | [All public platforms](socials.md) |
+
+---
+
+## Note
+
+Learn. Test. Build. Repeat.

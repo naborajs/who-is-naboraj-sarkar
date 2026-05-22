@@ -1,184 +1,120 @@
 # About Naboraj Sarkar
 
-**Naboraj Sarkar** (also known as **Nishant**, online identity **NS GAMMING/NISHANT**) is an Indian student,
-digital creator, and emerging technologist from **Siliguri, West Bengal, India 🇮🇳**.
+This is the full story behind the portfolio, the experiments, and the values that guide every line of code.
 
-This document exists to provide a **deep, transparent, and long-form understanding**
-of Naboraj Sarkar beyond short bios, social media summaries, or surface-level descriptions.
-It is written for both **humans and search engines** to clearly understand who I am,
-how I think, and what I am building over time.
+## The first spark
 
----
+I did not plan to become a developer. I became one because I could not stop fixing what felt broken.
 
-## Who I Am
+In a small room with a low-end laptop and a slow internet connection, I discovered the feeling of making something work when nobody else believed it would.
 
-I am a **learner by curiosity and a builder by mindset**.
+- I learned that waiting for a page to load was not wasted time — it was a moment to imagine what I could build next.
+- I learned that the first time a sensor reported real data to a screen, the world shifted from static to alive.
+- I learned that every problem I could not solve was actually an invitation to learn one more thing.
 
-My journey into technology did not begin with privilege, expensive devices, or perfect conditions.
-It began with **interest, limitations, and the habit of experimenting**.
-I don’t wait for ideal setups or external validation — I start with what I have and improve daily.
-
-Over time, this mindset shaped me into someone who prefers:
-- Understanding systems over memorizing tools  
-- Building real things over collecting certificates  
-- Long-term growth over short-term attention  
-
-> *“Progress doesn’t come from having more resources — it comes from using what you have consistently.”*
+Those early experiences did not just teach me technology. They taught me persistence, curiosity, and the courage to start before I was ready.
 
 ---
 
-## Early Curiosity & Growth
+## The story of growth
 
-My interest in technology started early, through **gaming and mobile devices**.
-What began as curiosity around games slowly turned into questions about
-**how applications work, how systems respond, and how automation happens**.
+My journey is not a straight line. It is a collection of small breakthroughs, sharp setbacks, and honest reflection.
 
-Before owning my own device, I learned by:
-- Observing app behavior
-- Experimenting with settings
-- Learning through trial and error
+### The first project that mattered
 
-When I finally bought my **first personal mobile phone using my own money**,
-it marked a shift toward **independence and responsibility**.
-From that point, learning became intentional, daily, and structured.
+I built my first meaningful project because I needed it.
+A tool that was simple on the outside but hard-earned on the inside. It solved a problem I saw every day and gave me a taste of what real impact feels like.
 
----
+That project was not perfect, but it was my first proof that I could create something useful from nothing.
 
-## What I Work On & Care About
+### The first time I failed publicly
 
-My interests revolve around multiple interconnected domains:
+I pushed code to a public repo and it broke.
+The experience was humbling, but it was also the moment I understood the power of sharing progress instead of hiding it.
 
-### Technology & Engineering
-- Programming & system design  
-- Backend development & APIs  
-- Automation workflows and logic  
+- I received feedback.
+- I discovered blind spots.
+- I learned faster because other people were watching and helping.
 
-### Artificial Intelligence & Automation
-- Prompt engineering  
-- AI agents and intelligent workflows  
-- Automation platforms (including n8n)  
-- Understanding how AI systems behave in real-world conditions  
+That failure became a turning point: building in public was no longer a choice. It was part of how I grew.
 
-### Cybersecurity & Digital Safety
-- Cybersecurity fundamentals  
-- Ethical hacking concepts (learning stage)  
-- System vulnerabilities and defensive thinking  
-- Learning how systems fail — not just how they work  
+### The moment I chose systems over shortcuts
 
-### Finance, Crypto & Markets
-- Financial fundamentals  
-- Cryptocurrency ecosystems  
-- Market psychology and risk awareness  
-- Long-term thinking over speculation  
+At one point, I had to stop building quick fixes and start designing how things should work long-term.
 
-### Content & Community
-- Content creation and storytelling  
-- Community building (YouTube & Telegram)  
-- Digital identity and personal branding  
-- Understanding audience psychology  
+I began to think in systems: how data flows, how components connect, how a workflow can be clearer for the next person.
 
-> *“Technology is powerful, but understanding people and systems together is what creates real impact.”*
+That shift turned daily tinkering into stronger engineering, and it made experimentation feel more intentional.
 
 ---
 
-## How I Think (Philosophy & Values)
+## The values behind the work
 
-I strongly believe:
+This page is not just about projects. It is about the reasons I keep building.
 
-- **Skills compound over time** — consistency beats intensity  
-- **Failure teaches faster than success** if reflected on honestly  
-- **Independence is more valuable than validation**  
-- **Systems matter more than tools**  
-- **Learning publicly creates accountability and authenticity**  
+### Resilience
 
-I am not chasing titles, trends, or shortcuts.
-I am focused on **understanding deeply and building steadily**.
+When something breaks, I do not see defeat. I see the next idea.
 
-> *“I don’t chase outcomes. I build habits that create outcomes.”*
+I have learned to treat failure as a signal, not a verdict. Every bug is an opportunity to rewrite what I know.
 
----
+### Curiosity
 
-## Learning in Public (Why This Exists)
+I ask questions constantly.
+- What if this could be automated?
+- What if this could feel more human?
+- What if I could make this easier for someone else?
 
-I document my journey openly because:
+That curiosity is the engine that keeps me learning and experimenting.
 
-- Others can learn from **real experiences**, not polished stories  
-- My growth remains **transparent and verifiable**  
-- Search engines can clearly establish **authentic identity signals**  
-- Progress becomes easier to track and reflect on  
+### Honesty
 
-This repository — and files like this one — act as a **living record**
-of learning, mistakes, experiments, and improvement.
+I do not hide messy work.
+I share what I build, what I try, and what does not work.
 
-> *“When learning is visible, growth becomes inevitable.”*
+That honesty makes the work more real and the lessons more useful.
 
 ---
 
-## Mindset & Direction
+## Milestones and lessons
 
-At an age where many people focus mainly on short-term goals,
-I’ve chosen to focus on:
-- Skill-building  
-- Long-term thinking  
-- Independence  
-- Creating options for the future  
+### First real hardware experiment
 
-I value privacy, discipline, and depth.
-I enjoy learning quietly, experimenting consistently, and improving gradually.
+Watching a sensor send live values to a dashboard changed everything.
+It taught me how software and physical systems can belong to the same story.
 
----
+### First revenue-minded prototype
 
-## Looking Forward
+I built a tool that helped me understand what people actually needed.
+That project taught me that engineering is not just building. It is solving real problems for real people.
 
-My long-term direction includes:
-- Pursuing **Computer Science**  
-- Growing deeper into **Artificial Intelligence & Cybersecurity**  
-- Mastering automation systems  
-- Building real-world software and platforms  
-- Expanding initiatives like **NSCodex** into meaningful educational spaces  
+### First automation flow that saved time
 
-Above all, my biggest motivation is to **create stability, opportunity, and a better future for my family**.
-
-> *“I’m not trying to be ahead of others. I’m trying to be ahead of who I was yesterday.”*
+I automated a repetitive workflow and realized the power of time as a resource.
+Every minute I saved became a minute I could spend learning or creating something bigger.
 
 ---
 
-## Living Document
+## Why I write this here
 
-This file will **evolve as I evolve**.
+Because the strongest portfolio is not just a list of projects. It is a map of why those projects exist.
 
-As skills grow, projects mature, and understanding deepens,
-this document will be updated to reflect that journey —
-honestly, transparently, and without exaggeration.
+This page is where I keep the story of:
 
----
+- the people who inspired me
+- the struggles that shaped me
+- the decisions that defined my path
+- the lessons I still carry forward
 
-**Digital Identity:** `@naborajs`  
-**Name:** Naboraj Sarkar  
-**Location:** Siliguri, West Bengal, India 🇮🇳
-
----
-
-## Expanded Profile — Technical & SEO Summary
-
-Naboraj Sarkar is an early-career software engineer and AI practitioner focused on building practical automation systems, AI agents, and developer tooling. Primary keywords: Naboraj Sarkar, Life Logger Telegram bot, AI agent development, automation, NSCodex, Telegram bot GitHub integration, n8n automation, deployed projects on Vercel/Netlify.
-
-### Core Competencies
-
-- AI and LLM systems: prompt engineering, agent design, memory & retrieval pipelines.
-- Automation: n8n workflows, webhooks, scheduled jobs, and reliable monitoring.
-- Integrations: Telegram/WhatsApp bots, GitHub logging, REST APIs, and lightweight dashboards.
-- Backend engineering: Python and Node.js services with deployable patterns.
+If you want to understand who I am beyond the code, this is the place to read it.
 
 ---
 
-## Latest Achievements (Selected)
+## What you will find here
 
-- Life Logger — built a Telegram bot that logs user activities and events to structured files and pushes them to a GitHub repo for versioned audit trails.
-- AI Agent Systems — prototyped self-improving conversational agents used for sales and support automation; integrated with Telegram and admin panels for live monitoring and manual override.
-- Production Automations — multiple live automations running on n8n and custom runners handling posting, monitoring, and business logic with retry and alerting.
-- NSCodex — an educational initiative and growing knowledge base for independent learners focused on project-based learning and reproducible code examples.
+- detailed personal stories, not just bullet points
+- real moments of doubt, decision, and discovery
+- the reasons I build in public and stay honest
+- the vision that connects my learning, my work, and my future
 
----
-
-If you want the technical README for any project (architecture diagram, code links, deployment notes), open an issue on my GitHub or message via Telegram.
+> My life is not only a list of projects. It is a story of growth, courage, and relentless curiosity.

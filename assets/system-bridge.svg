@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 300" width="1100" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+  </defs>
+  <rect width="1100" height="300" rx="24" fill="url(#bg)" />
+  <g font-family="Inter, Arial, sans-serif" fill="#e2e8f0">
+    <rect x="60" y="90" width="160" height="110" rx="20" fill="#111827" stroke="#334155" stroke-width="1.8" />
+    <text x="140" y="135" font-size="18" font-weight="700" text-anchor="middle">Browser</text>
+    <text x="140" y="160" font-size="13" fill="#94a3b8" text-anchor="middle">UI / interaction</text>
+    <rect x="290" y="60" width="180" height="170" rx="20" fill="#111827" stroke="#334155" stroke-width="1.8" />
+    <text x="380" y="135" font-size="18" font-weight="700" text-anchor="middle">Server</text>
+    <text x="380" y="160" font-size="13" fill="#94a3b8" text-anchor="middle">logic / routing</text>
+    <rect x="540" y="90" width="180" height="110" rx="20" fill="#111827" stroke="#334155" stroke-width="1.8" />
+    <text x="630" y="135" font-size="18" font-weight="700" text-anchor="middle">API</text>
+    <text x="630" y="160" font-size="13" fill="#94a3b8" text-anchor="middle">requests / responses</text>
+    <rect x="790" y="90" width="160" height="110" rx="20" fill="#111827" stroke="#334155" stroke-width="1.8" />
+    <text x="870" y="135" font-size="18" font-weight="700" text-anchor="middle">Device</text>
+    <text x="870" y="160" font-size="13" fill="#94a3b8" text-anchor="middle">sensors / controls</text>
+    <rect x="960" y="60" width="70" height="170" rx="20" fill="#111827" stroke="#334155" stroke-width="1.8" />
+    <text x="995" y="135" font-size="16" font-weight="700" text-anchor="middle">Feedback</text>
+  </g>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#38bdf8" />
+    </marker>
+  </defs>
+  <path d="M220 145 L290 145" stroke="#38bdf8" stroke-width="4" marker-end="url(#arrow)" />
+  <path d="M470 145 L540 145" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrow)" />
+  <path d="M720 145 L790 145" stroke="#38bdf8" stroke-width="4" marker-end="url(#arrow)" />
+  <path d="M950 145 L960 145" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrow)" />
+  <text x="550" y="260" font-family="Inter, Arial, sans-serif" fill="#94a3b8" font-size="14" text-anchor="middle">Browser → Server → API → Device → Feedback</text>
+</svg>
