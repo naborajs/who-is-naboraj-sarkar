@@ -14,10 +14,11 @@
 
 <div align="center" style="max-width: 820px; margin: 1rem auto 2rem auto; padding: 1.1rem 1.2rem; border-radius: 20px; background: rgba(15, 23, 42, 0.05); border: 1px solid rgba(124, 58, 237, 0.18);">
   <p style="margin: 0 0 0.7rem 0; font-size: 1rem; font-weight: 700; color: #111;">About the journey</p>
-  <p style="margin: 0 0 1rem 0; color: #333; line-height: 1.6;">This repo is a living portfolio of every experiment, lesson, and idea. It starts with my love for systems and grows into the deeper story of why I build, learn, and keep going.</p>
+  <p style="margin: 0 0 1rem 0; color: #333; line-height: 1.6;">This repo is the digital home for my learning in public journey, automation experiments, hardware prototypes, and developer portfolio. It shows the moments when I chose to learn faster, build stronger, and share honestly.</p>
+  <p style="margin: 0 0 1rem 0; color: #333; line-height: 1.6;"><strong>Read my life story, explore the lab, or connect through the full social hub.</strong></p>
   <p style="margin: 0;">
-    <a href="ABOUT.md"><img src="https://img.shields.io/badge/Read%20the%20Story-About%20Naboraj-7c3aed?style=for-the-badge&logo=ghost&logoColor=white" alt="Read the story" /></a>
-    <a href="ABOUT.md"><img src="https://img.shields.io/badge/More%20Life%20Experience-Learn%20More-0ea5e9?style=for-the-badge&logo=npm&logoColor=white" alt="More life experience" /></a>
+    <a href="ABOUT.md"><img src="https://img.shields.io/badge/Read%20My%20Story-Life%20Experience-7c3aed?style=for-the-badge&logo=ghost&logoColor=white" alt="Read my story" /></a>
+    <a href="socials.md"><img src="https://img.shields.io/badge/Visit%20Social%20Hub-Connect%20Now-0ea5e9?style=for-the-badge&logo=github&logoColor=white" alt="Visit Social Hub" /></a>
   </p>
 </div>
 
@@ -136,6 +137,16 @@ Browser → Server → API → Device → Feedback
 
 ---
 
+## Community signal
+
+> “This repo is a public lab of honest learning, practical automation, and real hardware experiments.”
+
+- learning in public with visible progress
+- open experiments that invite feedback and improvement
+- designed for practical use, not just polished examples
+
+---
+
 ## Future concepts
 
 - Smart Device Dashboard with real-time controls
@@ -191,6 +202,12 @@ Browser → Server → API → Device → Feedback
 | Email | nishant.ns.business@gmail.com |
 | WhatsApp | +91 8900653250 |
 | Social Hub | [All public platforms](socials.md) |
+
+---
+
+## Keywords
+
+developer portfolio · student developer journey · learning in public · automation experiments · hardware prototypes · AI workflows · system architecture · open source learning
 
 ---
 
