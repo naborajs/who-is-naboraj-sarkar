@@ -95,6 +95,25 @@ Every minute I saved became a minute I could spend learning or creating somethin
 
 ---
 
+## My values in action
+
+- **Resilience**: I rebuild tools that fail instead of accepting broken systems.
+- **Curiosity**: I turn questions into experiments and make small discoveries daily.
+- **Honesty**: I share the progress, the setbacks, and the lessons without polishing them away.
+- **Impact**: I focus on work that helps people, even when the first version feels rough.
+
+## A timeline of growth
+
+| Season | Moment | Meaning |
+| --- | --- | --- |
+| First spark | Waiting for a webpage to load | The first time I felt the power of creation in a slow connection |
+| First device | A sensor feeding live data | The moment hardware and software started to feel like one system |
+| First public failure | Code pushed to a repo that broke | The moment I learned the value of sharing progress openly |
+| First automation | A repetitive task automated | The moment I realized time savings are a real form of leverage |
+| Today | A living lab portfolio | The moment I chose to make learning visible and meaningful |
+
+---
+
 ## Why I write this here
 
 Because the strongest portfolio is not just a list of projects. It is a map of why those projects exist.
