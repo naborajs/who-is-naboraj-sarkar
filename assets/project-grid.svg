@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" width="1600" height="600">
-  <title>Featured Engineering Projects</title>
-  <desc>A showcase of practical software projects including Life Logger, Auto Contribution, and NS Fin.</desc>
+  <title>Engineered Systems by Naboraj Sarkar</title>
+  <desc>A showcase of highly scalable, open-source systems engineered by Naboraj Sarkar, including Life Logger, Auto Contribution Bot, and NS Fin.</desc>
 
   <defs>
     <!-- Background Space Fade -->
@@ -129,13 +129,13 @@
 
   <!-- Floating Background Text -->
   <g font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#38BDF8" opacity="0.4" font-weight="700" letter-spacing="1.5">
-    <text x="1350" y="60" class="particle" style="animation-duration: 20s;">AUTOMATION</text>
-    <text x="1420" y="120" class="particle" style="animation-duration: 24s; animation-delay: 2s;">OPEN SOURCE</text>
-    <text x="1100" y="80" class="particle" style="animation-duration: 22s; animation-delay: 1s;">SYSTEM DESIGN</text>
-    <text x="850" y="40" class="particle" style="animation-duration: 26s; animation-delay: 3s;">PERFORMANCE</text>
-    <text x="80" y="570" class="particle" style="animation-duration: 23s; animation-delay: 0s;">CLEAN ARCHITECTURE</text>
-    <text x="1400" y="560" class="particle" style="animation-duration: 25s; animation-delay: 4s;">EXPERIMENTATION</text>
-    <text x="100" y="500" class="particle" style="animation-duration: 28s; animation-delay: 2s;">CONTINUOUS LEARNING</text>
+    <text x="1350" y="60" class="particle" style="animation-duration: 20s;">MULTI-AGENT SYSTEMS</text>
+    <text x="1420" y="120" class="particle" style="animation-duration: 24s; animation-delay: 2s;">DISTRIBUTED ARCHITECTURE</text>
+    <text x="1100" y="80" class="particle" style="animation-duration: 22s; animation-delay: 1s;">EVENT-DRIVEN</text>
+    <text x="850" y="40" class="particle" style="animation-duration: 26s; animation-delay: 3s;">TELEMETRY</text>
+    <text x="80" y="570" class="particle" style="animation-duration: 23s; animation-delay: 0s;">SCALABILITY</text>
+    <text x="1400" y="560" class="particle" style="animation-duration: 25s; animation-delay: 4s;">ROBUST INFRASTRUCTURE</text>
+    <text x="100" y="500" class="particle" style="animation-duration: 28s; animation-delay: 2s;">CYBERSECURITY DEFENSE</text>
   </g>
 
   <!-- Particles -->
@@ -148,8 +148,8 @@
   <!-- Header -->
   <g>
     <rect x="40" y="44" width="4" height="28" rx="2" fill="#38BDF8" filter="url(#pg-glow)" />
-    <text x="60" y="70" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">Featured Projects</text>
-    <text x="60" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#CBD5E1">A collection of practical software built through curiosity, experimentation, automation, and continuous learning.</text>
+    <text x="60" y="70" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">Systems Engineered</text>
+    <text x="60" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#CBD5E1">A collection of highly scalable systems architected through deep reasoning, automation, and continuous learning.</text>
   </g>
 
   <!-- Card 1: Life Logger -->
@@ -189,23 +189,23 @@
       <rect x="340" y="38" width="90" height="24" rx="12" fill="#22C55E" fill-opacity="0.1" stroke="#22C55E" stroke-opacity="0.4" />
       <text x="385" y="54" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#22C55E" text-anchor="middle" font-weight="700" letter-spacing="0.5">OPEN SOURCE</text>
       
-      <text x="30" y="105" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">Capture, organize, and version personal activity</text>
-      <text x="30" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">across platforms.</text>
+      <text x="30" y="105" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">Audit-ready data pipeline connecting Telegram</text>
+      <text x="30" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">directly to secure version control.</text>
       
       <line x1="30" y1="150" x2="430" y2="150" stroke="#102A43" stroke-width="1.5" stroke-dasharray="2 4" />
       
       <!-- Features -->
       <rect x="30" y="171" width="6" height="6" rx="3" fill="#22C55E" />
-      <text x="48" y="179" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Telegram synchronization</text>
+      <text x="48" y="179" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Secure webhook ingestion</text>
       
       <rect x="30" y="199" width="6" height="6" rx="3" fill="#22C55E" />
-      <text x="48" y="207" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Git-based history</text>
+      <text x="48" y="207" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Immutable Git-based history</text>
       
       <rect x="30" y="227" width="6" height="6" rx="3" fill="#22C55E" />
-      <text x="48" y="235" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Timeline visualization</text>
+      <text x="48" y="235" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Asynchronous processing</text>
       
       <rect x="30" y="255" width="6" height="6" rx="3" fill="#22C55E" />
-      <text x="48" y="263" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Local-first architecture</text>
+      <text x="48" y="263" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Local-first resilient architecture</text>
       
       <!-- Pills -->
       <g font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600">
@@ -249,27 +249,27 @@
         <line x1="6" y1="9" x2="6" y2="21" />
       </g>
       
-      <text x="95" y="60" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#F8FAFC">Auto Contribution</text>
+      <text x="95" y="60" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#F8FAFC">Event-Driven CI/CD</text>
       
       <rect x="300" y="38" width="130" height="24" rx="12" fill="#06B6D4" fill-opacity="0.1" stroke="#06B6D4" stroke-opacity="0.4" />
       <text x="365" y="54" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#06B6D4" text-anchor="middle" font-weight="700" letter-spacing="0.5">ACTIVE DEVELOPMENT</text>
       
-      <text x="30" y="105" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">Orchestrated CI/CD pipelines to automate</text>
-      <text x="30" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">repository maintenance.</text>
+      <text x="30" y="105" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">Orchestrating autonomous pipelines to eliminate</text>
+      <text x="30" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">manual repository maintenance friction.</text>
       
       <line x1="30" y1="150" x2="430" y2="150" stroke="#102A43" stroke-width="1.5" stroke-dasharray="2 4" />
       
       <rect x="30" y="171" width="6" height="6" rx="3" fill="#06B6D4" />
-      <text x="48" y="179" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">GitHub Actions integration</text>
+      <text x="48" y="179" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Complex GitHub Actions workflows</text>
       
       <rect x="30" y="199" width="6" height="6" rx="3" fill="#06B6D4" />
-      <text x="48" y="207" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Automated PR labeling</text>
+      <text x="48" y="207" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Automated PR routing and labeling</text>
       
       <rect x="30" y="227" width="6" height="6" rx="3" fill="#06B6D4" />
-      <text x="48" y="235" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Schedule-based triggers</text>
+      <text x="48" y="235" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Strict schedule-based CRON triggers</text>
       
       <rect x="30" y="255" width="6" height="6" rx="3" fill="#06B6D4" />
-      <text x="48" y="263" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Repository health checks</text>
+      <text x="48" y="263" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Automated security and health checks</text>
       
       <g font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600">
         <rect x="30" y="280" width="90" height="24" rx="12" fill="#102A43" stroke="#06B6D4" stroke-opacity="0.3" />
@@ -308,27 +308,27 @@
         <polyline points="17 6 23 6 23 12" />
       </g>
       
-      <text x="95" y="60" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#F8FAFC">NS Fin</text>
+      <text x="95" y="60" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#F8FAFC">High-Performance Analytics</text>
       
       <rect x="330" y="38" width="100" height="24" rx="12" fill="#F59E0B" fill-opacity="0.1" stroke="#F59E0B" stroke-opacity="0.4" />
       <text x="380" y="54" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#F59E0B" text-anchor="middle" font-weight="700" letter-spacing="0.5">EXPERIMENTAL</text>
       
-      <text x="30" y="105" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">A research-focused dashboard for processing</text>
-      <text x="30" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">and visualizing market data.</text>
+      <text x="30" y="105" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">A robust, research-focused dashboard for processing</text>
+      <text x="30" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">and visualizing high-density market telemetry.</text>
       
       <line x1="30" y1="150" x2="430" y2="150" stroke="#102A43" stroke-width="1.5" stroke-dasharray="2 4" />
       
       <rect x="30" y="171" width="6" height="6" rx="3" fill="#F59E0B" />
-      <text x="48" y="179" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Real-time API ingestion</text>
+      <text x="48" y="179" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Low-latency API ingestion</text>
       
       <rect x="30" y="199" width="6" height="6" rx="3" fill="#F59E0B" />
-      <text x="48" y="207" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Interactive data visualization</text>
+      <text x="48" y="207" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Hardware-accelerated visualization</text>
       
       <rect x="30" y="227" width="6" height="6" rx="3" fill="#F59E0B" />
-      <text x="48" y="235" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Advanced financial metrics</text>
+      <text x="48" y="235" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Mathematical financial modeling</text>
       
       <rect x="30" y="255" width="6" height="6" rx="3" fill="#F59E0B" />
-      <text x="48" y="263" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Scalable data pipelines</text>
+      <text x="48" y="263" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Resilient database architecture</text>
       
       <g font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600">
         <rect x="30" y="280" width="86" height="24" rx="12" fill="#102A43" stroke="#F59E0B" stroke-opacity="0.3" />
@@ -346,7 +346,7 @@
   <!-- Footer -->
   <g>
     <line x1="60" y1="515" x2="1540" y2="515" stroke="#102A43" stroke-width="1.5" stroke-dasharray="4 4" />
-    <text x="800" y="545" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#94A3B8" text-anchor="middle">From automation and developer tooling to finance and productivity, each project explores a different engineering challenge</text>
-    <text x="800" y="565" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#94A3B8" text-anchor="middle">while emphasizing performance, simplicity, and thoughtful design.</text>
+    <text x="800" y="545" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#94A3B8" text-anchor="middle">Every system is architected with strict engineering principles, focusing on extreme performance,</text>
+    <text x="800" y="565" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#94A3B8" text-anchor="middle">scalability, resilience, and thoughtful design.</text>
   </g>
 </svg>

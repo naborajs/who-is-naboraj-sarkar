@@ -1,218 +1,119 @@
-# Naboraj Sarkar — Active Learning Lab
+# Who is Naboraj Sarkar?
 
 <div align="center">
-  <img src="assets/hero-banner.svg" width="100%" alt="Hero banner" />
-</div>
-
-<div align="center" style="margin: 1rem 0;">
-  <img src="assets/LOGO.png" width="240" alt="Naboraj Sarkar logo" />
+  <img src="assets/hero-banner.svg" width="100%" alt="Naboraj Sarkar - Engineering Identity and Hero Banner" />
 </div>
 
 <p align="center">
-  <strong>Learning by building. Testing ideas. Understanding systems.</strong>
+  <strong>Engineering intelligent systems. Building developer tools. Learning in public.</strong>
 </p>
 
 <div align="center" style="max-width: 820px; margin: 1rem auto 2rem auto; padding: 1.1rem 1.2rem; border-radius: 20px; background: rgba(15, 23, 42, 0.05); border: 1px solid rgba(124, 58, 237, 0.18);">
-  <p style="margin: 0 0 0.7rem 0; font-size: 1rem; font-weight: 700; color: #111;">About the journey</p>
-  <p style="margin: 0 0 1rem 0; color: #333; line-height: 1.6;">This repo is the digital home for my learning in public journey, automation experiments, hardware prototypes, and developer portfolio. It shows the moments when I chose to learn faster, build stronger, and share honestly.</p>
-  <p style="margin: 0 0 1rem 0; color: #333; line-height: 1.6;"><strong>Read my life story, explore the lab, or connect through the full social hub.</strong></p>
+  <p style="margin: 0 0 0.7rem 0; font-size: 1rem; font-weight: 700; color: #111;">Welcome to my Engineering Experience</p>
+  <p style="margin: 0 0 1rem 0; color: #333; line-height: 1.6;">This repository is not a static resume—it is a living, interactive digital narrative of my journey as a software engineer. Here you will find the real systems I am architecting, the automation pipelines I am experimenting with, and the profound reasons why I build open-source software.</p>
+  <p style="margin: 0 0 1rem 0; color: #333; line-height: 1.6;"><strong>Explore my story, dive into the system architecture, or connect to collaborate.</strong></p>
   <p style="margin: 0;">
-    <a href="ABOUT.md"><img src="https://img.shields.io/badge/Read%20My%20Story-Life%20Experience-7c3aed?style=for-the-badge&logo=ghost&logoColor=white" alt="Read my story" /></a>
-    <a href="socials.md"><img src="https://img.shields.io/badge/Visit%20Social%20Hub-Connect%20Now-0ea5e9?style=for-the-badge&logo=github&logoColor=white" alt="Visit Social Hub" /></a>
+    <a href="ABOUT.md"><img src="https://img.shields.io/badge/Read%20My%20Story-Life%20Experience-7c3aed?style=for-the-badge&logo=ghost&logoColor=white" alt="Read the full story of Naboraj Sarkar" /></a>
+    <a href="socials.md"><img src="https://img.shields.io/badge/Visit%20Social%20Hub-Connect%20Now-0ea5e9?style=for-the-badge&logo=github&logoColor=white" alt="Visit the Social Hub" /></a>
   </p>
 </div>
 
 <p align="center">
-  <a href="https://github.com/naborajs"><img src="https://img.shields.io/github/followers/naborajs?label=Followers&style=for-the-badge" alt="GitHub followers" /></a>
-  <img src="https://img.shields.io/github/last-commit/naborajs/who-is-naboraj-sarkar?style=for-the-badge" alt="Last commit" />
-  <img src="https://img.shields.io/github/license/naborajs/who-is-naborajs-sarkar?style=for-the-badge" alt="License" />
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=naborajs.who-is-naboraj-sarkar" alt="Profile views" />
+  <a href="https://github.com/naborajs"><img src="https://img.shields.io/github/followers/naborajs?label=Followers&style=for-the-badge" alt="GitHub followers of Naboraj Sarkar" /></a>
+  <img src="https://img.shields.io/github/last-commit/naborajs/who-is-naboraj-sarkar?style=for-the-badge" alt="Last repository commit" />
+  <img src="https://img.shields.io/github/license/naborajs/who-is-naborajs-sarkar?style=for-the-badge" alt="Open Source License" />
 </p>
 
-<div align="center" style="margin-top: 1rem; padding: 1rem; border: 1px solid #444; border-radius: 18px; background: rgba(124, 58, 237, 0.08); max-width: 760px;">
+---
+
+## 1. How I Think About AI & Intelligent Systems
+
+<div align="center">
+  <img src="assets/ai-flow.svg" width="100%" alt="AI Systems Architecture and Cognitive Workflow Design" />
+</div>
+
+I don't just consume AI tools; I engineer the workflows behind them. By orchestrating multi-agent reasoning loops and context-aware pipelines, I am exploring how we can build distributed, intelligent systems that solve actual problems rather than acting as simple conversational parlor tricks.
+
+---
+
+## 2. How I Automate & Eliminate Friction
+
+<div align="center">
+  <img src="assets/automation-flow.svg" width="100%" alt="Scalable Event-Driven Automation Pipelines" />
+</div>
+
+I believe human time is the most valuable resource. Every minute saved by eliminating a repetitive, manual task is a minute that can be spent learning, creating, or innovating. I design robust, event-driven CI/CD pipelines and webhooks that handle the heavy lifting of modern software deployment.
+
+---
+
+## 3. How I Connect Software to the Real World
+
+<div align="center">
+  <img src="assets/system-bridge.svg" width="100%" alt="System Integration connecting Cloud Software with Embedded Hardware" />
+</div>
+
+True engineering doesn't stop at the browser. I am endlessly curious about how digital code interacts with physical environments. By designing architecture that bridges cloud APIs with embedded sensors, I am learning how to orchestrate full-stack, closed-loop feedback systems.
+
+---
+
+## 4. What Systems I Have Built
+
+<div align="center">
+  <img src="assets/project-grid.svg" width="100%" alt="Open Source Projects and Systems Built by Naboraj Sarkar" />
+</div>
+
+It is one thing to build a solo script; it is another to maintain a living software ecosystem. I actively maintain open-source systems that real people use. 
+
+| System Built | Architectural Focus | Developer Tooling |
+| --- | --- | --- |
+| **Birthday Bloom** | Active open-source ecosystem (21+ stars) handling live contributor activity and PR automation. | React, Vite, GitHub Actions |
+| **Ghost Engine v5** | Cross-platform TOR proxy and secure IP rotation toolkit. | Networking, Toolkit APIs |
+| **Life Logger** | Audit-ready, secure data pipeline connecting Telegram directly to GitHub. | Python, Node.js, Webhooks |
+| **Auto Contribution Bot** | Event-driven repo automation eliminating manual CI/CD friction. | Shell, CI/CD pipelines |
+| **NS Fin** | High-performance financial data visualization and research dashboard. | REST APIs, Analytics |
+
+---
+
+## 5. What Technologies I Am Exploring
+
+<div align="center">
+  <img src="assets/hardware-lab.svg" width="100%" alt="Hardware and Software Experimentation Lab" />
+</div>
+
+My active learning lab is where ideas meet reality. Right now, I am deeply focused on:
+- Designing **Smart Device Dashboards** with low-latency telemetry.
+- Building **Hardware + Software Bridges** for sensor-driven applications.
+- Studying **System Defense and Cybersecurity** to understand how software performs under attack.
+- Exploring **Physics and Mathematics** to sharpen my underlying algorithmic reasoning.
+
+---
+
+## 6. Where My Engineering Journey is Heading
+
+<div align="center">
+  <img src="assets/roadmap.svg" width="100%" alt="Continuous Engineering Journey and Learning Roadmap" />
+</div>
+
+The hardest lesson I've learned is that quick fixes are easy, but building meaningful architecture takes patience. My roadmap is a continuous journey of research, experimentation, and open-source contribution. I am moving away from building disposable prototypes and shifting entirely toward architecting highly observable, scalable, and resilient platforms.
+
+---
+
+## Let's Connect
+
+I am always looking to collaborate with other builders, discuss system design, or contribute to open-source software.
+
+<div align="center" style="margin-top: 1rem; padding: 1rem; border: 1px solid #444; border-radius: 18px; background: rgba(14, 165, 233, 0.08); max-width: 760px;">
   <p style="margin: 0 0 0.6rem 0; font-weight: 700; color: #111;">Premium Contact & Social Hub</p>
-  <p style="margin: 0 0 0.8rem 0; color: #333;">Open the full connection page for GitHub, messaging, channels, and community access.</p>
+  <p style="margin: 0 0 0.8rem 0; color: #333;">Open the full connection page for GitHub, secure messaging, and community access.</p>
   <a href="socials.md"><img src="https://img.shields.io/badge/Explore%20Social%20Hub-Open%20Now-0ea5e9?style=for-the-badge&logo=webhooks&logoColor=white" alt="Explore Social Hub" /></a>
 </div>
 
----
-
-## What this lab shows
-
-- **Active learning** through experiments, prototypes, and iterations
-- **Engineering practice** with automation, APIs, and system design
-- **Visible progress** through diagrams, logs, and project summaries
-
-> Learn → Test → Build → Repeat
-
----
-
-## Now learning
-
-- Directing AI agents to build complex workflows
-- Cybersecurity basics and system defense
-- Physics and maths to sharpen reasoning
-- Critical thinking: slowing down and questioning assumptions
-- System architecture, request flow, and integration design
-
----
-
-## Active maintenance & experiments
-
-<div align="center">
-  <img src="assets/project-grid.svg" width="100%" alt="Project showcase" />
-</div>
-
-| Project | Why it matters | Stack |
-| --- | --- | --- |
-| **Birthday Bloom** | Active open source repo (21+ stars), managing PRs and docs | React · Vite |
-| **Ghost Engine v5** | Cross-platform TOR proxy and IP rotation toolkit | Toolkit |
-| **Life Logger** | Telegram → Git logging, audit-ready automation | Python · Node.js · GitHub API · webhooks |
-| **Auto Contribution Bot** | GitHub Actions and repo workflow automation | GitHub Actions · scripting · CI/CD |
-| **CODE** | Browser IDE prototype for AI-assisted development | JavaScript · AI APIs · tooling |
-| **NS Fin** | Finance dashboard with research-focused data flows | APIs · visualization · analytics |
-
----
-
-## System playground
-
-<div align="center">
-  <img src="assets/system-bridge.svg" width="100%" alt="System bridge" />
-</div>
-
-```text
-Browser → Server → API → Device → Feedback
-```
-
-### Ideas in motion
-
-- Smart Device Dashboard
-- Experiment Control Panel
-- Hardware + Software Bridge
-- AI + Automation Lab
-- Learning Sandbox
-
----
-
-## Hardware exploration
-
-<div align="center">
-  <img src="assets/hardware-lab.svg" width="100%" alt="Hardware lab" />
-</div>
-
-- device communication and sensor telemetry
-- basic electronics, signal mapping, and control loops
-- building small IoT concepts with web interfaces
-
----
-
-## AI & automation
-
-<div align="center">
-  <img src="assets/automation-flow.svg" width="100%" alt="Automation flow" />
-</div>
-
-<div align="center">
-  <img src="assets/ai-flow.svg" width="100%" alt="AI workflow" />
-</div>
-
-- automation flow: trigger, parse, commit, monitor
-- AI flow: input, orchestration, output
-- focus on real behavior over polished stories
-
----
-
-## Build log
-
-- **Recent**: Shifted from building solo projects to maintaining open source (Birthday Bloom, Ghost Engine v5).
-- **Current**: Directing AI agent workflows and starting a new track in cybersecurity.
-- **Focus**: Studying physics, maths, and critical thinking. Questioning assumptions before I ship code.
-
----
-
-## What changed recently
-
-- removed old duplicate documentation
-- centralized learning and experiment notes into a single portfolio
-- upgraded README with visual storytelling and system cards
-- added real architecture visuals for automation and hardware
-
----
-
-## Community signal
-
-> “This repo is a public lab of honest learning, practical automation, and real hardware experiments.”
-
-- learning in public with visible progress
-- open experiments that invite feedback and improvement
-- designed for practical use, not just polished examples
-
----
-
-## Future concepts
-
-- Smart Device Dashboard with real-time controls
-- Experiment Control Panel for simulation and replay
-- Hardware + Software Bridge for sensor-driven apps
-- AI + Automation Lab with chaining and observability
-- Learning Sandbox for repeatable experiments
-
----
-
-## Failures & lessons
-
-- not every experiment is a finished project
-- broken automations reveal assumptions faster than success
-- hardware timing issues require data validation and buffering
-- public learning is stronger when failures are documented
-
----
-
-## Learning timeline
-
-<div align="center">
-  <img src="assets/roadmap.svg" width="100%" alt="Roadmap" />
-</div>
-
-- **Explore**: build systems, not only features
-- **Prototype**: test quickly with real inputs
-- **Deploy**: make workflows observable and stable
-- **Improve**: learn from usage and failures
-- **Scale**: move from demos to architecture
-
-> See the full timeline in [LEARNING_TIMELINE.md](LEARNING_TIMELINE.md)
-
----
-
-## Stats
-
-| Metric | Value |
+| Network | Communication Gateway |
 | --- | --- |
-| GitHub repo | `naborajs/who-is-naboraj-sarkar` |
-| Last commit | ![Last commit](https://img.shields.io/github/last-commit/naborajs/who-is-naboraj-sarkar?style=flat-square) |
-| Followers | ![Followers](https://img.shields.io/github/followers/naborajs?label=Followers&style=flat-square) |
-| License | ![License](https://img.shields.io/github/license/naborajs/who-is-naboraj-sarkar?style=flat-square) |
+| **GitHub** | [@naborajs](https://github.com/naborajs) |
+| **Telegram** | [@Nishantsarkar10k](https://t.me/Nishantsarkar10k) |
+| **Email** | msg@naborajs.me |
+| **Social Hub** | [All Public Platforms](socials.md) |
 
 ---
-
-## Connect
-
-| Channel    | Handle                                             |
-| ------------| ----------------------------------------------------|
-| GitHub     | [@naborajs](https://github.com/naborajs)           |
-| Telegram   | [@Nishantsarkar10k](https://t.me/Nishantsarkar10k) |
-| Email      | msg@naborajs.me                                                  |
-| WhatsApp   | +91 8900653250                                     |
-| Social Hub | [All public platforms](socials.md)                 |
-
----
-
-## Keywords
-
-developer portfolio · student developer journey · learning in public · automation experiments · hardware prototypes · AI workflows · system architecture · open source learning
-
----
-
-## Note
-
-Learn. Test. Build. Repeat.
+**Keywords:** `software engineer`, `AI systems architecture`, `developer tools`, `automation workflows`, `open-source maintainer`, `full-stack development`, `embedded systems`, `learning in public`, `Naboraj Sarkar portfolio`
