@@ -1,34 +1,411 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 700" width="100%" height="100%">
+  <title>Naboraj Sarkar - Software Engineer &amp; AI Systems Builder</title>
+  <desc>Engineering portfolio banner showcasing expertise in intelligent software, AI agents, developer tools, and automation platforms.</desc>
+
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#080a12" />
-      <stop offset="100%" stop-color="#121827" />
-    </linearGradient>
-    <linearGradient id="textGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#7c3aed" />
-      <stop offset="100%" stop-color="#38bdf8" />
-    </linearGradient>
-    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="18" result="glow" />
-      <feMerge><feMergeNode in="glow" /><feMergeNode in="SourceGraphic"/></feMerge>
+    <!-- Background Blur & Filters -->
+    <filter id="ai-aurora-blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="100" />
     </filter>
+    <filter id="ai-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" />
+    </filter>
+    <filter id="ai-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="ai-glow-lg" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Glass Card Gradients -->
+    <linearGradient id="card-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#102A43" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#0D1B2A" stop-opacity="0.8" />
+    </linearGradient>
+    <linearGradient id="card-border" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#102A43" stop-opacity="0.2" />
+    </linearGradient>
+    <linearGradient id="top-highlight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" stop-opacity="0.2" />
+      <stop offset="15%" stop-color="#F8FAFC" stop-opacity="0.0" />
+      <stop offset="100%" stop-color="#F8FAFC" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Brain Gradients -->
+    <radialGradient id="core-aura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#06B6D4" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#07111F" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="brain-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F8FAFC" stop-opacity="0.9" />
+      <stop offset="30%" stop-color="#38BDF8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#102A43" stop-opacity="0.4" />
+    </radialGradient>
+
+    <!-- Patterns -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="1" fill="#38BDF8" opacity="0.08" />
+    </pattern>
+    <pattern id="card-mesh" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#F8FAFC" opacity="0.03" />
+    </pattern>
+
+    <!-- Neural Path Definitions -->
+    <path id="link-0" d="M 1450 350 L 1690 350" />
+    <path id="link-1" d="M 1657 470 L 1450 350" />
+    <path id="link-2" d="M 1450 350 L 1570 557" />
+    <path id="link-3" d="M 1450 590 L 1450 350" />
+    <path id="link-4" d="M 1450 350 L 1330 557" />
+    <path id="link-5" d="M 1243 470 L 1450 350" />
+    <path id="link-6" d="M 1450 350 L 1210 350" />
+    <path id="link-7" d="M 1243 230 L 1450 350" />
+    <path id="link-8" d="M 1450 350 L 1330 143" />
+    <path id="link-9" d="M 1450 110 L 1450 350" />
+    <path id="link-10" d="M 1450 350 L 1570 143" />
+    <path id="link-11" d="M 1657 230 L 1450 350" />
   </defs>
-  <rect width="1200" height="360" fill="url(#bg)" />
-  <circle cx="980" cy="80" r="110" fill="#2c3e50" opacity="0.22" />
-  <circle cx="110" cy="260" r="90" fill="#7c3aed" opacity="0.18" />
-  <circle cx="320" cy="120" r="56" fill="#38bdf8" opacity="0.28" />
-  <rect x="60" y="60" width="440" height="220" rx="28" fill="#111827" opacity="0.88" filter="url(#softGlow)" />
-  <text x="90" y="120" font-family="Inter, Arial, sans-serif" font-size="42" fill="url(#textGrad)" font-weight="700">Naboraj Sarkar</text>
-  <text x="90" y="170" font-family="Inter, Arial, sans-serif" font-size="24" fill="#e2e8f0" letter-spacing="0.02em">Student Developer • Automation Explorer</text>
-  <text x="90" y="210" font-family="Inter, Arial, sans-serif" font-size="18" fill="#94a3b8">Learning by building. Testing ideas. Understanding systems.</text>
-  <g transform="translate(90,250)">
-    <rect x="0" y="0" width="238" height="44" rx="12" fill="#1f2937" />
-    <text x="20" y="28" font-family="Inter, Arial, sans-serif" font-size="16" fill="#38bdf8">AI agents</text>
-    <rect x="258" y="0" width="238" height="44" rx="12" fill="#1f2937" />
-    <text x="278" y="28" font-family="Inter, Arial, sans-serif" font-size="16" fill="#a78bfa">Automation</text>
-    <rect x="516" y="0" width="238" height="44" rx="12" fill="#1f2937" />
-    <text x="536" y="28" font-family="Inter, Arial, sans-serif" font-size="16" fill="#38bdf8">Telegram workflows</text>
+
+  <style>
+    @keyframes spin-1 { to { stroke-dashoffset: 1000; } }
+    @keyframes spin-rev-1 { to { stroke-dashoffset: -1000; } }
+    @keyframes spin-2 { to { stroke-dashoffset: 500; } }
+    @keyframes pulse { 0%, 100% { opacity: 0.5; filter: brightness(1); } 50% { opacity: 1; filter: brightness(1.4); } }
+    @keyframes particleDrift { 0% { transform: translate(0,0); opacity: 0; } 20% { opacity: 0.5; } 80% { opacity: 0.5; } 100% { transform: translate(15px, -30px); opacity: 0; } }
+
+    .spin-1 { animation: spin-1 40s linear infinite; }
+    .spin-rev-1 { animation: spin-rev-1 50s linear infinite; }
+    .spin-2 { animation: spin-2 30s linear infinite; }
+    .pulse { animation: pulse 3s ease-in-out infinite; }
+    .particle { animation: particleDrift linear infinite; }
+  </style>
+
+  <!-- Deep Space Canvas -->
+  <rect width="1800" height="700" fill="#07111F" />
+  <rect width="1800" height="700" fill="url(#grid)" />
+
+  <!-- Aurora Lighting -->
+  <ellipse cx="15%" cy="20%" rx="30%" ry="30%" fill="#06B6D4" filter="url(#ai-aurora-blur)" opacity="0.15" />
+  <ellipse cx="80%" cy="50%" rx="40%" ry="40%" fill="#38BDF8" filter="url(#ai-aurora-blur)" opacity="0.1" />
+  <ellipse cx="50%" cy="80%" rx="30%" ry="20%" fill="#22C55E" filter="url(#ai-aurora-blur)" opacity="0.1" />
+
+  <!-- Circuit Traces -->
+  <g stroke="#38BDF8" stroke-width="1.5" fill="none" opacity="0.15">
+    <path d="M 0 150 L 50 150 L 100 200" />
+    <circle cx="100" cy="200" r="3" fill="#38BDF8" />
+    <path d="M 500 0 L 500 50 L 550 100" />
+    <circle cx="550" cy="100" r="3" fill="#38BDF8" />
+    <path d="M 900 700 L 900 650 L 950 600" />
+    <circle cx="950" cy="600" r="3" fill="#38BDF8" />
+    <path d="M 1750 0 L 1750 50 L 1700 100" />
+    <circle cx="1700" cy="100" r="3" fill="#38BDF8" />
   </g>
-  <path d="M780 140 C860 120 920 160 980 140" fill="none" stroke="#38bdf8" stroke-width="3" opacity="0.72" />
-  <path d="M780 185 C860 165 920 205 980 185" fill="none" stroke="#8b5cf6" stroke-width="3" opacity="0.72" />
+
+  <!-- Floating Background Particles -->
+  <circle cx="300" cy="100" r="3" fill="#38BDF8" class="particle" style="animation-duration: 9s;" />
+  <circle cx="800" cy="600" r="4" fill="#06B6D4" class="particle" style="animation-duration: 14s;" />
+  <circle cx="1000" cy="200" r="2.5" fill="#22C55E" class="particle" style="animation-duration: 11s;" />
+  <circle cx="1200" cy="500" r="3.5" fill="#F59E0B" class="particle" style="animation-duration: 15s;" />
+  <circle cx="1700" cy="150" r="2" fill="#F8FAFC" class="particle" style="animation-duration: 12s;" />
+
+  <!-- ======================== -->
+  <!-- LEFT SECTION (IDENTITY)  -->
+  <!-- ======================== -->
+  <g transform="translate(100, 180)">
+    <!-- Identity Block -->
+    <text x="0" y="0" font-family="Inter, system-ui, sans-serif" font-size="56" font-weight="800" fill="#F8FAFC" letter-spacing="1">Naboraj Sarkar</text>
+    <text x="0" y="45" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="600" fill="#38BDF8" letter-spacing="1">Software Engineer <tspan fill="#475569">|</tspan> AI Systems Builder <tspan fill="#475569">|</tspan> Open Source Contributor</text>
+
+    <!-- Intro Description -->
+    <text x="0" y="100" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#CBD5E1">
+      <tspan x="0" dy="0">Building intelligent software, AI agents,</tspan>
+      <tspan x="0" dy="26">developer tools, automation platforms,</tspan>
+      <tspan x="0" dy="26">and modern web experiences through</tspan>
+      <tspan x="0" dy="26">curiosity, engineering, and continuous learning.</tspan>
+    </text>
+
+    <!-- Engineering Principles Header -->
+    <text x="0" y="260" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" fill="#94A3B8" letter-spacing="2" text-transform="uppercase">Engineering Principles</text>
+
+    <!-- Principle Pills Row 1 -->
+    <g transform="translate(0, 290)">
+      <rect x="0" y="0" width="135" height="28" rx="14" fill="#102A43" stroke="#06B6D4" stroke-opacity="0.5" />
+      <text x="67.5" y="19" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#06B6D4" text-anchor="middle" font-weight="600">Problem Solving</text>
+
+      <rect x="145" y="0" width="140" height="28" rx="14" fill="#102A43" stroke="#06B6D4" stroke-opacity="0.5" />
+      <text x="215" y="19" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#06B6D4" text-anchor="middle" font-weight="600">Clean Architecture</text>
+    </g>
+
+    <!-- Principle Pills Row 2 -->
+    <g transform="translate(0, 330)">
+      <rect x="0" y="0" width="100" height="28" rx="14" fill="#102A43" stroke="#06B6D4" stroke-opacity="0.5" />
+      <text x="50" y="19" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#06B6D4" text-anchor="middle" font-weight="600">Performance</text>
+
+      <rect x="110" y="0" width="125" height="28" rx="14" fill="#102A43" stroke="#06B6D4" stroke-opacity="0.5" />
+      <text x="172.5" y="19" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#06B6D4" text-anchor="middle" font-weight="600">Experimentation</text>
+
+      <rect x="245" y="0" width="90" height="28" rx="14" fill="#102A43" stroke="#06B6D4" stroke-opacity="0.5" />
+      <text x="290" y="19" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#06B6D4" text-anchor="middle" font-weight="600">Scalability</text>
+    </g>
+
+    <!-- Principle Pills Row 3 -->
+    <g transform="translate(0, 370)">
+      <rect x="0" y="0" width="100" height="28" rx="14" fill="#102A43" stroke="#06B6D4" stroke-opacity="0.5" />
+      <text x="50" y="19" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#06B6D4" text-anchor="middle" font-weight="600">Automation</text>
+
+      <rect x="110" y="0" width="105" height="28" rx="14" fill="#102A43" stroke="#06B6D4" stroke-opacity="0.5" />
+      <text x="162.5" y="19" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#06B6D4" text-anchor="middle" font-weight="600">Open Source</text>
+
+      <rect x="225" y="0" width="145" height="28" rx="14" fill="#102A43" stroke="#06B6D4" stroke-opacity="0.5" />
+      <text x="297.5" y="19" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#06B6D4" text-anchor="middle" font-weight="600">Continuous Learning</text>
+    </g>
+  </g>
+
+  <!-- ======================== -->
+  <!-- CENTER SECTION (FOCUS)   -->
+  <!-- ======================== -->
+  <text x="600" y="110" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" fill="#94A3B8" letter-spacing="2" text-transform="uppercase">Current Focus</text>
+
+  <!-- Glass Card 1 -->
+  <g transform="translate(600, 140)">
+    <rect x="0" y="0" width="250" height="120" rx="16" fill="url(#card-grad)" filter="url(#ai-shadow)" />
+    <rect x="0" y="0" width="250" height="120" rx="16" fill="url(#card-mesh)" />
+    <rect x="1" y="1" width="248" height="118" rx="15" fill="none" stroke="url(#card-border)" stroke-width="1.5" />
+    <rect x="1" y="1" width="248" height="118" rx="15" fill="none" stroke="url(#top-highlight)" stroke-width="1.5" />
+    <rect x="1" y="1" width="248" height="60" rx="15" fill="url(#top-highlight)" opacity="0.3" class="pulse" />
+    
+    <text x="20" y="35" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#F8FAFC">AI Agents</text>
+    <text x="20" y="65" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#CBD5E1">
+      <tspan x="20" dy="0">Building autonomous systems</tspan>
+      <tspan x="20" dy="20">powered by modern LLM</tspan>
+      <tspan x="20" dy="20">workflows.</tspan>
+    </text>
+    <circle cx="220" cy="30" r="4" fill="#38BDF8" class="pulse" />
+  </g>
+
+  <!-- Glass Card 2 -->
+  <g transform="translate(870, 140)">
+    <rect x="0" y="0" width="250" height="120" rx="16" fill="url(#card-grad)" filter="url(#ai-shadow)" />
+    <rect x="0" y="0" width="250" height="120" rx="16" fill="url(#card-mesh)" />
+    <rect x="1" y="1" width="248" height="118" rx="15" fill="none" stroke="url(#card-border)" stroke-width="1.5" />
+    <rect x="1" y="1" width="248" height="118" rx="15" fill="none" stroke="url(#top-highlight)" stroke-width="1.5" />
+    <rect x="1" y="1" width="248" height="60" rx="15" fill="url(#top-highlight)" opacity="0.3" class="pulse" />
+    
+    <text x="20" y="35" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#F8FAFC">Developer Tools</text>
+    <text x="20" y="65" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#CBD5E1">
+      <tspan x="20" dy="0">Creating software that</tspan>
+      <tspan x="20" dy="20">improves developer</tspan>
+      <tspan x="20" dy="20">productivity.</tspan>
+    </text>
+    <circle cx="220" cy="30" r="4" fill="#22C55E" class="pulse" />
+  </g>
+
+  <!-- Glass Card 3 -->
+  <g transform="translate(600, 280)">
+    <rect x="0" y="0" width="250" height="120" rx="16" fill="url(#card-grad)" filter="url(#ai-shadow)" />
+    <rect x="0" y="0" width="250" height="120" rx="16" fill="url(#card-mesh)" />
+    <rect x="1" y="1" width="248" height="118" rx="15" fill="none" stroke="url(#card-border)" stroke-width="1.5" />
+    <rect x="1" y="1" width="248" height="118" rx="15" fill="none" stroke="url(#top-highlight)" stroke-width="1.5" />
+    <rect x="1" y="1" width="248" height="60" rx="15" fill="url(#top-highlight)" opacity="0.3" class="pulse" />
+    
+    <text x="20" y="35" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#F8FAFC">Automation</text>
+    <text x="20" y="65" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#CBD5E1">
+      <tspan x="20" dy="0">Designing reliable</tspan>
+      <tspan x="20" dy="20">workflows that eliminate</tspan>
+      <tspan x="20" dy="20">repetitive work.</tspan>
+    </text>
+    <circle cx="220" cy="30" r="4" fill="#F59E0B" class="pulse" />
+  </g>
+
+  <!-- Glass Card 4 -->
+  <g transform="translate(870, 280)">
+    <rect x="0" y="0" width="250" height="120" rx="16" fill="url(#card-grad)" filter="url(#ai-shadow)" />
+    <rect x="0" y="0" width="250" height="120" rx="16" fill="url(#card-mesh)" />
+    <rect x="1" y="1" width="248" height="118" rx="15" fill="none" stroke="url(#card-border)" stroke-width="1.5" />
+    <rect x="1" y="1" width="248" height="118" rx="15" fill="none" stroke="url(#top-highlight)" stroke-width="1.5" />
+    <rect x="1" y="1" width="248" height="60" rx="15" fill="url(#top-highlight)" opacity="0.3" class="pulse" />
+    
+    <text x="20" y="35" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#F8FAFC">Systems Engineering</text>
+    <text x="20" y="65" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#CBD5E1">
+      <tspan x="20" dy="0">Connecting software,</tspan>
+      <tspan x="20" dy="20">hardware, and intelligent</tspan>
+      <tspan x="20" dy="20">automation.</tspan>
+    </text>
+    <circle cx="220" cy="30" r="4" fill="#94A3B8" class="pulse" />
+  </g>
+
+  <!-- Engineering Stack Section -->
+  <text x="600" y="440" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" fill="#94A3B8" letter-spacing="2" text-transform="uppercase">Engineering Stack</text>
+
+  <!-- Stack Row 1 -->
+  <g transform="translate(600, 470)">
+    <rect x="0" y="0" width="100" height="28" rx="8" fill="#102A43" stroke="#38BDF8" stroke-opacity="0.6" />
+    <text x="50" y="19" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#38BDF8" text-anchor="middle" font-weight="600">TypeScript</text>
+  </g>
+  <g transform="translate(710, 470)">
+    <rect x="0" y="0" width="80" height="28" rx="8" fill="#102A43" stroke="#06B6D4" stroke-opacity="0.6" />
+    <text x="40" y="19" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#06B6D4" text-anchor="middle" font-weight="600">React</text>
+  </g>
+  <g transform="translate(800, 470)">
+    <rect x="0" y="0" width="80" height="28" rx="8" fill="#102A43" stroke="#F8FAFC" stroke-opacity="0.6" />
+    <text x="40" y="19" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#F8FAFC" text-anchor="middle" font-weight="600">Next.js</text>
+  </g>
+  <g transform="translate(890, 470)">
+    <rect x="0" y="0" width="80" height="28" rx="8" fill="#102A43" stroke="#22C55E" stroke-opacity="0.6" />
+    <text x="40" y="19" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#22C55E" text-anchor="middle" font-weight="600">Node.js</text>
+  </g>
+  <g transform="translate(980, 470)">
+    <rect x="0" y="0" width="90" height="28" rx="8" fill="#102A43" stroke="#22C55E" stroke-opacity="0.6" />
+    <text x="45" y="19" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#22C55E" text-anchor="middle" font-weight="600">Supabase</text>
+  </g>
+
+  <!-- Stack Row 2 -->
+  <g transform="translate(600, 510)">
+    <rect x="0" y="0" width="80" height="28" rx="8" fill="#102A43" stroke="#F59E0B" stroke-opacity="0.6" />
+    <text x="40" y="19" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#F59E0B" text-anchor="middle" font-weight="600">Python</text>
+  </g>
+  <g transform="translate(690, 510)">
+    <rect x="0" y="0" width="80" height="28" rx="8" fill="#102A43" stroke="#94A3B8" stroke-opacity="0.6" />
+    <text x="40" y="19" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#94A3B8" text-anchor="middle" font-weight="600">GitHub</text>
+  </g>
+  <g transform="translate(780, 510)">
+    <rect x="0" y="0" width="80" height="28" rx="8" fill="#102A43" stroke="#38BDF8" stroke-opacity="0.6" />
+    <text x="40" y="19" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#38BDF8" text-anchor="middle" font-weight="600">Docker</text>
+  </g>
+  <g transform="translate(870, 510)">
+    <rect x="0" y="0" width="60" height="28" rx="8" fill="#102A43" stroke="#06B6D4" stroke-opacity="0.6" />
+    <text x="30" y="19" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#06B6D4" text-anchor="middle" font-weight="600">AI</text>
+  </g>
+  <g transform="translate(940, 510)">
+    <rect x="0" y="0" width="100" height="28" rx="8" fill="#102A43" stroke="#06B6D4" stroke-opacity="0.6" />
+    <text x="50" y="19" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#06B6D4" text-anchor="middle" font-weight="600">Automation</text>
+  </g>
+
+  <!-- ======================== -->
+  <!-- RIGHT SECTION (AI BRAIN) -->
+  <!-- ======================== -->
+
+  <!-- Neural Connections -->
+  <g id="neural-connections" stroke="#38BDF8" stroke-width="1.5" opacity="0.3">
+    <!-- Visible Paths -->
+    <use href="#link-0"/> <use href="#link-1"/> <use href="#link-2"/>
+    <use href="#link-3"/> <use href="#link-4"/> <use href="#link-5"/>
+    <use href="#link-6"/> <use href="#link-7"/> <use href="#link-8"/>
+    <use href="#link-9"/> <use href="#link-10"/> <use href="#link-11"/>
+    
+    <!-- Outer Connecting Graph -->
+    <polygon points="1690,350 1657,470 1570,557 1450,590 1330,557 1243,470 1210,350 1243,230 1330,143 1450,110 1570,143 1657,230" fill="none" stroke-dasharray="4 8" />
+  </g>
+
+  <!-- Flying Data Packets -->
+  <g filter="url(#ai-glow)">
+    <circle r="3" fill="#F59E0B"><animateMotion dur="3s" repeatCount="indefinite"><mpath href="#link-0"/></animateMotion></circle>
+    <circle r="3" fill="#06B6D4"><animateMotion dur="4s" repeatCount="indefinite"><mpath href="#link-1"/></animateMotion></circle>
+    <circle r="3" fill="#22C55E"><animateMotion dur="3.5s" repeatCount="indefinite"><mpath href="#link-2"/></animateMotion></circle>
+    <circle r="3" fill="#38BDF8"><animateMotion dur="2.5s" repeatCount="indefinite"><mpath href="#link-3"/></animateMotion></circle>
+    <circle r="3" fill="#06B6D4"><animateMotion dur="3s" repeatCount="indefinite"><mpath href="#link-4"/></animateMotion></circle>
+    <circle r="3" fill="#F59E0B"><animateMotion dur="4.5s" repeatCount="indefinite"><mpath href="#link-5"/></animateMotion></circle>
+    <circle r="3" fill="#22C55E"><animateMotion dur="3.5s" repeatCount="indefinite"><mpath href="#link-6"/></animateMotion></circle>
+    <circle r="3" fill="#38BDF8"><animateMotion dur="2.5s" repeatCount="indefinite"><mpath href="#link-7"/></animateMotion></circle>
+    <circle r="3" fill="#F59E0B"><animateMotion dur="4s" repeatCount="indefinite"><mpath href="#link-8"/></animateMotion></circle>
+    <circle r="3" fill="#22C55E"><animateMotion dur="3s" repeatCount="indefinite"><mpath href="#link-9"/></animateMotion></circle>
+    <circle r="3" fill="#06B6D4"><animateMotion dur="3.5s" repeatCount="indefinite"><mpath href="#link-10"/></animateMotion></circle>
+    <circle r="3" fill="#F59E0B"><animateMotion dur="2.5s" repeatCount="indefinite"><mpath href="#link-11"/></animateMotion></circle>
+  </g>
+
+  <!-- The AI Core -->
+  <g id="ai-core">
+    <circle cx="1450" cy="350" r="220" fill="url(#core-aura)" />
+    
+    <circle cx="1450" cy="350" r="150" fill="none" stroke="#102A43" stroke-width="1.5" />
+    <circle cx="1450" cy="350" r="150" fill="none" stroke="#38BDF8" stroke-width="2" stroke-dasharray="10 80 40 40" class="spin-1" filter="url(#ai-glow)" />
+    
+    <circle cx="1450" cy="350" r="100" fill="none" stroke="#102A43" stroke-width="1.5" />
+    <circle cx="1450" cy="350" r="100" fill="none" stroke="#06B6D4" stroke-width="1.5" stroke-dasharray="20 40 10 50" class="spin-rev-1" filter="url(#ai-glow)" />
+
+    <circle cx="1450" cy="350" r="60" fill="none" stroke="#102A43" stroke-width="1.5" />
+    <circle cx="1450" cy="350" r="60" fill="none" stroke="#22C55E" stroke-width="1.5" stroke-dasharray="15 30" class="spin-2" filter="url(#ai-glow)" />
+
+    <circle cx="1450" cy="350" r="35" fill="url(#brain-grad)" filter="url(#ai-glow-lg)">
+      <animate attributeName="r" values="32;38;32" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="4s" repeatCount="indefinite" />
+    </circle>
+    
+    <circle cx="1450" cy="350" r="8" fill="#F8FAFC" filter="url(#ai-glow-lg)">
+      <animate attributeName="r" values="6;10;6" dur="2s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- The Peripheral Nodes -->
+  <g transform="translate(1690, 350)">
+    <circle r="12" fill="#0D1B2A" stroke="#F59E0B" stroke-width="2" />
+    <circle r="4" fill="#F59E0B" filter="url(#ai-glow)" class="pulse" />
+    <text x="20" y="4" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" text-anchor="start" font-weight="600">Reasoning</text>
+  </g>
+  <g transform="translate(1657, 470)">
+    <circle r="12" fill="#0D1B2A" stroke="#06B6D4" stroke-width="2" />
+    <circle r="4" fill="#06B6D4" filter="url(#ai-glow)" class="pulse" />
+    <text x="15" y="15" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" text-anchor="start" font-weight="600">Planning</text>
+  </g>
+  <g transform="translate(1570, 557)">
+    <circle r="12" fill="#0D1B2A" stroke="#22C55E" stroke-width="2" />
+    <circle r="4" fill="#22C55E" filter="url(#ai-glow)" class="pulse" />
+    <text x="15" y="20" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" text-anchor="start" font-weight="600">Memory</text>
+  </g>
+  <g transform="translate(1450, 590)">
+    <circle r="12" fill="#0D1B2A" stroke="#38BDF8" stroke-width="2" />
+    <circle r="4" fill="#38BDF8" filter="url(#ai-glow)" class="pulse" />
+    <text x="0" y="25" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" text-anchor="middle" font-weight="600">Inference</text>
+  </g>
+  <g transform="translate(1330, 557)">
+    <circle r="12" fill="#0D1B2A" stroke="#06B6D4" stroke-width="2" />
+    <circle r="4" fill="#06B6D4" filter="url(#ai-glow)" class="pulse" />
+    <text x="-15" y="20" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" text-anchor="end" font-weight="600">Learning</text>
+  </g>
+  <g transform="translate(1243, 470)">
+    <circle r="12" fill="#0D1B2A" stroke="#F59E0B" stroke-width="2" />
+    <circle r="4" fill="#F59E0B" filter="url(#ai-glow)" class="pulse" />
+    <text x="-15" y="15" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" text-anchor="end" font-weight="600">Optimization</text>
+  </g>
+  <g transform="translate(1210, 350)">
+    <circle r="12" fill="#0D1B2A" stroke="#22C55E" stroke-width="2" />
+    <circle r="4" fill="#22C55E" filter="url(#ai-glow)" class="pulse" />
+    <text x="-20" y="4" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" text-anchor="end" font-weight="600">Prediction</text>
+  </g>
+  <g transform="translate(1243, 230)">
+    <circle r="12" fill="#0D1B2A" stroke="#38BDF8" stroke-width="2" />
+    <circle r="4" fill="#38BDF8" filter="url(#ai-glow)" class="pulse" />
+    <text x="-15" y="-10" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" text-anchor="end" font-weight="600">Automation</text>
+  </g>
+  <g transform="translate(1330, 143)">
+    <circle r="12" fill="#0D1B2A" stroke="#F59E0B" stroke-width="2" />
+    <circle r="4" fill="#F59E0B" filter="url(#ai-glow)" class="pulse" />
+    <text x="-15" y="-15" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" text-anchor="end" font-weight="600">Context</text>
+  </g>
+  <g transform="translate(1450, 110)">
+    <circle r="12" fill="#0D1B2A" stroke="#22C55E" stroke-width="2" />
+    <circle r="4" fill="#22C55E" filter="url(#ai-glow)" class="pulse" />
+    <text x="0" y="-20" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" text-anchor="middle" font-weight="600">Knowledge</text>
+  </g>
+  <g transform="translate(1570, 143)">
+    <circle r="12" fill="#0D1B2A" stroke="#06B6D4" stroke-width="2" />
+    <circle r="4" fill="#06B6D4" filter="url(#ai-glow)" class="pulse" />
+    <text x="15" y="-15" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" text-anchor="start" font-weight="600">Tool Calling</text>
+  </g>
+  <g transform="translate(1657, 230)">
+    <circle r="12" fill="#0D1B2A" stroke="#F59E0B" stroke-width="2" />
+    <circle r="4" fill="#F59E0B" filter="url(#ai-glow)" class="pulse" />
+    <text x="15" y="-10" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" text-anchor="start" font-weight="600">Decision Making</text>
+  </g>
+
 </svg>
