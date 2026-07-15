@@ -3,79 +3,57 @@
   <desc>A showcase of highly scalable, open-source systems engineered by Naboraj Sarkar, including Life Logger, Auto Contribution Bot, and NS Fin.</desc>
 
   <defs>
-    <!-- Background Space Fade -->
-    <linearGradient id="bgSpace" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#07111F" stop-opacity="1" />
-      <stop offset="50%" stop-color="#07111F" stop-opacity="0.9" />
-      <stop offset="85%" stop-color="#07111F" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#07111F" stop-opacity="0.0" />
-    </linearGradient>
-
-    <!-- Aurora Blurs -->
-    <filter id="aurora-blur" x="-50%" y="-50%" width="200%" height="200%">
+    <!-- DESIGN SYSTEM: Background Blurs & Filters -->
+    <filter id="ds-aurora-blur" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="80" />
     </filter>
-
-    <!-- Card Texture -->
-    <pattern id="card-mesh" width="16" height="16" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1" fill="#F8FAFC" opacity="0.03" />
-    </pattern>
-
-    <!-- Card Gradients -->
-    <linearGradient id="pg-cardGrad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#102A43" stop-opacity="0.65" />
-      <stop offset="100%" stop-color="#0D1B2A" stop-opacity="0.9" />
-    </linearGradient>
-    <linearGradient id="pg-cardBorder" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#102A43" stop-opacity="0.1" />
-    </linearGradient>
-    
-    <!-- Top 3D Edge Highlight -->
-    <linearGradient id="topHighlight" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#F8FAFC" stop-opacity="0.25" />
-      <stop offset="15%" stop-color="#F8FAFC" stop-opacity="0.0" />
-      <stop offset="100%" stop-color="#F8FAFC" stop-opacity="0.0" />
-    </linearGradient>
-
-    <!-- Card Shadow -->
-    <filter id="card-shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="20" result="blur" />
-      <feColorMatrix type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.6 0" />
+    <filter id="ds-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.6"/>
     </filter>
-
-    <filter id="pg-glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
+    <filter id="ds-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+
+    <!-- DESIGN SYSTEM: Gradients -->
+    <linearGradient id="ds-cardGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#102A43" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#07111F" stop-opacity="0.95" />
+    </linearGradient>
+    <linearGradient id="ds-cardBorder" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#102A43" stop-opacity="0.1" />
+    </linearGradient>
+    <linearGradient id="topHighlight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" stop-opacity="0.15" />
+      <stop offset="15%" stop-color="#F8FAFC" stop-opacity="0.0" />
+      <stop offset="100%" stop-color="#F8FAFC" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Background Space Fade -->
+    <linearGradient id="bgSpace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050B14" stop-opacity="1" />
+      <stop offset="50%" stop-color="#050B14" stop-opacity="0.9" />
+      <stop offset="85%" stop-color="#050B14" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#050B14" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Pattern -->
+    <pattern id="ds-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#F8FAFC" stroke-width="1" stroke-opacity="0.03" />
+    </pattern>
   </defs>
 
   <style>
-    @keyframes floatUp1 {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-8px); }
-    }
-    @keyframes floatUp2 {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-6px); }
-    }
-    @keyframes floatUp3 {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-    @keyframes borderPulse {
-      0%, 100% { stroke-opacity: 0.3; }
-      50% { stroke-opacity: 0.8; }
-    }
-    @keyframes particleDrift {
-      0% { transform: translate(0, 0); opacity: 0; }
-      20% { opacity: 0.5; }
-      80% { opacity: 0.5; }
-      100% { transform: translate(15px, -30px); opacity: 0; }
-    }
+    @keyframes floatUp1 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+    @keyframes floatUp2 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+    @keyframes floatUp3 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    @keyframes borderPulse { 0%, 100% { stroke-opacity: 0.3; } 50% { stroke-opacity: 0.8; } }
+    @keyframes particleDrift { 0% { transform: translate(0, 0); opacity: 0; } 20% { opacity: 0.5; } 80% { opacity: 0.5; } 100% { transform: translate(15px, -30px); opacity: 0; } }
+    
     .floating-card-1 { animation: floatUp1 6s ease-in-out infinite; }
     .floating-card-2 { animation: floatUp2 7s ease-in-out infinite 1s; }
     .floating-card-3 { animation: floatUp3 8s ease-in-out infinite 2s; }
@@ -84,10 +62,13 @@
   </style>
 
   <!-- Solid Base -->
-  <rect width="1600" height="600" fill="#07111F" />
+  <rect width="1600" height="600" fill="#050B14" />
+  
+  <!-- Optional Flat Grid Behind -->
+  <rect width="1600" height="600" fill="url(#ds-grid)" />
 
   <!-- 3D Perspective Floor Grid -->
-  <g stroke="#38BDF8" stroke-opacity="0.15">
+  <g stroke="#38BDF8" stroke-opacity="0.1">
     <line x1="0" y1="600" x2="1600" y2="600" stroke-width="2" />
     <line x1="0" y1="560" x2="1600" y2="560" stroke-width="1.8" />
     <line x1="0" y1="525" x2="1600" y2="525" stroke-width="1.6" />
@@ -122,13 +103,13 @@
   <rect width="1600" height="600" fill="url(#bgSpace)" />
 
   <!-- Aurora Glows -->
-  <ellipse cx="20%" cy="20%" rx="25%" ry="20%" fill="#06B6D4" filter="url(#aurora-blur)" opacity="0.25" />
-  <ellipse cx="80%" cy="50%" rx="30%" ry="25%" fill="#38BDF8" filter="url(#aurora-blur)" opacity="0.2" />
-  <ellipse cx="50%" cy="80%" rx="25%" ry="15%" fill="#22C55E" filter="url(#aurora-blur)" opacity="0.15" />
-  <ellipse cx="10%" cy="80%" rx="20%" ry="20%" fill="#F59E0B" filter="url(#aurora-blur)" opacity="0.1" />
+  <ellipse cx="20%" cy="20%" rx="25%" ry="20%" fill="#06B6D4" filter="url(#ds-aurora-blur)" opacity="0.15" />
+  <ellipse cx="80%" cy="50%" rx="30%" ry="25%" fill="#38BDF8" filter="url(#ds-aurora-blur)" opacity="0.1" />
+  <ellipse cx="50%" cy="80%" rx="25%" ry="15%" fill="#22C55E" filter="url(#ds-aurora-blur)" opacity="0.1" />
+  <ellipse cx="10%" cy="80%" rx="20%" ry="20%" fill="#F59E0B" filter="url(#ds-aurora-blur)" opacity="0.1" />
 
   <!-- Floating Background Text -->
-  <g font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#38BDF8" opacity="0.4" font-weight="700" letter-spacing="1.5">
+  <g font-family="'JetBrains Mono', Consolas, monospace" font-size="13" fill="#38BDF8" opacity="0.3" font-weight="600" letter-spacing="1.5">
     <text x="1350" y="60" class="particle" style="animation-duration: 20s;">MULTI-AGENT SYSTEMS</text>
     <text x="1420" y="120" class="particle" style="animation-duration: 24s; animation-delay: 2s;">DISTRIBUTED ARCHITECTURE</text>
     <text x="1100" y="80" class="particle" style="animation-duration: 22s; animation-delay: 1s;">EVENT-DRIVEN</text>
@@ -139,15 +120,15 @@
   </g>
 
   <!-- Particles -->
-  <circle cx="20" cy="100" r="2" fill="#06B6D4" class="particle" style="animation-duration: 9s;" filter="url(#pg-glow)" />
-  <circle cx="1500" cy="50" r="2.5" fill="#38BDF8" class="particle" style="animation-duration: 14s;" filter="url(#pg-glow)" />
-  <circle cx="800" cy="30" r="1.5" fill="#22C55E" class="particle" style="animation-duration: 11s;" filter="url(#pg-glow)" />
-  <circle cx="1400" cy="480" r="2" fill="#F59E0B" class="particle" style="animation-duration: 15s;" filter="url(#pg-glow)" />
-  <circle cx="50" cy="520" r="2.5" fill="#38BDF8" class="particle" style="animation-duration: 12s;" filter="url(#pg-glow)" />
+  <circle cx="20" cy="100" r="2" fill="#06B6D4" class="particle" style="animation-duration: 9s;" filter="url(#ds-glow)" />
+  <circle cx="1500" cy="50" r="2.5" fill="#38BDF8" class="particle" style="animation-duration: 14s;" filter="url(#ds-glow)" />
+  <circle cx="800" cy="30" r="1.5" fill="#22C55E" class="particle" style="animation-duration: 11s;" filter="url(#ds-glow)" />
+  <circle cx="1400" cy="480" r="2" fill="#F59E0B" class="particle" style="animation-duration: 15s;" filter="url(#ds-glow)" />
+  <circle cx="50" cy="520" r="2.5" fill="#38BDF8" class="particle" style="animation-duration: 12s;" filter="url(#ds-glow)" />
 
   <!-- Header -->
   <g>
-    <rect x="40" y="44" width="4" height="28" rx="2" fill="#38BDF8" filter="url(#pg-glow)" />
+    <rect x="40" y="44" width="4" height="28" rx="2" fill="#38BDF8" filter="url(#ds-glow)" />
     <text x="60" y="70" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">Systems Engineered</text>
     <text x="60" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#CBD5E1">A collection of highly scalable systems architected through deep reasoning, automation, and continuous learning.</text>
   </g>
@@ -156,18 +137,17 @@
   <g transform="translate(60, 150)">
     <g class="floating-card-1">
       <!-- 3D Shadow -->
-      <rect x="0" y="25" width="460" height="320" rx="24" fill="#000000" filter="url(#card-shadow)" opacity="0.65" />
+      <rect x="0" y="25" width="460" height="320" rx="24" fill="#000000" filter="url(#ds-shadow)" opacity="0.6" />
       
-      <!-- Base & Texture -->
-      <rect x="0" y="0" width="460" height="320" rx="24" fill="url(#pg-cardGrad)" />
-      <rect x="0" y="0" width="460" height="320" rx="24" fill="url(#card-mesh)" />
+      <!-- Base -->
+      <rect x="0" y="0" width="460" height="320" rx="24" fill="url(#ds-cardGrad)" />
       
       <!-- Outline & 3D Top Edge Highlight -->
-      <rect x="0" y="0" width="460" height="320" rx="24" fill="none" stroke="url(#pg-cardBorder)" stroke-width="1.5" class="animated-border" />
+      <rect x="0" y="0" width="460" height="320" rx="24" fill="none" stroke="url(#ds-cardBorder)" stroke-width="1.5" class="animated-border" />
       <rect x="1" y="1" width="458" height="318" rx="23" fill="none" stroke="url(#topHighlight)" stroke-width="1.5" />
       
       <!-- Left Glowing Accent -->
-      <rect x="0" y="40" width="3" height="36" rx="1.5" fill="#22C55E" filter="url(#pg-glow)" />
+      <rect x="0" y="40" width="4" height="40" rx="2" fill="#22C55E" filter="url(#ds-glow)" />
       
       <!-- Watermark Background Icon -->
       <g transform="translate(320, 160) scale(4)" opacity="0.04" fill="none" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -177,8 +157,8 @@
       </g>
 
       <!-- Icon Box -->
-      <rect x="30" y="30" width="48" height="48" rx="12" fill="#0D1B2A" stroke="#22C55E" stroke-width="1.5" />
-      <g transform="translate(42, 42)" fill="none" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="30" y="30" width="48" height="48" rx="12" fill="#102A43" />
+      <g transform="translate(38, 38)" fill="none" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="21 8 21 21 3 21 3 8" />
         <rect x="1" y="3" width="22" height="5" />
         <line x1="10" y1="12" x2="14" y2="12" />
@@ -186,37 +166,37 @@
       
       <text x="95" y="60" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#F8FAFC">Life Logger</text>
       
-      <rect x="340" y="38" width="90" height="24" rx="12" fill="#22C55E" fill-opacity="0.1" stroke="#22C55E" stroke-opacity="0.4" />
-      <text x="385" y="54" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#22C55E" text-anchor="middle" font-weight="700" letter-spacing="0.5">OPEN SOURCE</text>
+      <rect x="340" y="42" width="90" height="24" rx="12" fill="#22C55E" fill-opacity="0.15" />
+      <text x="385" y="58" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#22C55E" text-anchor="middle" font-weight="700" letter-spacing="0.5">OPEN SOURCE</text>
       
-      <text x="30" y="105" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">Audit-ready data pipeline connecting Telegram</text>
-      <text x="30" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">directly to secure version control.</text>
+      <text x="30" y="105" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#94A3B8">Audit-ready data pipeline connecting Telegram</text>
+      <text x="30" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#94A3B8">directly to secure version control.</text>
       
-      <line x1="30" y1="150" x2="430" y2="150" stroke="#102A43" stroke-width="1.5" stroke-dasharray="2 4" />
+      <line x1="30" y1="150" x2="430" y2="150" stroke="#102A43" stroke-width="1.5" stroke-dasharray="4 4" />
       
       <!-- Features -->
-      <rect x="30" y="171" width="6" height="6" rx="3" fill="#22C55E" />
-      <text x="48" y="179" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Secure webhook ingestion</text>
+      <rect x="30" y="172" width="4" height="4" rx="2" fill="#22C55E" />
+      <text x="46" y="178" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">Secure webhook ingestion</text>
       
-      <rect x="30" y="199" width="6" height="6" rx="3" fill="#22C55E" />
-      <text x="48" y="207" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Immutable Git-based history</text>
+      <rect x="30" y="200" width="4" height="4" rx="2" fill="#22C55E" />
+      <text x="46" y="206" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">Immutable Git-based history</text>
       
-      <rect x="30" y="227" width="6" height="6" rx="3" fill="#22C55E" />
-      <text x="48" y="235" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Asynchronous processing</text>
+      <rect x="30" y="228" width="4" height="4" rx="2" fill="#22C55E" />
+      <text x="46" y="234" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">Asynchronous processing</text>
       
-      <rect x="30" y="255" width="6" height="6" rx="3" fill="#22C55E" />
-      <text x="48" y="263" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Local-first resilient architecture</text>
+      <rect x="30" y="256" width="4" height="4" rx="2" fill="#22C55E" />
+      <text x="46" y="262" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">Local-first resilient architecture</text>
       
-      <!-- Pills -->
-      <g font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600">
-        <rect x="30" y="280" width="70" height="24" rx="12" fill="#102A43" stroke="#22C55E" stroke-opacity="0.3" />
-        <text x="65" y="296" fill="#22C55E" text-anchor="middle">Node.js</text>
+      <!-- Tech Chips (DS) -->
+      <g font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600">
+        <rect x="30" y="278" width="65" height="28" rx="14" fill="#22C55E" fill-opacity="0.1" stroke="#22C55E" stroke-opacity="0.3" />
+        <text x="62.5" y="296" fill="#22C55E" text-anchor="middle">Node.js</text>
         
-        <rect x="110" y="280" width="60" height="24" rx="12" fill="#102A43" stroke="#22C55E" stroke-opacity="0.3" />
-        <text x="140" y="296" fill="#22C55E" text-anchor="middle">GitHub</text>
+        <rect x="105" y="278" width="60" height="28" rx="14" fill="#22C55E" fill-opacity="0.1" stroke="#22C55E" stroke-opacity="0.3" />
+        <text x="135" y="296" fill="#22C55E" text-anchor="middle">GitHub</text>
         
-        <rect x="180" y="280" width="60" height="24" rx="12" fill="#102A43" stroke="#22C55E" stroke-opacity="0.3" />
-        <text x="210" y="296" fill="#22C55E" text-anchor="middle">Python</text>
+        <rect x="175" y="278" width="60" height="28" rx="14" fill="#22C55E" fill-opacity="0.1" stroke="#22C55E" stroke-opacity="0.3" />
+        <text x="205" y="296" fill="#22C55E" text-anchor="middle">Python</text>
       </g>
     </g>
   </g>
@@ -224,15 +204,14 @@
   <!-- Card 2: Auto Contribution -->
   <g transform="translate(570, 150)">
     <g class="floating-card-2">
-      <rect x="0" y="25" width="460" height="320" rx="24" fill="#000000" filter="url(#card-shadow)" opacity="0.65" />
+      <rect x="0" y="25" width="460" height="320" rx="24" fill="#000000" filter="url(#ds-shadow)" opacity="0.6" />
       
-      <rect x="0" y="0" width="460" height="320" rx="24" fill="url(#pg-cardGrad)" />
-      <rect x="0" y="0" width="460" height="320" rx="24" fill="url(#card-mesh)" />
+      <rect x="0" y="0" width="460" height="320" rx="24" fill="url(#ds-cardGrad)" />
       
-      <rect x="0" y="0" width="460" height="320" rx="24" fill="none" stroke="url(#pg-cardBorder)" stroke-width="1.5" class="animated-border" />
+      <rect x="0" y="0" width="460" height="320" rx="24" fill="none" stroke="url(#ds-cardBorder)" stroke-width="1.5" class="animated-border" />
       <rect x="1" y="1" width="458" height="318" rx="23" fill="none" stroke="url(#topHighlight)" stroke-width="1.5" />
       
-      <rect x="0" y="40" width="3" height="36" rx="1.5" fill="#06B6D4" filter="url(#pg-glow)" />
+      <rect x="0" y="40" width="4" height="40" rx="2" fill="#06B6D4" filter="url(#ds-glow)" />
 
       <g transform="translate(320, 160) scale(4)" opacity="0.04" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="18" cy="18" r="3" />
@@ -241,8 +220,8 @@
         <line x1="6" y1="9" x2="6" y2="21" />
       </g>
       
-      <rect x="30" y="30" width="48" height="48" rx="12" fill="#0D1B2A" stroke="#06B6D4" stroke-width="1.5" />
-      <g transform="translate(42, 42)" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="30" y="30" width="48" height="48" rx="12" fill="#102A43" />
+      <g transform="translate(38, 38)" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="18" cy="18" r="3" />
         <circle cx="6" cy="6" r="3" />
         <path d="M13 6h3a2 2 0 0 1 2 2v7" />
@@ -251,35 +230,35 @@
       
       <text x="95" y="60" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#F8FAFC">Event-Driven CI/CD</text>
       
-      <rect x="300" y="38" width="130" height="24" rx="12" fill="#06B6D4" fill-opacity="0.1" stroke="#06B6D4" stroke-opacity="0.4" />
-      <text x="365" y="54" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#06B6D4" text-anchor="middle" font-weight="700" letter-spacing="0.5">ACTIVE DEVELOPMENT</text>
+      <rect x="300" y="42" width="130" height="24" rx="12" fill="#06B6D4" fill-opacity="0.15" />
+      <text x="365" y="58" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#06B6D4" text-anchor="middle" font-weight="700" letter-spacing="0.5">ACTIVE DEVELOPMENT</text>
       
-      <text x="30" y="105" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">Orchestrating autonomous pipelines to eliminate</text>
-      <text x="30" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">manual repository maintenance friction.</text>
+      <text x="30" y="105" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#94A3B8">Orchestrating autonomous pipelines to eliminate</text>
+      <text x="30" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#94A3B8">manual repository maintenance friction.</text>
       
-      <line x1="30" y1="150" x2="430" y2="150" stroke="#102A43" stroke-width="1.5" stroke-dasharray="2 4" />
+      <line x1="30" y1="150" x2="430" y2="150" stroke="#102A43" stroke-width="1.5" stroke-dasharray="4 4" />
       
-      <rect x="30" y="171" width="6" height="6" rx="3" fill="#06B6D4" />
-      <text x="48" y="179" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Complex GitHub Actions workflows</text>
+      <rect x="30" y="172" width="4" height="4" rx="2" fill="#06B6D4" />
+      <text x="46" y="178" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">Complex GitHub Actions workflows</text>
       
-      <rect x="30" y="199" width="6" height="6" rx="3" fill="#06B6D4" />
-      <text x="48" y="207" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Automated PR routing and labeling</text>
+      <rect x="30" y="200" width="4" height="4" rx="2" fill="#06B6D4" />
+      <text x="46" y="206" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">Automated PR routing and labeling</text>
       
-      <rect x="30" y="227" width="6" height="6" rx="3" fill="#06B6D4" />
-      <text x="48" y="235" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Strict schedule-based CRON triggers</text>
+      <rect x="30" y="228" width="4" height="4" rx="2" fill="#06B6D4" />
+      <text x="46" y="234" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">Strict schedule-based CRON triggers</text>
       
-      <rect x="30" y="255" width="6" height="6" rx="3" fill="#06B6D4" />
-      <text x="48" y="263" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Automated security and health checks</text>
+      <rect x="30" y="256" width="4" height="4" rx="2" fill="#06B6D4" />
+      <text x="46" y="262" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">Automated security and health checks</text>
       
-      <g font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600">
-        <rect x="30" y="280" width="90" height="24" rx="12" fill="#102A43" stroke="#06B6D4" stroke-opacity="0.3" />
-        <text x="75" y="296" fill="#06B6D4" text-anchor="middle">Automation</text>
+      <g font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600">
+        <rect x="30" y="278" width="85" height="28" rx="14" fill="#06B6D4" fill-opacity="0.1" stroke="#06B6D4" stroke-opacity="0.3" />
+        <text x="72.5" y="296" fill="#06B6D4" text-anchor="middle">Automation</text>
         
-        <rect x="130" y="280" width="60" height="24" rx="12" fill="#102A43" stroke="#06B6D4" stroke-opacity="0.3" />
-        <text x="160" y="296" fill="#06B6D4" text-anchor="middle">GitHub</text>
+        <rect x="125" y="278" width="60" height="28" rx="14" fill="#06B6D4" fill-opacity="0.1" stroke="#06B6D4" stroke-opacity="0.3" />
+        <text x="155" y="296" fill="#06B6D4" text-anchor="middle">GitHub</text>
         
-        <rect x="200" y="280" width="50" height="24" rx="12" fill="#102A43" stroke="#06B6D4" stroke-opacity="0.3" />
-        <text x="225" y="296" fill="#06B6D4" text-anchor="middle">Shell</text>
+        <rect x="195" y="278" width="50" height="28" rx="14" fill="#06B6D4" fill-opacity="0.1" stroke="#06B6D4" stroke-opacity="0.3" />
+        <text x="220" y="296" fill="#06B6D4" text-anchor="middle">Shell</text>
       </g>
     </g>
   </g>
@@ -287,58 +266,57 @@
   <!-- Card 3: NS Fin -->
   <g transform="translate(1080, 150)">
     <g class="floating-card-3">
-      <rect x="0" y="25" width="460" height="320" rx="24" fill="#000000" filter="url(#card-shadow)" opacity="0.65" />
+      <rect x="0" y="25" width="460" height="320" rx="24" fill="#000000" filter="url(#ds-shadow)" opacity="0.6" />
       
-      <rect x="0" y="0" width="460" height="320" rx="24" fill="url(#pg-cardGrad)" />
-      <rect x="0" y="0" width="460" height="320" rx="24" fill="url(#card-mesh)" />
+      <rect x="0" y="0" width="460" height="320" rx="24" fill="url(#ds-cardGrad)" />
       
-      <rect x="0" y="0" width="460" height="320" rx="24" fill="none" stroke="url(#pg-cardBorder)" stroke-width="1.5" class="animated-border" />
+      <rect x="0" y="0" width="460" height="320" rx="24" fill="none" stroke="url(#ds-cardBorder)" stroke-width="1.5" class="animated-border" />
       <rect x="1" y="1" width="458" height="318" rx="23" fill="none" stroke="url(#topHighlight)" stroke-width="1.5" />
       
-      <rect x="0" y="40" width="3" height="36" rx="1.5" fill="#F59E0B" filter="url(#pg-glow)" />
+      <rect x="0" y="40" width="4" height="40" rx="2" fill="#F59E0B" filter="url(#ds-glow)" />
 
       <g transform="translate(320, 160) scale(4)" opacity="0.04" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
         <polyline points="17 6 23 6 23 12" />
       </g>
       
-      <rect x="30" y="30" width="48" height="48" rx="12" fill="#0D1B2A" stroke="#F59E0B" stroke-width="1.5" />
-      <g transform="translate(42, 42)" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="30" y="30" width="48" height="48" rx="12" fill="#102A43" />
+      <g transform="translate(38, 38)" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
         <polyline points="17 6 23 6 23 12" />
       </g>
       
       <text x="95" y="60" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#F8FAFC">High-Performance Analytics</text>
       
-      <rect x="330" y="38" width="100" height="24" rx="12" fill="#F59E0B" fill-opacity="0.1" stroke="#F59E0B" stroke-opacity="0.4" />
-      <text x="380" y="54" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#F59E0B" text-anchor="middle" font-weight="700" letter-spacing="0.5">EXPERIMENTAL</text>
+      <rect x="330" y="42" width="100" height="24" rx="12" fill="#F59E0B" fill-opacity="0.15" />
+      <text x="380" y="58" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#F59E0B" text-anchor="middle" font-weight="700" letter-spacing="0.5">EXPERIMENTAL</text>
       
-      <text x="30" y="105" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">A robust, research-focused dashboard for processing</text>
-      <text x="30" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">and visualizing high-density market telemetry.</text>
+      <text x="30" y="105" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#94A3B8">A robust, research-focused dashboard for processing</text>
+      <text x="30" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#94A3B8">and visualizing high-density market telemetry.</text>
       
-      <line x1="30" y1="150" x2="430" y2="150" stroke="#102A43" stroke-width="1.5" stroke-dasharray="2 4" />
+      <line x1="30" y1="150" x2="430" y2="150" stroke="#102A43" stroke-width="1.5" stroke-dasharray="4 4" />
       
-      <rect x="30" y="171" width="6" height="6" rx="3" fill="#F59E0B" />
-      <text x="48" y="179" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Low-latency API ingestion</text>
+      <rect x="30" y="172" width="4" height="4" rx="2" fill="#F59E0B" />
+      <text x="46" y="178" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">Low-latency API ingestion</text>
       
-      <rect x="30" y="199" width="6" height="6" rx="3" fill="#F59E0B" />
-      <text x="48" y="207" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Hardware-accelerated visualization</text>
+      <rect x="30" y="200" width="4" height="4" rx="2" fill="#F59E0B" />
+      <text x="46" y="206" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">Hardware-accelerated visualization</text>
       
-      <rect x="30" y="227" width="6" height="6" rx="3" fill="#F59E0B" />
-      <text x="48" y="235" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Mathematical financial modeling</text>
+      <rect x="30" y="228" width="4" height="4" rx="2" fill="#F59E0B" />
+      <text x="46" y="234" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">Mathematical financial modeling</text>
       
-      <rect x="30" y="255" width="6" height="6" rx="3" fill="#F59E0B" />
-      <text x="48" y="263" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2E8F0">Resilient database architecture</text>
+      <rect x="30" y="256" width="4" height="4" rx="2" fill="#F59E0B" />
+      <text x="46" y="262" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#CBD5E1">Resilient database architecture</text>
       
-      <g font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600">
-        <rect x="30" y="280" width="86" height="24" rx="12" fill="#102A43" stroke="#F59E0B" stroke-opacity="0.3" />
-        <text x="73" y="296" fill="#F59E0B" text-anchor="middle">TypeScript</text>
+      <g font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600">
+        <rect x="30" y="278" width="80" height="28" rx="14" fill="#F59E0B" fill-opacity="0.1" stroke="#F59E0B" stroke-opacity="0.3" />
+        <text x="70" y="296" fill="#F59E0B" text-anchor="middle">TypeScript</text>
         
-        <rect x="126" y="280" width="56" height="24" rx="12" fill="#102A43" stroke="#F59E0B" stroke-opacity="0.3" />
-        <text x="154" y="296" fill="#F59E0B" text-anchor="middle">React</text>
+        <rect x="120" y="278" width="55" height="28" rx="14" fill="#F59E0B" fill-opacity="0.1" stroke="#F59E0B" stroke-opacity="0.3" />
+        <text x="147.5" y="296" fill="#F59E0B" text-anchor="middle">React</text>
         
-        <rect x="192" y="280" width="80" height="24" rx="12" fill="#102A43" stroke="#F59E0B" stroke-opacity="0.3" />
-        <text x="232" y="296" fill="#F59E0B" text-anchor="middle">Supabase</text>
+        <rect x="185" y="278" width="75" height="28" rx="14" fill="#F59E0B" fill-opacity="0.1" stroke="#F59E0B" stroke-opacity="0.3" />
+        <text x="222.5" y="296" fill="#F59E0B" text-anchor="middle">Supabase</text>
       </g>
     </g>
   </g>
