@@ -38,7 +38,7 @@
 | Email            | [nishant.ns.business@gmail.com](mailto:nishant.ns.business@gmail.com)                                  | Business inquiries and collaboration   |
 | Instagram        | [instagram.com/naborajs](https://instagram.com/naborajs)                                               | Visual project snippets and updates    |
 | YouTube          | [youtube.com/@Nishant_sarkar](https://youtube.com/@Nishant_sarkar)                                     | Learning experiments and walkthroughs  |
-| X (Twitter)      | [x.com/ItsNaborajs](https://x.com/ItsNaborajs)                                                        | quick engineering updates              |
+| X (Twitter)      | [x.com/ItsNaborajs](https://x.com/ItsNaborajs)                                                         | quick engineering updates              |
 | X (Twitter)      | [x.com/naboraj-sarkar](https://x.com/naboraj-sarkar)                                                   | alternate developer feed               |
 | Telegram         | [t.me/Nishantsarkar10k](https://t.me/Nishantsarkar10k)                                                 | personal chat and demos                |
 | Telegram Channel | [t.me/nsgamming69](https://t.me/nsgamming69)                                                           | community updates and experiments      |
