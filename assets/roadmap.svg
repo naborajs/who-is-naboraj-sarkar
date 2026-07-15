@@ -1,26 +1,657 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" width="1000" height="260">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1900" width="100%" height="100%">
+  <title>Engineering Journey Roadmap</title>
+  <desc>A continuous engineering journey of learning, building, experimenting, and improving through real-world projects.</desc>
+
   <defs>
-    <linearGradient id="road" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#7c3aed" />
-      <stop offset="100%" stop-color="#38bdf8" />
+    <!-- Background Blur & Filters -->
+    <filter id="ai-aurora-blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="150" />
+    </filter>
+    <filter id="ai-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="20" result="blur" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" />
+    </filter>
+    <filter id="ai-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="ai-glow-lg" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Milestone Gradients -->
+    <linearGradient id="grad-completed" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22C55E" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#0D1B2A" stop-opacity="0.8" />
     </linearGradient>
+    <linearGradient id="border-completed" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22C55E" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#102A43" stop-opacity="0.2" />
+    </linearGradient>
+
+    <linearGradient id="grad-focus" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#0D1B2A" stop-opacity="0.8" />
+    </linearGradient>
+    <linearGradient id="border-focus" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#102A43" stop-opacity="0.2" />
+    </linearGradient>
+
+    <linearGradient id="grad-next" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#0D1B2A" stop-opacity="0.8" />
+    </linearGradient>
+    <linearGradient id="border-next" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#102A43" stop-opacity="0.2" />
+    </linearGradient>
+
+    <linearGradient id="grad-future" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#94A3B8" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#0D1B2A" stop-opacity="0.8" />
+    </linearGradient>
+    <linearGradient id="border-future" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#94A3B8" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#102A43" stop-opacity="0.2" />
+    </linearGradient>
+
+    <linearGradient id="topHighlight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" stop-opacity="0.25" />
+      <stop offset="15%" stop-color="#F8FAFC" stop-opacity="0.0" />
+      <stop offset="100%" stop-color="#F8FAFC" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Patterns -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="1" fill="#38BDF8" opacity="0.08" />
+    </pattern>
+    <pattern id="card-mesh" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#F8FAFC" opacity="0.03" />
+    </pattern>
+
+    <!-- Master Journey Paths -->
+    <path id="main-route" d="M 250 300 L 1750 300 C 2000 300, 2000 850, 1750 850 L 250 850 C 0 850, 0 1400, 250 1400 L 1750 1400" />
+    <path id="branch-route" d="M 1750 850 L 1750 1000 C 1750 1100, 1650 1100, 1600 1100 L 1400 1100 C 1300 1100, 1250 1100, 1250 1200 L 1250 1400" />
   </defs>
-  <rect width="1000" height="260" rx="24" fill="#0f172a" />
-  <line x1="80" y1="140" x2="920" y2="140" stroke="url(#road)" stroke-width="8" stroke-linecap="round" />
-  <circle cx="160" cy="140" r="18" fill="#38bdf8" />
-  <circle cx="340" cy="140" r="18" fill="#7c3aed" />
-  <circle cx="520" cy="140" r="18" fill="#38bdf8" />
-  <circle cx="700" cy="140" r="18" fill="#7c3aed" />
-  <circle cx="880" cy="140" r="18" fill="#38bdf8" />
-  <text x="160" y="100" text-anchor="middle" font-family="Inter, Arial, sans-serif" fill="#e2e8f0" font-size="18" font-weight="700">Explore</text>
-  <text x="160" y="170" text-anchor="middle" fill="#94a3b8" font-size="14">AI + systems</text>
-  <text x="340" y="100" text-anchor="middle" font-family="Inter, Arial, sans-serif" fill="#e2e8f0" font-size="18" font-weight="700">Prototype</text>
-  <text x="340" y="170" text-anchor="middle" fill="#94a3b8" font-size="14">build tools</text>
-  <text x="520" y="100" text-anchor="middle" font-family="Inter, Arial, sans-serif" fill="#e2e8f0" font-size="18" font-weight="700">Deploy</text>
-  <text x="520" y="170" text-anchor="middle" fill="#94a3b8" font-size="14">real workflows</text>
-  <text x="700" y="100" text-anchor="middle" font-family="Inter, Arial, sans-serif" fill="#e2e8f0" font-size="18" font-weight="700">Improve</text>
-  <text x="700" y="170" text-anchor="middle" fill="#94a3b8" font-size="14">measure + iterate</text>
-  <text x="880" y="100" text-anchor="middle" font-family="Inter, Arial, sans-serif" fill="#e2e8f0" font-size="18" font-weight="700">Scale</text>
-  <text x="880" y="170" text-anchor="middle" fill="#94a3b8" font-size="14">systems thinking</text>
-  <text x="500" y="230" text-anchor="middle" fill="#94a3b8" font-size="14">Roadmap: learning through practical delivery and consistent iteration</text>
+
+  <style>
+    @keyframes float1 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+    @keyframes float2 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+    @keyframes pulse { 0%, 100% { opacity: 0.3; filter: brightness(1); } 50% { opacity: 1; filter: brightness(1.3); } }
+    @keyframes pipeFlow { from { stroke-dashoffset: 40; } to { stroke-dashoffset: 0; } }
+    @keyframes particleDrift { 0% { transform: translate(0,0); opacity: 0; } 20% { opacity: 0.5; } 80% { opacity: 0.5; } 100% { transform: translate(15px, -30px); opacity: 0; } }
+    
+    .float-1 { animation: float1 6s ease-in-out infinite; }
+    .float-2 { animation: float2 8s ease-in-out infinite; }
+    .pulse { animation: pulse 3s ease-in-out infinite; }
+    .pipe-flow { animation: pipeFlow 1s linear infinite; }
+    .particle { animation: particleDrift linear infinite; }
+  </style>
+
+  <!-- Deep Space Canvas -->
+  <rect width="2000" height="1900" fill="#07111F" />
+
+  <!-- Background Textures -->
+  <rect width="2000" height="1900" fill="url(#grid)" />
+  
+  <ellipse cx="20%" cy="15%" rx="30%" ry="30%" fill="#06B6D4" filter="url(#ai-aurora-blur)" opacity="0.15" />
+  <ellipse cx="80%" cy="30%" rx="30%" ry="30%" fill="#38BDF8" filter="url(#ai-aurora-blur)" opacity="0.1" />
+  <ellipse cx="50%" cy="60%" rx="40%" ry="20%" fill="#22C55E" filter="url(#ai-aurora-blur)" opacity="0.1" />
+  <ellipse cx="80%" cy="80%" rx="30%" ry="30%" fill="#F59E0B" filter="url(#ai-aurora-blur)" opacity="0.1" />
+
+  <!-- Circuit Traces & Decorators -->
+  <g stroke="#38BDF8" stroke-width="1.5" fill="none" opacity="0.2">
+    <path d="M 100 200 L 150 200 L 180 230" />
+    <circle cx="180" cy="230" r="3" fill="#38BDF8" />
+    
+    <path d="M 1900 400 L 1850 400 L 1820 430" />
+    <circle cx="1820" cy="430" r="3" fill="#38BDF8" />
+
+    <path d="M 100 1200 L 150 1200 L 180 1170" />
+    <circle cx="180" cy="1170" r="3" fill="#38BDF8" />
+
+    <path d="M 1900 1300 L 1850 1300 L 1820 1330" />
+    <circle cx="1820" cy="1330" r="3" fill="#38BDF8" />
+  </g>
+
+  <!-- Floating Particles -->
+  <circle cx="200" cy="300" r="3" fill="#38BDF8" class="particle" style="animation-duration: 9s;" filter="url(#ai-glow)" />
+  <circle cx="1500" cy="800" r="4" fill="#06B6D4" class="particle" style="animation-duration: 14s;" filter="url(#ai-glow)" />
+  <circle cx="1200" cy="200" r="2.5" fill="#22C55E" class="particle" style="animation-duration: 11s;" filter="url(#ai-glow)" />
+  <circle cx="500" cy="800" r="3.5" fill="#F59E0B" class="particle" style="animation-duration: 15s;" filter="url(#ai-glow)" />
+  <circle cx="800" cy="1150" r="2" fill="#F8FAFC" class="particle" style="animation-duration: 12s;" filter="url(#ai-glow)" />
+  <circle cx="1800" cy="1400" r="3" fill="#94A3B8" class="particle" style="animation-duration: 18s;" filter="url(#ai-glow)" />
+
+  <!-- ======================== -->
+  <!-- HEADER & FOOTER -->
+  <!-- ======================== -->
+  <g transform="translate(1000, 120)">
+    <text x="0" y="0" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="800" fill="#F8FAFC" text-anchor="middle" letter-spacing="2">Engineering Roadmap</text>
+    <text x="0" y="40" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#CBD5E1" text-anchor="middle" letter-spacing="1">A continuous journey of learning, building, experimenting, and improving through real-world projects.</text>
+  </g>
+
+  <g transform="translate(1000, 1750)">
+    <text x="0" y="0" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#38BDF8" text-anchor="middle" letter-spacing="1">Every project strengthens the next one.</text>
+    <text x="0" y="30" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#94A3B8" text-anchor="middle">Curiosity becomes experimentation, experimentation becomes products,</text>
+    <text x="0" y="55" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#94A3B8" text-anchor="middle">products become experience, and experience fuels continuous innovation.</text>
+  </g>
+
+  <!-- ======================== -->
+  <!-- GLOWING ROUTES -->
+  <!-- ======================== -->
+  <g id="data-routes">
+    <!-- Main Route -->
+    <use href="#main-route" stroke="#0D1B2A" stroke-width="12" fill="none" opacity="0.8" />
+    <use href="#main-route" stroke="#06B6D4" stroke-width="2" fill="none" opacity="0.3" />
+    <use href="#main-route" stroke="#38BDF8" stroke-width="2" fill="none" stroke-dasharray="15 20" class="pipe-flow" filter="url(#ai-glow)" />
+
+    <!-- Branch Route -->
+    <use href="#branch-route" stroke="#0D1B2A" stroke-width="8" fill="none" opacity="0.8" />
+    <use href="#branch-route" stroke="#38BDF8" stroke-width="1.5" fill="none" stroke-dasharray="8 20" class="pipe-flow" opacity="0.6" filter="url(#ai-glow)" />
+
+    <!-- Moving Data Packets -->
+    <circle r="5" fill="#F8FAFC" filter="url(#ai-glow-lg)"><animateMotion dur="25s" repeatCount="indefinite"><mpath href="#main-route" /></animateMotion></circle>
+    <circle r="5" fill="#F8FAFC" filter="url(#ai-glow-lg)"><animateMotion dur="25s" begin="5s" repeatCount="indefinite"><mpath href="#main-route" /></animateMotion></circle>
+    <circle r="5" fill="#F8FAFC" filter="url(#ai-glow-lg)"><animateMotion dur="25s" begin="10s" repeatCount="indefinite"><mpath href="#main-route" /></animateMotion></circle>
+    <circle r="5" fill="#F8FAFC" filter="url(#ai-glow-lg)"><animateMotion dur="25s" begin="15s" repeatCount="indefinite"><mpath href="#main-route" /></animateMotion></circle>
+    <circle r="5" fill="#F8FAFC" filter="url(#ai-glow-lg)"><animateMotion dur="25s" begin="20s" repeatCount="indefinite"><mpath href="#main-route" /></animateMotion></circle>
+
+    <circle r="4" fill="#38BDF8" filter="url(#ai-glow-lg)"><animateMotion dur="12s" repeatCount="indefinite"><mpath href="#branch-route" /></animateMotion></circle>
+    <circle r="4" fill="#38BDF8" filter="url(#ai-glow-lg)"><animateMotion dur="12s" begin="6s" repeatCount="indefinite"><mpath href="#branch-route" /></animateMotion></circle>
+  </g>
+
+  <!-- ======================== -->
+  <!-- MILESTONE NODES -->
+  <!-- ======================== -->
+  <!-- Row 1 Nodes (Completed - Green) -->
+  <g transform="translate(250, 300)"><circle cx="0" cy="0" r="14" fill="#0D1B2A" stroke="#22C55E" stroke-width="3" /><circle cx="0" cy="0" r="6" fill="#22C55E" filter="url(#ai-glow)" class="pulse" /></g>
+  <g transform="translate(750, 300)"><circle cx="0" cy="0" r="14" fill="#0D1B2A" stroke="#22C55E" stroke-width="3" /><circle cx="0" cy="0" r="6" fill="#22C55E" filter="url(#ai-glow)" class="pulse" /></g>
+  <g transform="translate(1250, 300)"><circle cx="0" cy="0" r="14" fill="#0D1B2A" stroke="#22C55E" stroke-width="3" /><circle cx="0" cy="0" r="6" fill="#22C55E" filter="url(#ai-glow)" class="pulse" /></g>
+  <g transform="translate(1750, 300)"><circle cx="0" cy="0" r="14" fill="#0D1B2A" stroke="#22C55E" stroke-width="3" /><circle cx="0" cy="0" r="6" fill="#22C55E" filter="url(#ai-glow)" class="pulse" /></g>
+
+  <!-- Row 2 Nodes -->
+  <g transform="translate(1750, 850)"><circle cx="0" cy="0" r="14" fill="#0D1B2A" stroke="#22C55E" stroke-width="3" /><circle cx="0" cy="0" r="6" fill="#22C55E" filter="url(#ai-glow)" class="pulse" /></g>
+  <g transform="translate(1250, 850)"><circle cx="0" cy="0" r="14" fill="#0D1B2A" stroke="#22C55E" stroke-width="3" /><circle cx="0" cy="0" r="6" fill="#22C55E" filter="url(#ai-glow)" class="pulse" /></g>
+  <g transform="translate(750, 850)"><circle cx="0" cy="0" r="14" fill="#0D1B2A" stroke="#38BDF8" stroke-width="3" /><circle cx="0" cy="0" r="6" fill="#38BDF8" filter="url(#ai-glow)" class="pulse" /></g>
+  <g transform="translate(250, 850)"><circle cx="0" cy="0" r="14" fill="#0D1B2A" stroke="#38BDF8" stroke-width="3" /><circle cx="0" cy="0" r="6" fill="#38BDF8" filter="url(#ai-glow)" class="pulse" /></g>
+
+  <!-- Row 3 Nodes -->
+  <g transform="translate(250, 1400)"><circle cx="0" cy="0" r="14" fill="#0D1B2A" stroke="#F59E0B" stroke-width="3" /><circle cx="0" cy="0" r="6" fill="#F59E0B" filter="url(#ai-glow)" class="pulse" /></g>
+  <g transform="translate(750, 1400)"><circle cx="0" cy="0" r="14" fill="#0D1B2A" stroke="#F59E0B" stroke-width="3" /><circle cx="0" cy="0" r="6" fill="#F59E0B" filter="url(#ai-glow)" class="pulse" /></g>
+  <g transform="translate(1250, 1400)"><circle cx="0" cy="0" r="14" fill="#0D1B2A" stroke="#94A3B8" stroke-width="3" /><circle cx="0" cy="0" r="6" fill="#94A3B8" filter="url(#ai-glow)" class="pulse" /></g>
+  <g transform="translate(1750, 1400)"><circle cx="0" cy="0" r="14" fill="#0D1B2A" stroke="#94A3B8" stroke-width="3" /><circle cx="0" cy="0" r="6" fill="#94A3B8" filter="url(#ai-glow)" class="pulse" /></g>
+
+  <!-- Branch Nodes -->
+  <g transform="translate(1750, 1000)">
+    <rect x="-35" y="-12" width="70" height="24" rx="12" fill="#0D1B2A" stroke="#38BDF8" stroke-width="1.5" filter="url(#ai-glow)" />
+    <text x="0" y="4" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#F8FAFC" text-anchor="middle" font-weight="600">AI</text>
+  </g>
+  <g transform="translate(1600, 1100)">
+    <rect x="-45" y="-12" width="90" height="24" rx="12" fill="#0D1B2A" stroke="#38BDF8" stroke-width="1.5" filter="url(#ai-glow)" />
+    <text x="0" y="4" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#F8FAFC" text-anchor="middle" font-weight="600">Dev Tools</text>
+  </g>
+  <g transform="translate(1400, 1100)">
+    <rect x="-50" y="-12" width="100" height="24" rx="12" fill="#0D1B2A" stroke="#38BDF8" stroke-width="1.5" filter="url(#ai-glow)" />
+    <text x="0" y="4" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#F8FAFC" text-anchor="middle" font-weight="600">Automation</text>
+  </g>
+  <g transform="translate(1250, 1250)">
+    <rect x="-40" y="-12" width="80" height="24" rx="12" fill="#0D1B2A" stroke="#38BDF8" stroke-width="1.5" filter="url(#ai-glow)" />
+    <text x="0" y="4" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#F8FAFC" text-anchor="middle" font-weight="600">Hardware</text>
+  </g>
+
+  <!-- ======================== -->
+  <!-- MILESTONE CARDS -->
+  <!-- ======================== -->
+
+  <!-- Card 1: Curiosity -->
+  <g transform="translate(90, 340)">
+    <g class="float-1">
+      <rect x="0" y="20" width="320" height="220" rx="16" fill="#000000" filter="url(#ai-shadow)" opacity="0.6" />
+      <rect x="0" y="0" width="320" height="220" rx="16" fill="url(#grad-completed)" />
+      <rect x="0" y="0" width="320" height="220" rx="16" fill="url(#card-mesh)" />
+      <rect x="1" y="1" width="318" height="218" rx="15" fill="none" stroke="url(#border-completed)" stroke-width="1.5" />
+      <rect x="1" y="1" width="318" height="218" rx="15" fill="none" stroke="url(#topHighlight)" stroke-width="1.5" />
+      <rect x="0" y="40" width="4" height="40" rx="2" fill="#22C55E" filter="url(#ai-glow)" />
+
+      <circle cx="40" cy="40" r="20" fill="#0D1B2A" stroke="#22C55E" stroke-width="1.5" />
+      <svg x="28" y="28" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/>
+      </svg>
+
+      <text x="75" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#F8FAFC">Curiosity</text>
+
+      <rect x="230" y="30" width="75" height="24" rx="12" fill="#22C55E" fill-opacity="0.15" stroke="#22C55E" stroke-width="1" />
+      <text x="267.5" y="46" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" fill="#22C55E" text-anchor="middle">Completed</text>
+
+      <text x="25" y="90" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#CBD5E1">
+        <tspan x="25" dy="0">Identify meaningful problems,</tspan>
+        <tspan x="25" dy="20">ask the right questions, and</tspan>
+        <tspan x="25" dy="20">explore modern technologies.</tspan>
+      </text>
+
+      <g transform="translate(25, 170)">
+        <rect x="0" y="0" width="70" height="24" rx="6" fill="#102A43" stroke="#22C55E" stroke-width="1" stroke-opacity="0.5" />
+        <text x="35" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#22C55E" text-anchor="middle">Ideation</text>
+
+        <rect x="80" y="0" width="100" height="24" rx="6" fill="#102A43" stroke="#22C55E" stroke-width="1" stroke-opacity="0.5" />
+        <text x="130" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#22C55E" text-anchor="middle">Brainstorming</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Card 2: Research -->
+  <g transform="translate(590, 340)">
+    <g class="float-2">
+      <rect x="0" y="20" width="320" height="220" rx="16" fill="#000000" filter="url(#ai-shadow)" opacity="0.6" />
+      <rect x="0" y="0" width="320" height="220" rx="16" fill="url(#grad-completed)" />
+      <rect x="0" y="0" width="320" height="220" rx="16" fill="url(#card-mesh)" />
+      <rect x="1" y="1" width="318" height="218" rx="15" fill="none" stroke="url(#border-completed)" stroke-width="1.5" />
+      <rect x="1" y="1" width="318" height="218" rx="15" fill="none" stroke="url(#topHighlight)" stroke-width="1.5" />
+      <rect x="0" y="40" width="4" height="40" rx="2" fill="#22C55E" filter="url(#ai-glow)" />
+
+      <circle cx="40" cy="40" r="20" fill="#0D1B2A" stroke="#22C55E" stroke-width="1.5" />
+      <svg x="28" y="28" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+      </svg>
+
+      <text x="75" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#F8FAFC">Research</text>
+
+      <rect x="230" y="30" width="75" height="24" rx="12" fill="#22C55E" fill-opacity="0.15" stroke="#22C55E" stroke-width="1" />
+      <text x="267.5" y="46" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" fill="#22C55E" text-anchor="middle">Completed</text>
+
+      <text x="25" y="90" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#CBD5E1">
+        <tspan x="25" dy="0">Dive deep into documentation,</tspan>
+        <tspan x="25" dy="20">analyze architecture patterns,</tspan>
+        <tspan x="25" dy="20">and validate feasibility.</tspan>
+      </text>
+
+      <g transform="translate(25, 170)">
+        <rect x="0" y="0" width="100" height="24" rx="6" fill="#102A43" stroke="#22C55E" stroke-width="1" stroke-opacity="0.5" />
+        <text x="50" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#22C55E" text-anchor="middle">System Design</text>
+
+        <rect x="110" y="0" width="50" height="24" rx="6" fill="#102A43" stroke="#22C55E" stroke-width="1" stroke-opacity="0.5" />
+        <text x="135" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#22C55E" text-anchor="middle">Docs</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Card 3: Learn -->
+  <g transform="translate(1090, 340)">
+    <g class="float-1">
+      <rect x="0" y="20" width="320" height="220" rx="16" fill="#000000" filter="url(#ai-shadow)" opacity="0.6" />
+      <rect x="0" y="0" width="320" height="220" rx="16" fill="url(#grad-completed)" />
+      <rect x="0" y="0" width="320" height="220" rx="16" fill="url(#card-mesh)" />
+      <rect x="1" y="1" width="318" height="218" rx="15" fill="none" stroke="url(#border-completed)" stroke-width="1.5" />
+      <rect x="1" y="1" width="318" height="218" rx="15" fill="none" stroke="url(#topHighlight)" stroke-width="1.5" />
+      <rect x="0" y="40" width="4" height="40" rx="2" fill="#22C55E" filter="url(#ai-glow)" />
+
+      <circle cx="40" cy="40" r="20" fill="#0D1B2A" stroke="#22C55E" stroke-width="1.5" />
+      <svg x="28" y="28" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+      </svg>
+
+      <text x="75" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#F8FAFC">Learn</text>
+
+      <rect x="230" y="30" width="75" height="24" rx="12" fill="#22C55E" fill-opacity="0.15" stroke="#22C55E" stroke-width="1" />
+      <text x="267.5" y="46" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" fill="#22C55E" text-anchor="middle">Completed</text>
+
+      <text x="25" y="90" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#CBD5E1">
+        <tspan x="25" dy="0">Absorb new paradigms,</tspan>
+        <tspan x="25" dy="20">study core principles, and</tspan>
+        <tspan x="25" dy="20">expand technical knowledge.</tspan>
+      </text>
+
+      <g transform="translate(25, 170)">
+        <rect x="0" y="0" width="75" height="24" rx="6" fill="#102A43" stroke="#22C55E" stroke-width="1" stroke-opacity="0.5" />
+        <text x="37.5" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#22C55E" text-anchor="middle">Tutorials</text>
+
+        <rect x="85" y="0" width="60" height="24" rx="6" fill="#102A43" stroke="#22C55E" stroke-width="1" stroke-opacity="0.5" />
+        <text x="115" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#22C55E" text-anchor="middle">Books</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Card 4: Experiment -->
+  <g transform="translate(1590, 340)">
+    <g class="float-2">
+      <rect x="0" y="20" width="320" height="220" rx="16" fill="#000000" filter="url(#ai-shadow)" opacity="0.6" />
+      <rect x="0" y="0" width="320" height="220" rx="16" fill="url(#grad-completed)" />
+      <rect x="0" y="0" width="320" height="220" rx="16" fill="url(#card-mesh)" />
+      <rect x="1" y="1" width="318" height="218" rx="15" fill="none" stroke="url(#border-completed)" stroke-width="1.5" />
+      <rect x="1" y="1" width="318" height="218" rx="15" fill="none" stroke="url(#topHighlight)" stroke-width="1.5" />
+      <rect x="0" y="40" width="4" height="40" rx="2" fill="#22C55E" filter="url(#ai-glow)" />
+
+      <circle cx="40" cy="40" r="20" fill="#0D1B2A" stroke="#22C55E" stroke-width="1.5" />
+      <svg x="28" y="28" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 2v7.5l-4.8 7.2A2 2 0 0 0 5.8 20h12.4a2 2 0 0 0 1.6-3.3L15 9.5V2"/><path d="M6 2h12"/><path d="M6 14h12"/>
+      </svg>
+
+      <text x="75" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#F8FAFC">Experiment</text>
+
+      <rect x="230" y="30" width="75" height="24" rx="12" fill="#22C55E" fill-opacity="0.15" stroke="#22C55E" stroke-width="1" />
+      <text x="267.5" y="46" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" fill="#22C55E" text-anchor="middle">Completed</text>
+
+      <text x="25" y="90" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#CBD5E1">
+        <tspan x="25" dy="0">Write throwaway code,</tspan>
+        <tspan x="25" dy="20">test hypotheses quickly,</tspan>
+        <tspan x="25" dy="20">and break things safely.</tspan>
+      </text>
+
+      <g transform="translate(25, 170)">
+        <rect x="0" y="0" width="65" height="24" rx="6" fill="#102A43" stroke="#22C55E" stroke-width="1" stroke-opacity="0.5" />
+        <text x="32.5" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#22C55E" text-anchor="middle">Scripts</text>
+
+        <rect x="75" y="0" width="85" height="24" rx="6" fill="#102A43" stroke="#22C55E" stroke-width="1" stroke-opacity="0.5" />
+        <text x="117.5" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#22C55E" text-anchor="middle">Sandboxes</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Row 2 -->
+  <!-- Card 5: Prototype -->
+  <g transform="translate(1590, 590)">
+    <g class="float-1">
+      <rect x="0" y="20" width="320" height="220" rx="16" fill="#000000" filter="url(#ai-shadow)" opacity="0.6" />
+      <rect x="0" y="0" width="320" height="220" rx="16" fill="url(#grad-completed)" />
+      <rect x="0" y="0" width="320" height="220" rx="16" fill="url(#card-mesh)" />
+      <rect x="1" y="1" width="318" height="218" rx="15" fill="none" stroke="url(#border-completed)" stroke-width="1.5" />
+      <rect x="1" y="1" width="318" height="218" rx="15" fill="none" stroke="url(#topHighlight)" stroke-width="1.5" />
+      <rect x="0" y="40" width="4" height="40" rx="2" fill="#22C55E" filter="url(#ai-glow)" />
+
+      <circle cx="40" cy="40" r="20" fill="#0D1B2A" stroke="#22C55E" stroke-width="1.5" />
+      <svg x="28" y="28" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/>
+      </svg>
+
+      <text x="75" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#F8FAFC">Prototype</text>
+
+      <rect x="230" y="30" width="75" height="24" rx="12" fill="#22C55E" fill-opacity="0.15" stroke="#22C55E" stroke-width="1" />
+      <text x="267.5" y="46" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" fill="#22C55E" text-anchor="middle">Completed</text>
+
+      <text x="25" y="90" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#CBD5E1">
+        <tspan x="25" dy="0">Transform concepts into</tspan>
+        <tspan x="25" dy="20">working software through</tspan>
+        <tspan x="25" dy="20">rapid experimentation.</tspan>
+      </text>
+
+      <g transform="translate(25, 170)">
+        <rect x="0" y="0" width="50" height="24" rx="6" fill="#102A43" stroke="#22C55E" stroke-width="1" stroke-opacity="0.5" />
+        <text x="25" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#22C55E" text-anchor="middle">MVP</text>
+
+        <rect x="60" y="0" width="55" height="24" rx="6" fill="#102A43" stroke="#22C55E" stroke-width="1" stroke-opacity="0.5" />
+        <text x="87.5" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#22C55E" text-anchor="middle">React</text>
+
+        <rect x="125" y="0" width="65" height="24" rx="6" fill="#102A43" stroke="#22C55E" stroke-width="1" stroke-opacity="0.5" />
+        <text x="157.5" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#22C55E" text-anchor="middle">Node.js</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Card 6: Build -->
+  <g transform="translate(1090, 590)">
+    <g class="float-2">
+      <rect x="0" y="20" width="320" height="220" rx="16" fill="#000000" filter="url(#ai-shadow)" opacity="0.6" />
+      <rect x="0" y="0" width="320" height="220" rx="16" fill="url(#grad-completed)" />
+      <rect x="0" y="0" width="320" height="220" rx="16" fill="url(#card-mesh)" />
+      <rect x="1" y="1" width="318" height="218" rx="15" fill="none" stroke="url(#border-completed)" stroke-width="1.5" />
+      <rect x="1" y="1" width="318" height="218" rx="15" fill="none" stroke="url(#topHighlight)" stroke-width="1.5" />
+      <rect x="0" y="40" width="4" height="40" rx="2" fill="#22C55E" filter="url(#ai-glow)" />
+
+      <circle cx="40" cy="40" r="20" fill="#0D1B2A" stroke="#22C55E" stroke-width="1.5" />
+      <svg x="28" y="28" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+      </svg>
+
+      <text x="75" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#F8FAFC">Build</text>
+
+      <rect x="230" y="30" width="75" height="24" rx="12" fill="#22C55E" fill-opacity="0.15" stroke="#22C55E" stroke-width="1" />
+      <text x="267.5" y="46" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" fill="#22C55E" text-anchor="middle">Completed</text>
+
+      <text x="25" y="90" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#CBD5E1">
+        <tspan x="25" dy="0">Engineer robust solutions</tspan>
+        <tspan x="25" dy="20">with clean architecture</tspan>
+        <tspan x="25" dy="20">and scalable patterns.</tspan>
+      </text>
+
+      <g transform="translate(25, 170)">
+        <rect x="0" y="0" width="45" height="24" rx="6" fill="#102A43" stroke="#22C55E" stroke-width="1" stroke-opacity="0.5" />
+        <text x="22.5" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#22C55E" text-anchor="middle">API</text>
+
+        <rect x="55" y="0" width="75" height="24" rx="6" fill="#102A43" stroke="#22C55E" stroke-width="1" stroke-opacity="0.5" />
+        <text x="92.5" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#22C55E" text-anchor="middle">Database</text>
+
+        <rect x="140" y="0" width="75" height="24" rx="6" fill="#102A43" stroke="#22C55E" stroke-width="1" stroke-opacity="0.5" />
+        <text x="177.5" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#22C55E" text-anchor="middle">Frontend</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Card 7: Deploy -->
+  <g transform="translate(590, 590)">
+    <g class="float-1">
+      <rect x="0" y="20" width="320" height="220" rx="16" fill="#000000" filter="url(#ai-shadow)" opacity="0.6" />
+      <rect x="0" y="0" width="320" height="220" rx="16" fill="url(#grad-focus)" />
+      <rect x="0" y="0" width="320" height="220" rx="16" fill="url(#card-mesh)" />
+      <rect x="1" y="1" width="318" height="218" rx="15" fill="none" stroke="url(#border-focus)" stroke-width="1.5" />
+      <rect x="1" y="1" width="318" height="218" rx="15" fill="none" stroke="url(#topHighlight)" stroke-width="1.5" />
+      <rect x="0" y="40" width="4" height="40" rx="2" fill="#38BDF8" filter="url(#ai-glow)" />
+
+      <circle cx="40" cy="40" r="20" fill="#0D1B2A" stroke="#38BDF8" stroke-width="1.5" />
+      <svg x="28" y="28" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
+      </svg>
+
+      <text x="75" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#F8FAFC">Deploy</text>
+
+      <rect x="220" y="30" width="85" height="24" rx="12" fill="#38BDF8" fill-opacity="0.15" stroke="#38BDF8" stroke-width="1" />
+      <text x="262.5" y="46" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" fill="#38BDF8" text-anchor="middle">Current Focus</text>
+
+      <text x="25" y="90" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#CBD5E1">
+        <tspan x="25" dy="0">Deliver production-ready</tspan>
+        <tspan x="25" dy="20">software with monitoring,</tspan>
+        <tspan x="25" dy="20">automation, and reliability.</tspan>
+      </text>
+
+      <g transform="translate(25, 170)">
+        <rect x="0" y="0" width="65" height="24" rx="6" fill="#102A43" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.5" />
+        <text x="32.5" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#38BDF8" text-anchor="middle">Docker</text>
+
+        <rect x="75" y="0" width="55" height="24" rx="6" fill="#102A43" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.5" />
+        <text x="102.5" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#38BDF8" text-anchor="middle">CI/CD</text>
+
+        <rect x="140" y="0" width="50" height="24" rx="6" fill="#102A43" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.5" />
+        <text x="165" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#38BDF8" text-anchor="middle">AWS</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Card 8: Measure -->
+  <g transform="translate(90, 590)">
+    <g class="float-2">
+      <rect x="0" y="20" width="320" height="220" rx="16" fill="#000000" filter="url(#ai-shadow)" opacity="0.6" />
+      <rect x="0" y="0" width="320" height="220" rx="16" fill="url(#grad-focus)" />
+      <rect x="0" y="0" width="320" height="220" rx="16" fill="url(#card-mesh)" />
+      <rect x="1" y="1" width="318" height="218" rx="15" fill="none" stroke="url(#border-focus)" stroke-width="1.5" />
+      <rect x="1" y="1" width="318" height="218" rx="15" fill="none" stroke="url(#topHighlight)" stroke-width="1.5" />
+      <rect x="0" y="40" width="4" height="40" rx="2" fill="#38BDF8" filter="url(#ai-glow)" />
+
+      <circle cx="40" cy="40" r="20" fill="#0D1B2A" stroke="#38BDF8" stroke-width="1.5" />
+      <svg x="28" y="28" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/>
+      </svg>
+
+      <text x="75" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#F8FAFC">Measure</text>
+
+      <rect x="220" y="30" width="85" height="24" rx="12" fill="#38BDF8" fill-opacity="0.15" stroke="#38BDF8" stroke-width="1" />
+      <text x="262.5" y="46" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" fill="#38BDF8" text-anchor="middle">Current Focus</text>
+
+      <text x="25" y="90" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#CBD5E1">
+        <tspan x="25" dy="0">Track performance metrics,</tspan>
+        <tspan x="25" dy="20">analyze user behavior,</tspan>
+        <tspan x="25" dy="20">and gather system logs.</tspan>
+      </text>
+
+      <g transform="translate(25, 170)">
+        <rect x="0" y="0" width="70" height="24" rx="6" fill="#102A43" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.5" />
+        <text x="35" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#38BDF8" text-anchor="middle">Grafana</text>
+
+        <rect x="80" y="0" width="65" height="24" rx="6" fill="#102A43" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.5" />
+        <text x="112.5" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#38BDF8" text-anchor="middle">Logging</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Row 3 -->
+  <!-- Card 9: Optimize -->
+  <g transform="translate(90, 1440)">
+    <g class="float-1">
+      <rect x="0" y="20" width="320" height="220" rx="16" fill="#000000" filter="url(#ai-shadow)" opacity="0.6" />
+      <rect x="0" y="0" width="320" height="220" rx="16" fill="url(#grad-next)" />
+      <rect x="0" y="0" width="320" height="220" rx="16" fill="url(#card-mesh)" />
+      <rect x="1" y="1" width="318" height="218" rx="15" fill="none" stroke="url(#border-next)" stroke-width="1.5" />
+      <rect x="1" y="1" width="318" height="218" rx="15" fill="none" stroke="url(#topHighlight)" stroke-width="1.5" />
+      <rect x="0" y="40" width="4" height="40" rx="2" fill="#F59E0B" filter="url(#ai-glow)" />
+
+      <circle cx="40" cy="40" r="20" fill="#0D1B2A" stroke="#F59E0B" stroke-width="1.5" />
+      <svg x="28" y="28" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1Z"/>
+      </svg>
+
+      <text x="75" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#F8FAFC">Optimize</text>
+
+      <rect x="230" y="30" width="75" height="24" rx="12" fill="#F59E0B" fill-opacity="0.15" stroke="#F59E0B" stroke-width="1" />
+      <text x="267.5" y="46" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" fill="#F59E0B" text-anchor="middle">Next Step</text>
+
+      <text x="25" y="90" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#CBD5E1">
+        <tspan x="25" dy="0">Refactor bottlenecks,</tspan>
+        <tspan x="25" dy="20">reduce latency, and</tspan>
+        <tspan x="25" dy="20">improve code efficiency.</tspan>
+      </text>
+
+      <g transform="translate(25, 170)">
+        <rect x="0" y="0" width="95" height="24" rx="6" fill="#102A43" stroke="#F59E0B" stroke-width="1" stroke-opacity="0.5" />
+        <text x="47.5" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#F59E0B" text-anchor="middle">Performance</text>
+
+        <rect x="105" y="0" width="70" height="24" rx="6" fill="#102A43" stroke="#F59E0B" stroke-width="1" stroke-opacity="0.5" />
+        <text x="140" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#F59E0B" text-anchor="middle">Profiling</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Card 10: Scale -->
+  <g transform="translate(590, 1440)">
+    <g class="float-2">
+      <rect x="0" y="20" width="320" height="220" rx="16" fill="#000000" filter="url(#ai-shadow)" opacity="0.6" />
+      <rect x="0" y="0" width="320" height="220" rx="16" fill="url(#grad-next)" />
+      <rect x="0" y="0" width="320" height="220" rx="16" fill="url(#card-mesh)" />
+      <rect x="1" y="1" width="318" height="218" rx="15" fill="none" stroke="url(#border-next)" stroke-width="1.5" />
+      <rect x="1" y="1" width="318" height="218" rx="15" fill="none" stroke="url(#topHighlight)" stroke-width="1.5" />
+      <rect x="0" y="40" width="4" height="40" rx="2" fill="#F59E0B" filter="url(#ai-glow)" />
+
+      <circle cx="40" cy="40" r="20" fill="#0D1B2A" stroke="#F59E0B" stroke-width="1.5" />
+      <svg x="28" y="28" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>
+      </svg>
+
+      <text x="75" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#F8FAFC">Scale</text>
+
+      <rect x="230" y="30" width="75" height="24" rx="12" fill="#F59E0B" fill-opacity="0.15" stroke="#F59E0B" stroke-width="1" />
+      <text x="267.5" y="46" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" fill="#F59E0B" text-anchor="middle">Next Step</text>
+
+      <text x="25" y="90" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#CBD5E1">
+        <tspan x="25" dy="0">Handle increased traffic</tspan>
+        <tspan x="25" dy="20">with distributed systems</tspan>
+        <tspan x="25" dy="20">and load balancing.</tspan>
+      </text>
+
+      <g transform="translate(25, 170)">
+        <rect x="0" y="0" width="45" height="24" rx="6" fill="#102A43" stroke="#F59E0B" stroke-width="1" stroke-opacity="0.5" />
+        <text x="22.5" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#F59E0B" text-anchor="middle">K8s</text>
+
+        <rect x="55" y="0" width="105" height="24" rx="6" fill="#102A43" stroke="#F59E0B" stroke-width="1" stroke-opacity="0.5" />
+        <text x="107.5" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#F59E0B" text-anchor="middle">Microservices</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Card 11: Open Source -->
+  <g transform="translate(1090, 1440)">
+    <g class="float-1">
+      <rect x="0" y="20" width="320" height="220" rx="16" fill="#000000" filter="url(#ai-shadow)" opacity="0.6" />
+      <rect x="0" y="0" width="320" height="220" rx="16" fill="url(#grad-future)" />
+      <rect x="0" y="0" width="320" height="220" rx="16" fill="url(#card-mesh)" />
+      <rect x="1" y="1" width="318" height="218" rx="15" fill="none" stroke="url(#border-future)" stroke-width="1.5" />
+      <rect x="1" y="1" width="318" height="218" rx="15" fill="none" stroke="url(#topHighlight)" stroke-width="1.5" />
+      <rect x="0" y="40" width="4" height="40" rx="2" fill="#94A3B8" filter="url(#ai-glow)" />
+
+      <circle cx="40" cy="40" r="20" fill="#0D1B2A" stroke="#94A3B8" stroke-width="1.5" />
+      <svg x="28" y="28" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 3v12"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/>
+      </svg>
+
+      <text x="75" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#F8FAFC">Open Source</text>
+
+      <rect x="220" y="30" width="85" height="24" rx="12" fill="#94A3B8" fill-opacity="0.15" stroke="#94A3B8" stroke-width="1" />
+      <text x="262.5" y="46" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" fill="#94A3B8" text-anchor="middle">Future Vision</text>
+
+      <text x="25" y="90" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#CBD5E1">
+        <tspan x="25" dy="0">Share tools with the</tspan>
+        <tspan x="25" dy="20">community, manage PRs,</tspan>
+        <tspan x="25" dy="20">and build ecosystems.</tspan>
+      </text>
+
+      <g transform="translate(25, 170)">
+        <rect x="0" y="0" width="65" height="24" rx="6" fill="#102A43" stroke="#94A3B8" stroke-width="1" stroke-opacity="0.5" />
+        <text x="32.5" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#94A3B8" text-anchor="middle">GitHub</text>
+
+        <rect x="75" y="0" width="85" height="24" rx="6" fill="#102A43" stroke="#94A3B8" stroke-width="1" stroke-opacity="0.5" />
+        <text x="117.5" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#94A3B8" text-anchor="middle">Community</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Card 12: Innovation -->
+  <g transform="translate(1590, 1440)">
+    <g class="float-2">
+      <rect x="0" y="20" width="320" height="220" rx="16" fill="#000000" filter="url(#ai-shadow)" opacity="0.6" />
+      <rect x="0" y="0" width="320" height="220" rx="16" fill="url(#grad-future)" />
+      <rect x="0" y="0" width="320" height="220" rx="16" fill="url(#card-mesh)" />
+      <rect x="1" y="1" width="318" height="218" rx="15" fill="none" stroke="url(#border-future)" stroke-width="1.5" />
+      <rect x="1" y="1" width="318" height="218" rx="15" fill="none" stroke="url(#topHighlight)" stroke-width="1.5" />
+      <rect x="0" y="40" width="4" height="40" rx="2" fill="#94A3B8" filter="url(#ai-glow)" />
+
+      <circle cx="40" cy="40" r="20" fill="#0D1B2A" stroke="#94A3B8" stroke-width="1.5" />
+      <svg x="28" y="28" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/>
+      </svg>
+
+      <text x="75" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#F8FAFC">Innovation</text>
+
+      <rect x="220" y="30" width="85" height="24" rx="12" fill="#94A3B8" fill-opacity="0.15" stroke="#94A3B8" stroke-width="1" />
+      <text x="262.5" y="46" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" fill="#94A3B8" text-anchor="middle">Future Vision</text>
+
+      <text x="25" y="90" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#CBD5E1">
+        <tspan x="25" dy="0">Push boundaries,</tspan>
+        <tspan x="25" dy="20">invent new solutions,</tspan>
+        <tspan x="25" dy="20">and redefine the standard.</tspan>
+      </text>
+
+      <g transform="translate(25, 170)">
+        <rect x="0" y="0" width="45" height="24" rx="6" fill="#102A43" stroke="#94A3B8" stroke-width="1" stroke-opacity="0.5" />
+        <text x="22.5" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#94A3B8" text-anchor="middle">R&amp;D</text>
+
+        <rect x="55" y="0" width="60" height="24" rx="6" fill="#102A43" stroke="#94A3B8" stroke-width="1" stroke-opacity="0.5" />
+        <text x="85" y="16" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#94A3B8" text-anchor="middle">Future</text>
+      </g>
+    </g>
+  </g>
+
 </svg>
