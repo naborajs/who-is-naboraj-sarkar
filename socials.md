@@ -24,7 +24,7 @@
 
 <p align="center">
   <a href="https://github.com/naborajs"><img src="https://img.shields.io/badge/GitHub-@naborajs-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-  <a href="mailto:nishant.ns.business@gmail.com"><img src="https://img.shields.io/badge/Email-Business-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="mailto:msg@naborajs.me"><img src="https://img.shields.io/badge/Email-Business-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://t.me/Nishantsarkar10k"><img src="https://img.shields.io/badge/Telegram-Personal-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" /></a>
 </p>
 
@@ -35,7 +35,7 @@
 | Platform         | Link                                                                                                   | Why it matters                         |
 | ------------------| --------------------------------------------------------------------------------------------------------| ----------------------------------------|
 | GitHub           | [github.com/naborajs](https://github.com/naborajs)                                                     | Source, projects, open source activity |
-| Email            | [nishant.ns.business@gmail.com](mailto:nishant.ns.business@gmail.com)                                  | Business inquiries and collaboration   |
+| Email            | [msg@naborajs.me](mailto:msg@naborajs.me)                                                              | Business inquiries and collaboration   |
 | Instagram        | [instagram.com/naborajs](https://instagram.com/naborajs)                                               | Visual project snippets and updates    |
 | YouTube          | [youtube.com/@Nishant_sarkar](https://youtube.com/@Nishant_sarkar)                                     | Learning experiments and walkthroughs  |
 | X (Twitter)      | [x.com/ItsNaborajs](https://x.com/ItsNaborajs)                                                         | quick engineering updates              |
@@ -74,7 +74,7 @@
 ## Contact section
 
 <p align="center">
-  <a href="mailto:nishant.ns.business@gmail.com"><img src="https://img.shields.io/badge/Business%20Email-Contact%20Now-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Business email" /></a>
+  <a href="mailto:msg@naborajs.me"><img src="https://img.shields.io/badge/Business%20Email-Contact%20Now-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Business email" /></a>
 </p>
 
 <div align="center">
