@@ -197,13 +197,13 @@ Browser → Server → API → Device → Feedback
 
 ## Connect
 
-| Channel | Handle |
-| --- | --- |
-| GitHub | [@naborajs](https://github.com/naborajs) |
-| Telegram | [@Nishantsarkar10k](https://t.me/Nishantsarkar10k) |
-| Email | nishant.ns.business@gmail.com |
-| WhatsApp | +91 8900653250 |
-| Social Hub | [All public platforms](socials.md) |
+| Channel    | Handle                                             |
+| ------------| ----------------------------------------------------|
+| GitHub     | [@naborajs](https://github.com/naborajs)           |
+| Telegram   | [@Nishantsarkar10k](https://t.me/Nishantsarkar10k) |
+| Email      | msg@naborajs.me                                                  |
+| WhatsApp   | +91 8900653250                                     |
+| Social Hub | [All public platforms](socials.md)                 |
 
 ---
 
