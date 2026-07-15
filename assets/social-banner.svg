@@ -1,28 +1,78 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#070b17" />
-      <stop offset="100%" stop-color="#121827" />
+      <stop offset="0%" stop-color="#05060d" />
+      <stop offset="45%" stop-color="#0b0f1f" />
+      <stop offset="100%" stop-color="#141b30" />
     </linearGradient>
-    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#7c3aed" />
+    <linearGradient id="borderGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="50%" stop-color="#8b5cf6" />
       <stop offset="100%" stop-color="#38bdf8" />
     </linearGradient>
+    <radialGradient id="hubGrad" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#c4b5fd" />
+      <stop offset="55%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </radialGradient>
+    <pattern id="dotgrid" width="46" height="46" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#ffffff" opacity="0.05" />
+    </pattern>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
   </defs>
+
   <rect width="1200" height="360" fill="url(#bg)" />
-  <circle cx="250" cy="220" r="90" fill="#2d334c" opacity="0.7" />
-  <circle cx="980" cy="120" r="110" fill="#1f2937" opacity="0.65" />
-  <rect x="64" y="52" width="520" height="230" rx="32" fill="#0f172a" stroke="url(#grad)" stroke-width="2" />
-  <text x="100" y="114" font-family="Inter, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700">Digital Identity</text>
-  <text x="100" y="162" font-family="Inter, Arial, sans-serif" font-size="22" fill="#94a3b8">Choose where to connect.</text>
-  <g transform="translate(100, 190)">
-    <rect x="0" y="0" width="170" height="34" rx="16" fill="#111827" />
-    <text x="20" y="22" font-family="Inter, Arial, sans-serif" font-size="14" fill="#38bdf8">GitHub</text>
-    <rect x="190" y="0" width="200" height="34" rx="16" fill="#111827" />
-    <text x="210" y="22" font-family="Inter, Arial, sans-serif" font-size="14" fill="#7c3aed">AI · Automation</text>
-    <rect x="410" y="0" width="220" height="34" rx="16" fill="#111827" />
-    <text x="430" y="22" font-family="Inter, Arial, sans-serif" font-size="14" fill="#38bdf8">Telegram · Workflow</text>
+  <rect width="1200" height="360" fill="url(#dotgrid)" />
+
+  <!-- identity card -->
+  <rect x="64" y="52" width="520" height="232" rx="28" fill="#0b1020" fill-opacity="0.92" stroke="url(#borderGrad)" stroke-width="1.8" />
+
+  <text x="100" y="80" font-family="'JetBrains Mono', Consolas, monospace" font-size="12" letter-spacing="3" font-weight="600" fill="#7dd3fc">SOCIAL HUB</text>
+  <text x="100" y="128" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="42" font-weight="800" fill="#f8fafc">Digital Identity</text>
+  <text x="100" y="162" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="19" fill="#94a3b8">Choose where to connect.</text>
+
+  <g transform="translate(100, 196)">
+    <rect x="0" y="0" width="90" height="32" rx="16" fill="#111a2e" stroke="#ffffff" stroke-opacity="0.08" />
+    <circle cx="14" cy="16" r="3" fill="#38bdf8" />
+    <text x="26" y="20.5" font-family="Inter, Arial, sans-serif" font-size="12.5" fill="#7dd3fc">GitHub</text>
+
+    <rect x="102" y="0" width="150" height="32" rx="16" fill="#111a2e" stroke="#ffffff" stroke-opacity="0.08" />
+    <circle cx="116" cy="16" r="3" fill="#a78bfa" />
+    <text x="128" y="20.5" font-family="Inter, Arial, sans-serif" font-size="12.5" fill="#c4b5fd">AI · Automation</text>
+
+    <rect x="264" y="0" width="180" height="32" rx="16" fill="#111a2e" stroke="#ffffff" stroke-opacity="0.08" />
+    <circle cx="278" cy="16" r="3" fill="#fb7185" />
+    <text x="290" y="20.5" font-family="Inter, Arial, sans-serif" font-size="12.5" fill="#fda4af">Telegram · Workflow</text>
   </g>
-  <path d="M640 210 C700 180 760 220 820 200" fill="none" stroke="#38bdf8" stroke-width="3" opacity="0.65" />
-  <path d="M640 240 C700 210 760 250 820 230" fill="none" stroke="#7c3aed" stroke-width="3" opacity="0.65" />
+
+  <!-- bridge from identity card into the network -->
+  <circle cx="584" cy="168" r="3" fill="#38bdf8" />
+  <path d="M584 168 C660 150 760 190 900 180" fill="none" stroke="url(#borderGrad)" stroke-width="2" stroke-dasharray="1 7" stroke-linecap="round" opacity="0.6" />
+
+  <!-- network: the real platforms, not decoration -->
+  <line x1="900" y1="180" x2="1000" y2="84" stroke="#38bdf8" stroke-width="1.3" opacity="0.4" stroke-linecap="round" />
+  <line x1="900" y1="180" x2="1108" y2="142" stroke="#fb7185" stroke-width="1.3" opacity="0.4" stroke-linecap="round" />
+  <line x1="900" y1="180" x2="1082" y2="258" stroke="#a78bfa" stroke-width="1.3" opacity="0.4" stroke-linecap="round" />
+  <line x1="900" y1="180" x2="958" y2="286" stroke="#fbbf24" stroke-width="1.3" opacity="0.4" stroke-linecap="round" />
+
+  <circle cx="900" cy="180" r="34" fill="url(#hubGrad)" filter="url(#glow)" opacity="0.95" />
+  <text x="900" y="186" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800" fill="#ffffff" text-anchor="middle">NS</text>
+
+  <circle cx="1000" cy="84" r="20" fill="#0f172a" fill-opacity="0.9" stroke="#38bdf8" stroke-width="1.6" />
+  <text x="1000" y="88" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#7dd3fc" text-anchor="middle">GH</text>
+
+  <circle cx="1108" cy="142" r="20" fill="#0f172a" fill-opacity="0.9" stroke="#fb7185" stroke-width="1.6" />
+  <text x="1108" y="146" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#fda4af" text-anchor="middle">TG</text>
+
+  <circle cx="1082" cy="258" r="20" fill="#0f172a" fill-opacity="0.9" stroke="#a78bfa" stroke-width="1.6" />
+  <text x="1082" y="262" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#c4b5fd" text-anchor="middle">X</text>
+
+  <circle cx="958" cy="286" r="20" fill="#0f172a" fill-opacity="0.9" stroke="#fbbf24" stroke-width="1.6" />
+  <text x="958" y="290" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#fde68a" text-anchor="middle">YT</text>
 </svg>
