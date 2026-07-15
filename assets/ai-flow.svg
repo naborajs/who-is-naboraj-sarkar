@@ -1,31 +1,527 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" width="1000" height="320">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1000" width="100%" height="100%">
+  <title>AI Agent Brain Architecture</title>
+  <desc>A highly detailed, animated representation of a living AI brain featuring neural connections, memory systems, reasoning layers, tool execution, and continuous feedback loops.</desc>
+
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0e1726" />
-      <stop offset="100%" stop-color="#111827" />
+    <!-- Background Blurs and Gradients -->
+    <filter id="ai-aurora-blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="120" />
+    </filter>
+    <radialGradient id="coreAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#06B6D4" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="brainCoreGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#06B6D4" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#102A43" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- UI Card Styling -->
+    <linearGradient id="ai-cardGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#102A43" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#0D1B2A" stop-opacity="0.9" />
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="100%" stop-color="#7c3aed" />
+    <linearGradient id="ai-cardBorder" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#102A43" stop-opacity="0.15" />
     </linearGradient>
+    <linearGradient id="topHighlight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" stop-opacity="0.25" />
+      <stop offset="15%" stop-color="#F8FAFC" stop-opacity="0.0" />
+      <stop offset="100%" stop-color="#F8FAFC" stop-opacity="0.0" />
+    </linearGradient>
+    
+    <pattern id="card-mesh" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#F8FAFC" opacity="0.03" />
+    </pattern>
+
+    <filter id="ai-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="20" result="blur" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.6 0" />
+    </filter>
+    
+    <filter id="ai-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="ai-glow-lg" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Neural Web Background Pattern -->
+    <pattern id="neural-web" width="300" height="300" patternUnits="userSpaceOnUse">
+      <path d="M 30 50 C 100 80, 150 20, 200 100 C 250 180, 200 250, 100 220 C 50 200, 10 150, 30 50 Z" fill="none" stroke="#38BDF8" stroke-width="0.5" opacity="0.15" />
+      <path d="M 200 100 C 250 50, 280 150, 250 250 C 200 300, 150 280, 100 220" fill="none" stroke="#06B6D4" stroke-width="0.5" opacity="0.1" />
+      <circle cx="30" cy="50" r="2" fill="#38BDF8" opacity="0.3" class="pulse" />
+      <circle cx="200" cy="100" r="3" fill="#06B6D4" opacity="0.2" class="pulse" style="animation-delay: 1s;" />
+      <circle cx="100" cy="220" r="2.5" fill="#22C55E" opacity="0.3" class="pulse" style="animation-delay: 2s;" />
+      <circle cx="250" cy="250" r="1.5" fill="#F59E0B" opacity="0.2" class="pulse" style="animation-delay: 3s;" />
+    </pattern>
+
+    <!-- Master Data Paths -->
+    <path id="p-in-rs" d="M 360 250 C 420 250, 410 500, 460 500" />
+    <path id="p-mem-rs" d="M 360 525 C 410 525, 410 500, 460 500" />
+    <path id="p-know-rs" d="M 360 790 C 420 790, 410 500, 460 500" />
+    <path id="p-rs-br" d="M 680 500 L 900 500" />
+    <path id="p-br-ex" d="M 900 500 L 1140 500" />
+    <path id="p-ex-tl" d="M 1360 500 C 1400 500, 1400 290, 1440 290" />
+    <path id="p-ex-out" d="M 1360 500 C 1400 500, 1400 600, 1440 600" />
+    <path id="p-tl-out" d="M 1560 430 L 1560 500" />
+    <path id="p-fb-loop" d="M 1560 700 L 1560 880 C 1560 920, 1520 920, 1480 920 L 310 920 C 270 920, 230 920, 230 880 L 230 650" />
   </defs>
-  <rect width="1000" height="320" rx="24" fill="url(#bg)" />
-  <rect x="72" y="84" width="220" height="120" rx="20" fill="#111827" stroke="#334155" stroke-width="1.6" />
-  <rect x="390" y="44" width="220" height="230" rx="20" fill="#111827" stroke="#334155" stroke-width="1.6" />
-  <rect x="708" y="84" width="220" height="120" rx="20" fill="#111827" stroke="#334155" stroke-width="1.6" />
-  <text x="182" y="120" font-family="Inter, Arial, sans-serif" fill="#38bdf8" font-size="20" font-weight="700" text-anchor="middle">Input</text>
-  <text x="182" y="150" font-family="Inter, Arial, sans-serif" fill="#cbd5e1" font-size="14" text-anchor="middle">data • prompts • context</text>
-  <text x="500" y="90" font-family="Inter, Arial, sans-serif" fill="#7c3aed" font-size="20" font-weight="700" text-anchor="middle">Process</text>
-  <text x="500" y="120" font-family="Inter, Arial, sans-serif" fill="#cbd5e1" font-size="14" text-anchor="middle">LLM orchestration</text>
-  <text x="500" y="145" font-family="Inter, Arial, sans-serif" fill="#cbd5e1" font-size="14" text-anchor="middle">memory • tools • automation</text>
-  <text x="818" y="120" font-family="Inter, Arial, sans-serif" fill="#38bdf8" font-size="20" font-weight="700" text-anchor="middle">Output</text>
-  <text x="818" y="150" font-family="Inter, Arial, sans-serif" fill="#cbd5e1" font-size="14" text-anchor="middle">actions • replies • logs</text>
-  <path d="M292 144 L390 144" stroke="#38bdf8" stroke-width="4" marker-end="url(#arr)" />
-  <path d="M610 144 L708 144" stroke="#38bdf8" stroke-width="4" marker-end="url(#arr)" />
-  <defs>
-    <marker id="arr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M0 0 L10 5 L0 10 Z" fill="#38bdf8" />
-    </marker>
-  </defs>
-  <text x="500" y="260" font-family="Inter, Arial, sans-serif" fill="#94a3b8" font-size="14" text-anchor="middle">Agent workflow: Input → Process → Output</text>
+
+  <style>
+    @keyframes float1 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+    @keyframes float2 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+    @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
+    @keyframes breatheBtn { 0%, 100% { fill-opacity: 0.05; } 50% { fill-opacity: 0.25; } }
+    @keyframes spin1 { to { stroke-dashoffset: 1000; } }
+    @keyframes spinRev1 { to { stroke-dashoffset: -1000; } }
+    @keyframes spin2 { to { stroke-dashoffset: 500; } }
+    @keyframes spinRev2 { to { stroke-dashoffset: -500; } }
+    @keyframes pipeFlow { from { stroke-dashoffset: 40; } to { stroke-dashoffset: 0; } }
+    @keyframes scanner { 0%, 100% { transform: translateY(-200px); opacity: 0; } 10%, 90% { opacity: 1; } 50% { transform: translateY(200px); } }
+    @keyframes particleDrift { 0% { transform: translate(0,0); opacity: 0; } 20% { opacity: 0.5; } 80% { opacity: 0.5; } 100% { transform: translate(15px, -30px); opacity: 0; } }
+    
+    .float-1 { animation: float1 6s ease-in-out infinite; }
+    .float-2 { animation: float2 8s ease-in-out infinite; }
+    .pulse { animation: pulse 3s ease-in-out infinite; }
+    .breathe-btn { animation: breatheBtn 4s ease-in-out infinite; }
+    .spin-1 { animation: spin1 40s linear infinite; }
+    .spin-rev-1 { animation: spinRev1 60s linear infinite; }
+    .spin-2 { animation: spin2 25s linear infinite; }
+    .spin-rev-2 { animation: spinRev2 35s linear infinite; }
+    .pipe-flow { animation: pipeFlow 1s linear infinite; }
+    .scanner { animation: scanner 8s linear infinite; }
+    .particle { animation: particleDrift linear infinite; }
+    
+    .glass-panel {
+      fill: url(#ai-cardGrad);
+      stroke: url(#ai-cardBorder);
+      stroke-width: 1.5;
+    }
+  </style>
+
+  <!-- Deep Space Background -->
+  <rect width="1800" height="1000" fill="#07111F" />
+
+  <!-- Neural Web Patterns -->
+  <rect width="1800" height="1000" fill="url(#neural-web)" />
+  <rect width="1800" height="1000" fill="url(#neural-web)" transform="scale(-1, 1) translate(-1800, 0)" opacity="0.5" />
+
+  <!-- Aurora Glows -->
+  <ellipse cx="20%" cy="30%" rx="30%" ry="30%" fill="#06B6D4" filter="url(#ai-aurora-blur)" opacity="0.2" />
+  <ellipse cx="80%" cy="40%" rx="30%" ry="30%" fill="#38BDF8" filter="url(#ai-aurora-blur)" opacity="0.15" />
+  <ellipse cx="50%" cy="80%" rx="40%" ry="20%" fill="#22C55E" filter="url(#ai-aurora-blur)" opacity="0.1" />
+  <ellipse cx="90%" cy="90%" rx="20%" ry="20%" fill="#F59E0B" filter="url(#ai-aurora-blur)" opacity="0.15" />
+
+  <!-- Floating OS Tech Labels -->
+  <g font-family="monospace, system-ui, sans-serif" font-size="11" fill="#38BDF8" opacity="0.4" font-weight="600" letter-spacing="2">
+    <text x="50" y="50" class="float-1">AI_OS // KERNEL ONLINE</text>
+    <text x="50" y="70" class="float-2">SYS.LOAD: 4.02ms</text>
+    <text x="50" y="90" class="float-1">NEURAL.NET: ACTIVE</text>
+    <text x="1750" y="50" class="float-2" text-anchor="end">MEMORY.ALLOC // 1024TB</text>
+    <text x="1750" y="70" class="float-1" text-anchor="end">VECTOR.DB // CONNECTED</text>
+    <text x="50" y="950" class="float-2">AGENT.REASONING // RUNNING</text>
+    <text x="1750" y="950" class="float-1" text-anchor="end">CONTINUOUS.LOOP // TRUE</text>
+  </g>
+
+  <!-- Floating Particles -->
+  <circle cx="200" cy="300" r="3" fill="#38BDF8" class="particle" style="animation-duration: 9s;" filter="url(#ai-glow)" />
+  <circle cx="1500" cy="800" r="4" fill="#06B6D4" class="particle" style="animation-duration: 14s;" filter="url(#ai-glow)" />
+  <circle cx="1200" cy="200" r="2.5" fill="#22C55E" class="particle" style="animation-duration: 11s;" filter="url(#ai-glow)" />
+  <circle cx="500" cy="800" r="3.5" fill="#F59E0B" class="particle" style="animation-duration: 15s;" filter="url(#ai-glow)" />
+  <circle cx="800" cy="150" r="2" fill="#F8FAFC" class="particle" style="animation-duration: 12s;" filter="url(#ai-glow)" />
+
+  <!-- ======================== -->
+  <!-- DATA FLOW PIPES & CONNECTIONS -->
+  <!-- ======================== -->
+  <g id="data-pipes">
+    <!-- Thick Base Lines (Shadow/Glass Backing) -->
+    <use href="#p-in-rs" stroke="#0D1B2A" stroke-width="8" fill="none" opacity="0.8" />
+    <use href="#p-mem-rs" stroke="#0D1B2A" stroke-width="8" fill="none" opacity="0.8" />
+    <use href="#p-know-rs" stroke="#0D1B2A" stroke-width="8" fill="none" opacity="0.8" />
+    <use href="#p-rs-br" stroke="#0D1B2A" stroke-width="8" fill="none" opacity="0.8" />
+    <use href="#p-br-ex" stroke="#0D1B2A" stroke-width="8" fill="none" opacity="0.8" />
+    <use href="#p-ex-tl" stroke="#0D1B2A" stroke-width="8" fill="none" opacity="0.8" />
+    <use href="#p-ex-out" stroke="#0D1B2A" stroke-width="8" fill="none" opacity="0.8" />
+    <use href="#p-tl-out" stroke="#0D1B2A" stroke-width="8" fill="none" opacity="0.8" />
+    <use href="#p-fb-loop" stroke="#0D1B2A" stroke-width="8" fill="none" opacity="0.8" />
+
+    <!-- Thin Accent Lines -->
+    <use href="#p-in-rs" stroke="#06B6D4" stroke-width="2" fill="none" opacity="0.3" />
+    <use href="#p-mem-rs" stroke="#22C55E" stroke-width="2" fill="none" opacity="0.3" />
+    <use href="#p-know-rs" stroke="#F59E0B" stroke-width="2" fill="none" opacity="0.3" />
+    <use href="#p-rs-br" stroke="#38BDF8" stroke-width="2" fill="none" opacity="0.3" />
+    <use href="#p-br-ex" stroke="#38BDF8" stroke-width="2" fill="none" opacity="0.3" />
+    <use href="#p-ex-tl" stroke="#F59E0B" stroke-width="2" fill="none" opacity="0.3" />
+    <use href="#p-ex-out" stroke="#22C55E" stroke-width="2" fill="none" opacity="0.3" />
+    <use href="#p-tl-out" stroke="#F59E0B" stroke-width="2" fill="none" opacity="0.3" />
+    <use href="#p-fb-loop" stroke="#22C55E" stroke-width="2" fill="none" opacity="0.3" />
+
+    <!-- Dashed Animated Flow Lines -->
+    <use href="#p-in-rs" stroke="#06B6D4" stroke-width="2" fill="none" stroke-dasharray="10 30" class="pipe-flow" filter="url(#ai-glow)" />
+    <use href="#p-mem-rs" stroke="#22C55E" stroke-width="2" fill="none" stroke-dasharray="10 30" class="pipe-flow" filter="url(#ai-glow)" />
+    <use href="#p-know-rs" stroke="#F59E0B" stroke-width="2" fill="none" stroke-dasharray="10 30" class="pipe-flow" filter="url(#ai-glow)" />
+    <use href="#p-rs-br" stroke="#38BDF8" stroke-width="2" fill="none" stroke-dasharray="10 30" class="pipe-flow" filter="url(#ai-glow)" />
+    <use href="#p-br-ex" stroke="#38BDF8" stroke-width="2" fill="none" stroke-dasharray="10 30" class="pipe-flow" filter="url(#ai-glow)" />
+    <use href="#p-ex-tl" stroke="#F59E0B" stroke-width="2" fill="none" stroke-dasharray="10 30" class="pipe-flow" filter="url(#ai-glow)" />
+    <use href="#p-ex-out" stroke="#22C55E" stroke-width="2" fill="none" stroke-dasharray="10 30" class="pipe-flow" filter="url(#ai-glow)" />
+    <use href="#p-tl-out" stroke="#F59E0B" stroke-width="2" fill="none" stroke-dasharray="10 30" class="pipe-flow" filter="url(#ai-glow)" />
+    <use href="#p-fb-loop" stroke="#22C55E" stroke-width="2" fill="none" stroke-dasharray="10 30" class="pipe-flow" filter="url(#ai-glow)" />
+
+    <!-- Foreground Glowing Data Packets -->
+    <circle r="4" fill="#F8FAFC" filter="url(#ai-glow-lg)"><animateMotion dur="4s" repeatCount="indefinite"><mpath href="#p-in-rs" /></animateMotion></circle>
+    <circle r="4" fill="#F8FAFC" filter="url(#ai-glow-lg)"><animateMotion dur="4s" begin="2s" repeatCount="indefinite"><mpath href="#p-in-rs" /></animateMotion></circle>
+    
+    <circle r="4" fill="#F8FAFC" filter="url(#ai-glow-lg)"><animateMotion dur="5s" repeatCount="indefinite"><mpath href="#p-mem-rs" /></animateMotion></circle>
+    <circle r="4" fill="#F8FAFC" filter="url(#ai-glow-lg)"><animateMotion dur="5s" begin="2.5s" repeatCount="indefinite"><mpath href="#p-mem-rs" /></animateMotion></circle>
+    
+    <circle r="4" fill="#F8FAFC" filter="url(#ai-glow-lg)"><animateMotion dur="4s" repeatCount="indefinite"><mpath href="#p-know-rs" /></animateMotion></circle>
+    <circle r="4" fill="#F8FAFC" filter="url(#ai-glow-lg)"><animateMotion dur="4s" begin="2s" repeatCount="indefinite"><mpath href="#p-know-rs" /></animateMotion></circle>
+    
+    <circle r="6" fill="#F8FAFC" filter="url(#ai-glow-lg)"><animateMotion dur="2s" repeatCount="indefinite"><mpath href="#p-rs-br" /></animateMotion></circle>
+    <circle r="6" fill="#F8FAFC" filter="url(#ai-glow-lg)"><animateMotion dur="2s" begin="1s" repeatCount="indefinite"><mpath href="#p-rs-br" /></animateMotion></circle>
+    
+    <circle r="6" fill="#F8FAFC" filter="url(#ai-glow-lg)"><animateMotion dur="2s" repeatCount="indefinite"><mpath href="#p-br-ex" /></animateMotion></circle>
+    <circle r="6" fill="#F8FAFC" filter="url(#ai-glow-lg)"><animateMotion dur="2s" begin="1s" repeatCount="indefinite"><mpath href="#p-br-ex" /></animateMotion></circle>
+    
+    <circle r="4" fill="#F8FAFC" filter="url(#ai-glow-lg)"><animateMotion dur="3s" repeatCount="indefinite"><mpath href="#p-ex-tl" /></animateMotion></circle>
+    <circle r="4" fill="#F8FAFC" filter="url(#ai-glow-lg)"><animateMotion dur="3s" repeatCount="indefinite"><mpath href="#p-ex-out" /></animateMotion></circle>
+    <circle r="4" fill="#F8FAFC" filter="url(#ai-glow-lg)"><animateMotion dur="2s" repeatCount="indefinite"><mpath href="#p-tl-out" /></animateMotion></circle>
+    
+    <!-- Massive Feedback Loop Packets -->
+    <circle r="6" fill="#22C55E" filter="url(#ai-glow-lg)"><animateMotion dur="15s" begin="0s" repeatCount="indefinite"><mpath href="#p-fb-loop" /></animateMotion></circle>
+    <circle r="6" fill="#06B6D4" filter="url(#ai-glow-lg)"><animateMotion dur="15s" begin="5s" repeatCount="indefinite"><mpath href="#p-fb-loop" /></animateMotion></circle>
+    <circle r="6" fill="#F59E0B" filter="url(#ai-glow-lg)"><animateMotion dur="15s" begin="10s" repeatCount="indefinite"><mpath href="#p-fb-loop" /></animateMotion></circle>
+  </g>
+
+  <!-- ======================== -->
+  <!-- CENTRAL AI BRAIN CORE -->
+  <!-- ======================== -->
+  <g transform="translate(900, 500)">
+    <!-- Base Core Glow with native SVG animate for safety -->
+    <circle cx="0" cy="0" r="280" fill="url(#coreAura)" opacity="0.8">
+      <animate attributeName="r" values="270;290;270" dur="6s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.6;0.9;0.6" dur="6s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Rotating Dashed Rings representing Neural Layers -->
+    <circle cx="0" cy="0" r="230" fill="none" stroke="#06B6D4" stroke-width="1.5" stroke-dasharray="10 40 80 20" class="spin-1" opacity="0.6" />
+    <circle cx="0" cy="0" r="250" fill="none" stroke="#38BDF8" stroke-width="0.5" stroke-dasharray="200 100" class="spin-rev-1" opacity="0.4" />
+    <circle cx="0" cy="0" r="180" fill="none" stroke="#22C55E" stroke-width="2" stroke-dasharray="15 60" class="spin-2" opacity="0.7" />
+    <circle cx="0" cy="0" r="150" fill="none" stroke="#F59E0B" stroke-width="1" stroke-dasharray="4 12" class="spin-rev-2" opacity="0.5" />
+    
+    <!-- Solid Inner Brain -->
+    <circle cx="0" cy="0" r="110" fill="url(#brainCoreGrad)" filter="url(#ai-glow-lg)">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="4s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Internal Brain Connections -->
+    <line x1="0" y1="-110" x2="0" y2="110" stroke="#38BDF8" stroke-width="1.5" opacity="0.4" />
+    <line x1="-110" y1="0" x2="110" y2="0" stroke="#38BDF8" stroke-width="1.5" opacity="0.4" />
+    <line x1="-78" y1="-78" x2="78" y2="78" stroke="#38BDF8" stroke-width="1.5" opacity="0.4" />
+    <line x1="-78" y1="78" x2="78" y2="-78" stroke="#38BDF8" stroke-width="1.5" opacity="0.4" />
+    
+    <g stroke="#F8FAFC" stroke-width="2" opacity="0.9" filter="url(#ai-glow)">
+      <path d="M 0 -80 C 40 -80, 70 -40, 70 0 C 70 40, 40 80, 0 80 C -40 80, -70 40, -70 0 C -70 -40, -40 -80, 0 -80 Z" fill="none" />
+    </g>
+    
+    <!-- Central Spark -->
+    <circle cx="0" cy="0" r="20" fill="#F8FAFC" filter="url(#ai-glow-lg)">
+      <animate attributeName="r" values="18;24;18" dur="3s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Static Orbiting Neural Nodes -->
+    <g transform="translate(0, -110)">
+       <circle cx="0" cy="0" r="14" fill="#0D1B2A" stroke="#06B6D4" stroke-width="2" />
+       <circle cx="0" cy="0" r="6" fill="#06B6D4" filter="url(#ai-glow)" class="pulse" style="animation-delay: 0s" />
+       <text x="22" y="4" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" font-weight="600">Attention</text>
+    </g>
+    <g transform="translate(110, 0)">
+       <circle cx="0" cy="0" r="14" fill="#0D1B2A" stroke="#F59E0B" stroke-width="2" />
+       <circle cx="0" cy="0" r="6" fill="#F59E0B" filter="url(#ai-glow)" class="pulse" style="animation-delay: 1s" />
+       <text x="22" y="4" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" font-weight="600">Inference</text>
+    </g>
+    <g transform="translate(0, 110)">
+       <circle cx="0" cy="0" r="14" fill="#0D1B2A" stroke="#22C55E" stroke-width="2" />
+       <circle cx="0" cy="0" r="6" fill="#22C55E" filter="url(#ai-glow)" class="pulse" style="animation-delay: 2s" />
+       <text x="22" y="4" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" font-weight="600">Context</text>
+    </g>
+    <g transform="translate(-110, 0)">
+       <circle cx="0" cy="0" r="14" fill="#0D1B2A" stroke="#38BDF8" stroke-width="2" />
+       <circle cx="0" cy="0" r="6" fill="#38BDF8" filter="url(#ai-glow)" class="pulse" style="animation-delay: 3s" />
+       <text x="-22" y="4" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" text-anchor="end" font-weight="600">Prediction</text>
+    </g>
+    
+    <text x="0" y="145" font-family="monospace, system-ui, sans-serif" font-size="15" font-weight="800" fill="#F8FAFC" text-anchor="middle" letter-spacing="4">NEURAL CORE</text>
+    
+    <!-- Core Scanning Beam -->
+    <line x1="-150" y1="0" x2="150" y2="0" stroke="#06B6D4" stroke-width="1.5" opacity="0.8" class="scanner" filter="url(#ai-glow)" />
+  </g>
+
+  <!-- ======================== -->
+  <!-- GLASS PANEL SUBSYSTEMS -->
+  <!-- ======================== -->
+
+  <!-- Card 1: Input Pipeline -->
+  <g transform="translate(100, 150)">
+    <g class="float-1">
+      <rect x="0" y="20" width="260" height="200" rx="20" fill="#000000" filter="url(#ai-shadow)" opacity="0.75" />
+      <rect x="0" y="0" width="260" height="200" rx="20" class="glass-panel" />
+      <rect x="0" y="0" width="260" height="200" rx="20" fill="url(#card-mesh)" />
+      <rect x="1" y="1" width="258" height="198" rx="19" fill="none" stroke="url(#topHighlight)" stroke-width="1.5" />
+      <rect x="0" y="30" width="4" height="40" rx="2" fill="#06B6D4" filter="url(#ai-glow)" />
+      
+      <g transform="translate(20, 25)">
+         <circle cx="6" cy="-4" r="4" fill="#06B6D4" class="pulse" />
+         <text x="20" y="0" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#F8FAFC" letter-spacing="1">INPUT PIPELINE</text>
+      </g>
+      <line x1="20" y1="40" x2="240" y2="40" stroke="#102A43" stroke-width="2" />
+      
+      <rect x="20" y="60" width="100" height="32" rx="8" fill="#0D1B2A" stroke="#06B6D4" stroke-width="1.5" />
+      <text x="70" y="80" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" text-anchor="middle">User Prompt</text>
+      <line x1="70" y1="92" x2="70" y2="108" stroke="#06B6D4" stroke-dasharray="2 2" />
+      
+      <rect x="20" y="108" width="100" height="32" rx="8" fill="#0D1B2A" stroke="#06B6D4" stroke-width="1.5" />
+      <text x="70" y="128" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" text-anchor="middle">Input Parser</text>
+      <line x1="120" y1="76" x2="140" y2="76" stroke="#06B6D4" stroke-dasharray="2 2" />
+      
+      <rect x="140" y="60" width="100" height="32" rx="8" fill="#0D1B2A" stroke="#06B6D4" stroke-width="1.5" />
+      <text x="190" y="80" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" text-anchor="middle">Intent Detect</text>
+      <line x1="190" y1="92" x2="190" y2="108" stroke="#06B6D4" stroke-dasharray="2 2" />
+      
+      <rect x="140" y="108" width="100" height="32" rx="8" fill="#0D1B2A" stroke="#06B6D4" stroke-width="1.5" />
+      <text x="190" y="128" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" text-anchor="middle">Context Builder</text>
+      
+      <rect x="20" y="150" width="220" height="32" rx="8" fill="#06B6D4" fill-opacity="0.1" stroke="#06B6D4" stroke-width="1.5" class="breathe-btn" />
+      <text x="130" y="170" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" fill="#06B6D4" text-anchor="middle">Token Optimization</text>
+    </g>
+  </g>
+
+  <!-- Card 2: Memory System -->
+  <g transform="translate(100, 400)">
+    <g class="float-2">
+      <rect x="0" y="20" width="260" height="250" rx="20" fill="#000000" filter="url(#ai-shadow)" opacity="0.75" />
+      <rect x="0" y="0" width="260" height="250" rx="20" class="glass-panel" />
+      <rect x="0" y="0" width="260" height="250" rx="20" fill="url(#card-mesh)" />
+      <rect x="1" y="1" width="258" height="248" rx="19" fill="none" stroke="url(#topHighlight)" stroke-width="1.5" />
+      <rect x="0" y="30" width="4" height="40" rx="2" fill="#22C55E" filter="url(#ai-glow)" />
+      
+      <g transform="translate(20, 25)">
+         <circle cx="6" cy="-4" r="4" fill="#22C55E" class="pulse" />
+         <text x="20" y="0" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#F8FAFC" letter-spacing="1">MEMORY SYSTEM</text>
+      </g>
+      <line x1="20" y1="40" x2="240" y2="40" stroke="#102A43" stroke-width="2" />
+      
+      <rect x="20" y="60" width="220" height="32" rx="8" fill="#0D1B2A" stroke="#22C55E" stroke-width="1.5" />
+      <text x="130" y="80" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" text-anchor="middle">Working Memory</text>
+      
+      <rect x="20" y="100" width="105" height="32" rx="8" fill="#0D1B2A" stroke="#22C55E" stroke-width="1.5" />
+      <text x="72" y="120" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" text-anchor="middle">Cache DB</text>
+      
+      <rect x="135" y="100" width="105" height="32" rx="8" fill="#0D1B2A" stroke="#22C55E" stroke-width="1.5" />
+      <text x="187" y="120" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" text-anchor="middle">Embeddings</text>
+      
+      <rect x="20" y="140" width="220" height="45" rx="8" fill="#22C55E" fill-opacity="0.1" stroke="#22C55E" stroke-width="1.5" class="breathe-btn" />
+      <text x="130" y="160" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#22C55E" text-anchor="middle">Vector Database Core</text>
+      <text x="130" y="175" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#CBD5E1" text-anchor="middle">High-dimensional similarity search</text>
+      
+      <rect x="20" y="195" width="220" height="32" rx="8" fill="#0D1B2A" stroke="#22C55E" stroke-width="1.5" />
+      <text x="130" y="215" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" text-anchor="middle">Conversation History</text>
+    </g>
+  </g>
+
+  <!-- Card 3: External Knowledge -->
+  <g transform="translate(100, 690)">
+    <g class="float-1">
+      <rect x="0" y="20" width="260" height="200" rx="20" fill="#000000" filter="url(#ai-shadow)" opacity="0.75" />
+      <rect x="0" y="0" width="260" height="200" rx="20" class="glass-panel" />
+      <rect x="0" y="0" width="260" height="200" rx="20" fill="url(#card-mesh)" />
+      <rect x="1" y="1" width="258" height="198" rx="19" fill="none" stroke="url(#topHighlight)" stroke-width="1.5" />
+      <rect x="0" y="30" width="4" height="40" rx="2" fill="#F59E0B" filter="url(#ai-glow)" />
+      
+      <g transform="translate(20, 25)">
+         <circle cx="6" cy="-4" r="4" fill="#F59E0B" class="pulse" />
+         <text x="20" y="0" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#F8FAFC" letter-spacing="1">EXTERNAL KNOWLEDGE</text>
+      </g>
+      <line x1="20" y1="40" x2="240" y2="40" stroke="#102A43" stroke-width="2" />
+      
+      <rect x="20" y="60" width="105" height="45" rx="8" fill="#0D1B2A" stroke="#F59E0B" stroke-width="1.5" />
+      <text x="72" y="80" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#F59E0B" text-anchor="middle">Web Search</text>
+      <text x="72" y="95" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#CBD5E1" text-anchor="middle">Live indexing</text>
+      
+      <rect x="135" y="60" width="105" height="45" rx="8" fill="#0D1B2A" stroke="#F59E0B" stroke-width="1.5" />
+      <text x="187" y="80" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#F59E0B" text-anchor="middle">GitHub</text>
+      <text x="187" y="95" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#CBD5E1" text-anchor="middle">Code repos</text>
+      
+      <rect x="20" y="115" width="105" height="45" rx="8" fill="#0D1B2A" stroke="#F59E0B" stroke-width="1.5" />
+      <text x="72" y="135" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#F59E0B" text-anchor="middle">Local Files</text>
+      <text x="72" y="150" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#CBD5E1" text-anchor="middle">Documents</text>
+      
+      <rect x="135" y="115" width="105" height="45" rx="8" fill="#0D1B2A" stroke="#F59E0B" stroke-width="1.5" />
+      <text x="187" y="135" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#F59E0B" text-anchor="middle">APIs</text>
+      <text x="187" y="150" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#CBD5E1" text-anchor="middle">REST / GraphQL</text>
+    </g>
+  </g>
+
+  <!-- Card 4: Reasoning Engine -->
+  <g transform="translate(460, 420)">
+    <g class="float-2">
+      <rect x="0" y="20" width="220" height="160" rx="20" fill="#000000" filter="url(#ai-shadow)" opacity="0.75" />
+      <rect x="0" y="0" width="220" height="160" rx="20" class="glass-panel" />
+      <rect x="0" y="0" width="220" height="160" rx="20" fill="url(#card-mesh)" />
+      <rect x="1" y="1" width="218" height="158" rx="19" fill="none" stroke="url(#topHighlight)" stroke-width="1.5" />
+      <rect x="0" y="30" width="4" height="40" rx="2" fill="#06B6D4" filter="url(#ai-glow)" />
+      
+      <g transform="translate(20, 25)">
+         <circle cx="6" cy="-4" r="4" fill="#06B6D4" class="pulse" />
+         <text x="20" y="0" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#F8FAFC" letter-spacing="1">REASONING ENGINE</text>
+      </g>
+      <line x1="20" y1="40" x2="200" y2="40" stroke="#102A43" stroke-width="2" />
+      
+      <rect x="20" y="60" width="180" height="32" rx="8" fill="#06B6D4" fill-opacity="0.15" stroke="#06B6D4" stroke-width="1.5" class="breathe-btn" />
+      <text x="110" y="80" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" fill="#06B6D4" text-anchor="middle">Chain of Thought</text>
+      
+      <rect x="20" y="100" width="85" height="32" rx="8" fill="#0D1B2A" stroke="#06B6D4" stroke-width="1.5" />
+      <text x="62" y="120" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" text-anchor="middle">Planning</text>
+      
+      <rect x="115" y="100" width="85" height="32" rx="8" fill="#0D1B2A" stroke="#06B6D4" stroke-width="1.5" />
+      <text x="157" y="120" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" text-anchor="middle">Synthesis</text>
+    </g>
+  </g>
+
+  <!-- Card 5: Execution Routing -->
+  <g transform="translate(1140, 420)">
+    <g class="float-1">
+      <rect x="0" y="20" width="220" height="160" rx="20" fill="#000000" filter="url(#ai-shadow)" opacity="0.75" />
+      <rect x="0" y="0" width="220" height="160" rx="20" class="glass-panel" />
+      <rect x="0" y="0" width="220" height="160" rx="20" fill="url(#card-mesh)" />
+      <rect x="1" y="1" width="218" height="158" rx="19" fill="none" stroke="url(#topHighlight)" stroke-width="1.5" />
+      <rect x="0" y="30" width="4" height="40" rx="2" fill="#38BDF8" filter="url(#ai-glow)" />
+      
+      <g transform="translate(20, 25)">
+         <circle cx="6" cy="-4" r="4" fill="#38BDF8" class="pulse" />
+         <text x="20" y="0" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#F8FAFC" letter-spacing="1">EXECUTION LAYER</text>
+      </g>
+      <line x1="20" y1="40" x2="200" y2="40" stroke="#102A43" stroke-width="2" />
+      
+      <rect x="20" y="60" width="180" height="32" rx="8" fill="#38BDF8" fill-opacity="0.15" stroke="#38BDF8" stroke-width="1.5" class="breathe-btn" />
+      <text x="110" y="80" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" fill="#38BDF8" text-anchor="middle">Tool Router Core</text>
+      
+      <rect x="20" y="100" width="85" height="32" rx="8" fill="#0D1B2A" stroke="#38BDF8" stroke-width="1.5" />
+      <text x="62" y="120" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" text-anchor="middle">Safety Guard</text>
+      
+      <rect x="115" y="100" width="85" height="32" rx="8" fill="#0D1B2A" stroke="#38BDF8" stroke-width="1.5" />
+      <text x="157" y="120" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#E2E8F0" text-anchor="middle">Validation</text>
+    </g>
+  </g>
+
+  <!-- Card 6: Tool Network -->
+  <g transform="translate(1440, 150)">
+    <g class="float-2">
+      <rect x="0" y="20" width="240" height="280" rx="20" fill="#000000" filter="url(#ai-shadow)" opacity="0.75" />
+      <rect x="0" y="0" width="240" height="280" rx="20" class="glass-panel" />
+      <rect x="0" y="0" width="240" height="280" rx="20" fill="url(#card-mesh)" />
+      <rect x="1" y="1" width="238" height="278" rx="19" fill="none" stroke="url(#topHighlight)" stroke-width="1.5" />
+      <rect x="0" y="30" width="4" height="40" rx="2" fill="#F59E0B" filter="url(#ai-glow)" />
+      
+      <g transform="translate(20, 25)">
+         <circle cx="6" cy="-4" r="4" fill="#F59E0B" class="pulse" />
+         <text x="20" y="0" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#F8FAFC" letter-spacing="1">TOOL NETWORK</text>
+      </g>
+      <line x1="20" y1="40" x2="220" y2="40" stroke="#102A43" stroke-width="2" />
+      
+      <rect x="20" y="60" width="200" height="36" rx="8" fill="#0D1B2A" stroke="#F59E0B" stroke-width="1.5" />
+      <g transform="translate(24, 66)" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" />
+      </g>
+      <text x="56" y="82" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Python Environment</text>
+      
+      <rect x="20" y="104" width="200" height="36" rx="8" fill="#0D1B2A" stroke="#F59E0B" stroke-width="1.5" />
+      <g transform="translate(24, 110)" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 6h18 M3 6v12h18V6" />
+      </g>
+      <text x="56" y="126" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Headless Browser</text>
+      
+      <rect x="20" y="148" width="200" height="36" rx="8" fill="#0D1B2A" stroke="#F59E0B" stroke-width="1.5" />
+      <g transform="translate(24, 154)" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 6h4l2 2h14v10H2Z" />
+      </g>
+      <text x="56" y="170" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Local Filesystem</text>
+      
+      <rect x="20" y="192" width="200" height="36" rx="8" fill="#0D1B2A" stroke="#F59E0B" stroke-width="1.5" />
+      <g transform="translate(24, 198)" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 17l6-6-6-6 M12 19h8" />
+      </g>
+      <text x="56" y="214" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Bash Terminal</text>
+      
+      <rect x="20" y="236" width="200" height="36" rx="8" fill="#0D1B2A" stroke="#F59E0B" stroke-width="1.5" />
+      <g transform="translate(24, 242)" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2v20 M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+      </g>
+      <text x="56" y="258" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">REST Webhooks</text>
+    </g>
+  </g>
+
+  <!-- Card 7: Output Stream -->
+  <g transform="translate(1440, 500)">
+    <g class="float-1">
+      <rect x="0" y="20" width="240" height="200" rx="20" fill="#000000" filter="url(#ai-shadow)" opacity="0.75" />
+      <rect x="0" y="0" width="240" height="200" rx="20" class="glass-panel" />
+      <rect x="0" y="0" width="240" height="200" rx="20" fill="url(#card-mesh)" />
+      <rect x="1" y="1" width="238" height="198" rx="19" fill="none" stroke="url(#topHighlight)" stroke-width="1.5" />
+      <rect x="0" y="30" width="4" height="40" rx="2" fill="#22C55E" filter="url(#ai-glow)" />
+      
+      <g transform="translate(20, 25)">
+         <circle cx="6" cy="-4" r="4" fill="#22C55E" class="pulse" />
+         <text x="20" y="0" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#F8FAFC" letter-spacing="1">OUTPUT STREAM</text>
+      </g>
+      <line x1="20" y1="40" x2="220" y2="40" stroke="#102A43" stroke-width="2" />
+      
+      <rect x="20" y="60" width="95" height="50" rx="8" fill="#0D1B2A" stroke="#22C55E" stroke-width="1.5" />
+      <text x="67" y="84" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#22C55E" text-anchor="middle">Action Logs</text>
+      <text x="67" y="100" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#CBD5E1" text-anchor="middle">Trace output</text>
+
+      <rect x="125" y="60" width="95" height="50" rx="8" fill="#0D1B2A" stroke="#22C55E" stroke-width="1.5" />
+      <text x="172" y="84" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#22C55E" text-anchor="middle">Text &amp; UI</text>
+      <text x="172" y="100" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#CBD5E1" text-anchor="middle">Response text</text>
+      
+      <rect x="20" y="120" width="200" height="50" rx="8" fill="#22C55E" fill-opacity="0.1" stroke="#22C55E" stroke-width="1.5" class="breathe-btn" />
+      <text x="120" y="144" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#22C55E" text-anchor="middle">Automated Execution</text>
+      <text x="120" y="160" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#CBD5E1" text-anchor="middle">Code, scripts, and API triggers</text>
+    </g>
+  </g>
+
+  <!-- ======================== -->
+  <!-- FEEDBACK LOOP NODES -->
+  <!-- ======================== -->
+  <g transform="translate(1200, 920)">
+    <rect x="-60" y="-16" width="120" height="32" rx="16" fill="#07111F" stroke="#F59E0B" stroke-width="2" filter="url(#ai-glow)">
+      <animate attributeName="stroke-width" values="1;3;1" dur="4s" repeatCount="indefinite" />
+    </rect>
+    <text x="0" y="4" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#F59E0B" text-anchor="middle" font-weight="700">Evaluation</text>
+  </g>
+  <g transform="translate(900, 920)">
+    <rect x="-60" y="-16" width="120" height="32" rx="16" fill="#07111F" stroke="#06B6D4" stroke-width="2" filter="url(#ai-glow)">
+      <animate attributeName="stroke-width" values="1;3;1" dur="4s" begin="1s" repeatCount="indefinite" />
+    </rect>
+    <text x="0" y="4" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#06B6D4" text-anchor="middle" font-weight="700">Reflection</text>
+  </g>
+  <g transform="translate(600, 920)">
+    <rect x="-60" y="-16" width="120" height="32" rx="16" fill="#07111F" stroke="#22C55E" stroke-width="2" filter="url(#ai-glow)">
+      <animate attributeName="stroke-width" values="1;3;1" dur="4s" begin="2s" repeatCount="indefinite" />
+    </rect>
+    <text x="0" y="4" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#22C55E" text-anchor="middle" font-weight="700">Memory Update</text>
+  </g>
+
 </svg>
