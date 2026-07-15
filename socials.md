@@ -32,20 +32,20 @@
 
 ## Social directory
 
-| Platform | Link | Why it matters |
-| --- | --- | --- |
-| GitHub | [github.com/naborajs](https://github.com/naborajs) | Source, projects, open source activity |
-| Email | [nishant.ns.business@gmail.com](mailto:nishant.ns.business@gmail.com) | Business inquiries and collaboration |
-| Instagram | [instagram.com/naborajs](https://instagram.com/naborajs) | Visual project snippets and updates |
-| YouTube | [youtube.com/@Nishant_sarkar](https://youtube.com/@Nishant_sarkar) | Learning experiments and walkthroughs |
-| X (Twitter) | [x.com/NSGAMMING699](https://x.com/NSGAMMING699) | quick engineering updates |
-| X (Twitter) | [x.com/naboraj-sarkar](https://x.com/naboraj-sarkar) | alternate developer feed |
-| Telegram | [t.me/Nishantsarkar10k](https://t.me/Nishantsarkar10k) | personal chat and demos |
-| Telegram Channel | [t.me/nsgamming69](https://t.me/nsgamming69) | community updates and experiments |
-| WhatsApp Channel | [whatsapp.com/channel/0029Vb4QTP7GE56sVeiOJJ1i](https://whatsapp.com/channel/0029Vb4QTP7GE56sVeiOJJ1i) | urgent channel updates |
-| LinkedIn | [linkedin.com/in/naboraj-sarkar](https://linkedin.com/in/naboraj-sarkar) | professional network and portfolio |
-| Discord | [discord.gg/eRnfcBuv5v](https://discord.gg/eRnfcBuv5v) | community chat and feedback |
-| Reddit | [reddit.com/u/naborajs](https://reddit.com/u/naborajs) | discussion and idea sharing |
+| Platform         | Link                                                                                                   | Why it matters                         |
+| ------------------| --------------------------------------------------------------------------------------------------------| ----------------------------------------|
+| GitHub           | [github.com/naborajs](https://github.com/naborajs)                                                     | Source, projects, open source activity |
+| Email            | [nishant.ns.business@gmail.com](mailto:nishant.ns.business@gmail.com)                                  | Business inquiries and collaboration   |
+| Instagram        | [instagram.com/naborajs](https://instagram.com/naborajs)                                               | Visual project snippets and updates    |
+| YouTube          | [youtube.com/@Nishant_sarkar](https://youtube.com/@Nishant_sarkar)                                     | Learning experiments and walkthroughs  |
+| X (Twitter)      | [x.com/ItsNaborajs](https://x.com/ItsNaborajs)                                                        | quick engineering updates              |
+| X (Twitter)      | [x.com/naboraj-sarkar](https://x.com/naboraj-sarkar)                                                   | alternate developer feed               |
+| Telegram         | [t.me/Nishantsarkar10k](https://t.me/Nishantsarkar10k)                                                 | personal chat and demos                |
+| Telegram Channel | [t.me/nsgamming69](https://t.me/nsgamming69)                                                           | community updates and experiments      |
+| WhatsApp Channel | [whatsapp.com/channel/0029Vb4QTP7GE56sVeiOJJ1i](https://whatsapp.com/channel/0029Vb4QTP7GE56sVeiOJJ1i) | urgent channel updates                 |
+| LinkedIn         | [linkedin.com/in/naboraj-sarkar](https://linkedin.com/in/naboraj-sarkar)                               | professional network and portfolio     |
+| Discord          | [discord.gg/eRnfcBuv5v](https://discord.gg/eRnfcBuv5v)                                                 | community chat and feedback            |
+| Reddit           | [reddit.com/u/naborajs](https://reddit.com/u/naborajs)                                                 | discussion and idea sharing            |
 
 ---
 
