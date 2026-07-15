@@ -1,33 +1,34 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360">
   <title>Engineering Network &amp; Collaboration Hub</title>
-  <desc>Naboraj Sarkar's social and collaboration network, linking builders across GitHub, Telegram, X, and Email to discuss system design and open source.</desc>
+  <desc>Naboraj Sarkar's social and collaboration network, linking builders across GitHub, Telegram, X, YouTube, LinkedIn, Discord, and Email to discuss system design and open source.</desc>
   
   <defs>
     <!-- Background Gradients -->
     <linearGradient id="sb-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#07111F" />
-      <stop offset="50%" stop-color="#0D1B2A" />
-      <stop offset="100%" stop-color="#102A43" />
+      <stop offset="0%" stop-color="#05060d" />
+      <stop offset="45%" stop-color="#0b0f1f" />
+      <stop offset="100%" stop-color="#141b30" />
     </linearGradient>
     
     <linearGradient id="sb-borderGrad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#06B6D4" />
-      <stop offset="50%" stop-color="#38BDF8" />
-      <stop offset="100%" stop-color="#22C55E" />
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#38bdf8" />
     </linearGradient>
     
-    <radialGradient id="sb-hubGrad" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#38BDF8" />
-      <stop offset="100%" stop-color="#06B6D4" />
+    <radialGradient id="sb-hubGrad" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#c4b5fd" />
+      <stop offset="55%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#38bdf8" />
     </radialGradient>
     
     <!-- Tech Grid -->
-    <pattern id="sb-dotgrid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1.5" fill="#F8FAFC" opacity="0.04" />
+    <pattern id="sb-dotgrid" width="46" height="46" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#F8FAFC" opacity="0.05" />
     </pattern>
     
     <filter id="sb-glow" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feGaussianBlur stdDeviation="6" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
@@ -54,11 +55,14 @@
       100% { transform: rotate(360deg); }
     }
     .sb-pulse-node { animation: sb-pulse 2.5s ease-in-out infinite; transform-origin: center; }
-    .sb-flow-line { stroke-dasharray: 4 8; animation: sb-flow 2s linear infinite; }
+    .sb-flow-line { stroke-dasharray: 4 8; animation: sb-flow 3s linear infinite; }
     .sb-orbit-ring { animation: sb-orbit 20s linear infinite; transform-origin: 900px 180px; }
     .sb-delay-1 { animation-delay: 0.5s; }
     .sb-delay-2 { animation-delay: 1.0s; }
     .sb-delay-3 { animation-delay: 1.5s; }
+    .sb-delay-4 { animation-delay: 2.0s; }
+    .sb-delay-5 { animation-delay: 2.5s; }
+    .sb-delay-6 { animation-delay: 3.0s; }
   </style>
 
   <rect width="1200" height="360" fill="url(#sb-bg)" />
@@ -66,68 +70,99 @@
 
   <!-- The Identity Card (Left) -->
   <g filter="url(#sb-card-shadow)">
-    <rect x="60" y="50" width="560" height="260" rx="24" fill="#07111F" fill-opacity="0.9" stroke="url(#sb-borderGrad)" stroke-width="1.5" />
+    <rect x="64" y="52" width="520" height="252" rx="28" fill="#0b1020" fill-opacity="0.92" stroke="url(#sb-borderGrad)" stroke-width="1.8" />
     
-    <text x="100" y="90" font-family="monospace" font-size="13" letter-spacing="3" font-weight="700" fill="#38BDF8">ENGINEERING NETWORK</text>
-    <text x="100" y="140" font-family="system-ui, sans-serif" font-size="44" font-weight="800" fill="#F8FAFC" letter-spacing="-1">Collaboration Hub</text>
-    <text x="100" y="175" font-family="system-ui, sans-serif" font-size="18" fill="#CBD5E1">Let's discuss system design, open-source, and AI architecture.</text>
+    <text x="100" y="90" font-family="'JetBrains Mono', Consolas, monospace" font-size="12" letter-spacing="3" font-weight="600" fill="#7dd3fc">SOCIAL HUB</text>
+    <text x="100" y="140" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="44" font-weight="800" fill="#f8fafc" letter-spacing="-1">Digital Identity</text>
+    <text x="100" y="175" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="18" fill="#94a3b8">Let's discuss system design, open-source, and AI architecture.</text>
 
     <!-- Communication Tags -->
-    <g transform="translate(100, 215)" font-family="system-ui, sans-serif" font-size="13" font-weight="600">
-      <rect x="0" y="0" width="95" height="36" rx="18" fill="#102A43" stroke="#38BDF8" stroke-opacity="0.3" />
-      <circle cx="16" cy="18" r="4" fill="#38BDF8" class="sb-pulse-node" />
-      <text x="28" y="23" fill="#38BDF8">GitHub</text>
+    <g transform="translate(100, 205)" font-family="Inter, Arial, sans-serif" font-size="12.5" font-weight="600">
+      <rect x="0" y="0" width="90" height="32" rx="16" fill="#111a2e" stroke="#ffffff" stroke-opacity="0.08" />
+      <circle cx="14" cy="16" r="3" fill="#38bdf8" class="sb-pulse-node" />
+      <text x="26" y="20.5" fill="#7dd3fc">GitHub</text>
 
-      <rect x="110" y="0" width="110" height="36" rx="18" fill="#102A43" stroke="#06B6D4" stroke-opacity="0.3" />
-      <circle cx="126" cy="18" r="4" fill="#06B6D4" class="sb-pulse-node sb-delay-1" />
-      <text x="138" y="23" fill="#06B6D4">Telegram</text>
+      <rect x="102" y="0" width="110" height="32" rx="16" fill="#111a2e" stroke="#ffffff" stroke-opacity="0.08" />
+      <circle cx="116" cy="16" r="3" fill="#a78bfa" class="sb-pulse-node sb-delay-1" />
+      <text x="128" y="20.5" fill="#c4b5fd">Telegram</text>
 
-      <rect x="235" y="0" width="85" height="36" rx="18" fill="#102A43" stroke="#22C55E" stroke-opacity="0.3" />
-      <circle cx="251" cy="18" r="4" fill="#22C55E" class="sb-pulse-node sb-delay-2" />
-      <text x="263" y="23" fill="#22C55E">Email</text>
+      <rect x="224" y="0" width="85" height="32" rx="16" fill="#111a2e" stroke="#ffffff" stroke-opacity="0.08" />
+      <circle cx="238" cy="16" r="3" fill="#fb7185" class="sb-pulse-node sb-delay-2" />
+      <text x="250" y="20.5" fill="#fda4af">Email</text>
       
-      <rect x="335" y="0" width="135" height="36" rx="18" fill="#102A43" stroke="#F59E0B" stroke-opacity="0.3" />
-      <circle cx="351" cy="18" r="4" fill="#F59E0B" class="sb-pulse-node sb-delay-3" />
-      <text x="363" y="23" fill="#F59E0B">X (Twitter)</text>
+      <!-- Second Row -->
+      <rect x="0" y="44" width="90" height="32" rx="16" fill="#111a2e" stroke="#ffffff" stroke-opacity="0.08" />
+      <circle cx="14" cy="60" r="3" fill="#f43f5e" class="sb-pulse-node sb-delay-3" />
+      <text x="26" y="64.5" fill="#fb7185">YouTube</text>
+
+      <rect x="102" y="44" width="100" height="32" rx="16" fill="#111a2e" stroke="#ffffff" stroke-opacity="0.08" />
+      <circle cx="116" cy="60" r="3" fill="#60a5fa" class="sb-pulse-node sb-delay-4" />
+      <text x="128" y="64.5" fill="#93c5fd">LinkedIn</text>
+
+      <rect x="214" y="44" width="95" height="32" rx="16" fill="#111a2e" stroke="#ffffff" stroke-opacity="0.08" />
+      <circle cx="228" cy="60" r="3" fill="#818cf8" class="sb-pulse-node sb-delay-5" />
+      <text x="240" y="64.5" fill="#a5b4fc">Discord</text>
     </g>
   </g>
 
   <!-- The Bridge / Connection Pathway -->
-  <path d="M620 180 Q 760 180 840 180" fill="none" stroke="#102A43" stroke-width="4" />
-  <path d="M620 180 Q 760 180 840 180" fill="none" stroke="#38BDF8" stroke-width="2" class="sb-flow-line" />
-  <circle cx="620" cy="180" r="4" fill="#38BDF8" filter="url(#sb-glow)" class="sb-pulse-node" />
+  <path d="M584 180 Q 720 180 840 180" fill="none" stroke="url(#sb-borderGrad)" stroke-width="2" class="sb-flow-line" opacity="0.8" />
+  <circle cx="584" cy="180" r="4" fill="#38BDF8" filter="url(#sb-glow)" class="sb-pulse-node" />
 
   <!-- The Central Network Node (Right) -->
   
   <!-- Rotating Outer Rings -->
-  <circle cx="900" cy="180" r="110" fill="none" stroke="#06B6D4" stroke-width="1" opacity="0.2" stroke-dasharray="10 10" class="sb-orbit-ring" />
-  <circle cx="900" cy="180" r="140" fill="none" stroke="#22C55E" stroke-width="1" opacity="0.1" stroke-dasharray="5 15" class="sb-orbit-ring" style="animation-direction: reverse; animation-duration: 30s;" />
+  <circle cx="900" cy="180" r="110" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.3" stroke-dasharray="10 15" class="sb-orbit-ring" />
+  <circle cx="900" cy="180" r="140" fill="none" stroke="#38bdf8" stroke-width="1" opacity="0.2" stroke-dasharray="5 20" class="sb-orbit-ring" style="animation-direction: reverse; animation-duration: 30s;" />
+  <circle cx="900" cy="180" r="170" fill="none" stroke="#fb7185" stroke-width="1.5" opacity="0.15" stroke-dasharray="15 25" class="sb-orbit-ring" style="animation-duration: 25s;" />
 
-  <!-- Connection Lines to Platform Nodes -->
-  <line x1="900" y1="180" x2="1000" y2="80" stroke="#38BDF8" stroke-width="2" class="sb-flow-line" />
-  <line x1="900" y1="180" x2="1100" y2="180" stroke="#06B6D4" stroke-width="2" class="sb-flow-line sb-delay-1" />
-  <line x1="900" y1="180" x2="1000" y2="280" stroke="#22C55E" stroke-width="2" class="sb-flow-line sb-delay-2" />
-  <line x1="900" y1="180" x2="800" y2="280" stroke="#F59E0B" stroke-width="2" class="sb-flow-line sb-delay-3" />
+  <!-- Connection Curves to Platform Nodes using Bezier Paths -->
+  <!-- Top Right (GitHub) -->
+  <path d="M900 180 Q 1000 180 1020 70" fill="none" stroke="#38bdf8" stroke-width="2" class="sb-flow-line" opacity="0.6" />
+  <!-- Far Right (Telegram) -->
+  <path d="M900 180 Q 1020 180 1120 160" fill="none" stroke="#a78bfa" stroke-width="2" class="sb-flow-line sb-delay-1" opacity="0.6" />
+  <!-- Bottom Right (X) -->
+  <path d="M900 180 Q 1050 180 1080 270" fill="none" stroke="#fb7185" stroke-width="2" class="sb-flow-line sb-delay-2" opacity="0.6" />
+  <!-- Bottom Center (YouTube) -->
+  <path d="M900 180 Q 950 250 970 310" fill="none" stroke="#f43f5e" stroke-width="2" class="sb-flow-line sb-delay-3" opacity="0.6" />
+  <!-- Bottom Left (LinkedIn) -->
+  <path d="M900 180 Q 820 220 800 290" fill="none" stroke="#60a5fa" stroke-width="2" class="sb-flow-line sb-delay-4" opacity="0.6" />
+  <!-- Top Left (Discord) -->
+  <path d="M900 180 Q 820 140 800 60" fill="none" stroke="#818cf8" stroke-width="2" class="sb-flow-line sb-delay-5" opacity="0.6" />
+  <!-- Top Center (Email) -->
+  <path d="M900 180 Q 920 120 900 40" fill="none" stroke="#fbbf24" stroke-width="2" class="sb-flow-line sb-delay-6" opacity="0.6" />
 
   <!-- Central Naboraj Node -->
-  <circle cx="900" cy="180" r="40" fill="url(#sb-hubGrad)" filter="url(#sb-glow)" opacity="0.9" />
-  <circle cx="900" cy="180" r="38" fill="#07111F" />
-  <text x="900" y="186" font-family="system-ui, sans-serif" font-size="18" font-weight="800" fill="#F8FAFC" text-anchor="middle" letter-spacing="1">NS</text>
+  <circle cx="900" cy="180" r="42" fill="url(#sb-hubGrad)" filter="url(#sb-glow)" opacity="0.95" />
+  <circle cx="900" cy="180" r="40" fill="#0b1020" />
+  <text x="900" y="186" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="1">NS</text>
 
   <!-- Node: GitHub -->
-  <circle cx="1000" cy="80" r="24" fill="#0D1B2A" stroke="#38BDF8" stroke-width="2" filter="url(#sb-glow)" />
-  <text x="1000" y="85" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#38BDF8" text-anchor="middle">GH</text>
+  <circle cx="1020" cy="70" r="22" fill="#0f172a" fill-opacity="0.9" stroke="#38bdf8" stroke-width="1.8" filter="url(#sb-glow)" />
+  <text x="1020" y="74.5" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#7dd3fc" text-anchor="middle">GH</text>
 
   <!-- Node: Telegram -->
-  <circle cx="1100" cy="180" r="24" fill="#0D1B2A" stroke="#06B6D4" stroke-width="2" filter="url(#sb-glow)" />
-  <text x="1100" y="185" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#06B6D4" text-anchor="middle">TG</text>
-
-  <!-- Node: Email -->
-  <circle cx="1000" cy="280" r="24" fill="#0D1B2A" stroke="#22C55E" stroke-width="2" filter="url(#sb-glow)" />
-  <text x="1000" y="285" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#22C55E" text-anchor="middle">@</text>
+  <circle cx="1120" cy="160" r="22" fill="#0f172a" fill-opacity="0.9" stroke="#a78bfa" stroke-width="1.8" filter="url(#sb-glow)" />
+  <text x="1120" y="164.5" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#c4b5fd" text-anchor="middle">TG</text>
 
   <!-- Node: X (Twitter) -->
-  <circle cx="800" cy="280" r="24" fill="#0D1B2A" stroke="#F59E0B" stroke-width="2" filter="url(#sb-glow)" />
-  <text x="800" y="285" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#F59E0B" text-anchor="middle">X</text>
+  <circle cx="1080" cy="270" r="22" fill="#0f172a" fill-opacity="0.9" stroke="#fb7185" stroke-width="1.8" filter="url(#sb-glow)" />
+  <text x="1080" y="274.5" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#fda4af" text-anchor="middle">X</text>
+
+  <!-- Node: YouTube -->
+  <circle cx="970" cy="310" r="22" fill="#0f172a" fill-opacity="0.9" stroke="#f43f5e" stroke-width="1.8" filter="url(#sb-glow)" />
+  <text x="970" y="314.5" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#fb7185" text-anchor="middle">YT</text>
+
+  <!-- Node: LinkedIn -->
+  <circle cx="800" cy="290" r="22" fill="#0f172a" fill-opacity="0.9" stroke="#60a5fa" stroke-width="1.8" filter="url(#sb-glow)" />
+  <text x="800" y="294.5" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#93c5fd" text-anchor="middle">IN</text>
+
+  <!-- Node: Discord -->
+  <circle cx="800" cy="60" r="22" fill="#0f172a" fill-opacity="0.9" stroke="#818cf8" stroke-width="1.8" filter="url(#sb-glow)" />
+  <text x="800" y="64.5" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#a5b4fc" text-anchor="middle">DC</text>
+
+  <!-- Node: Email -->
+  <circle cx="900" cy="40" r="22" fill="#0f172a" fill-opacity="0.9" stroke="#fbbf24" stroke-width="1.8" filter="url(#sb-glow)" />
+  <text x="900" y="44.5" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#fde68a" text-anchor="middle">@</text>
 
 </svg>
