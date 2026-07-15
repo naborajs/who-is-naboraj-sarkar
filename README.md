@@ -49,14 +49,15 @@
 
 ## Now learning
 
-- AI agent orchestration and prompt workflows
-- Git-based automation, webhook pipelines, and n8n
-- Hardware interfaces, sensors, serial telemetry, and device feedback
+- Directing AI agents to build complex workflows
+- Cybersecurity basics and system defense
+- Physics and maths to sharpen reasoning
+- Critical thinking: slowing down and questioning assumptions
 - System architecture, request flow, and integration design
 
 ---
 
-## Current experiments
+## Active maintenance & experiments
 
 <div align="center">
   <img src="assets/project-grid.svg" width="100%" alt="Project showcase" />
@@ -64,11 +65,12 @@
 
 | Project | Why it matters | Stack |
 | --- | --- | --- |
+| **Birthday Bloom** | Active open source repo (21+ stars), managing PRs and docs | React · Vite |
+| **Ghost Engine v5** | Cross-platform TOR proxy and IP rotation toolkit | Toolkit |
 | **Life Logger** | Telegram → Git logging, audit-ready automation | Python · Node.js · GitHub API · webhooks |
 | **Auto Contribution Bot** | GitHub Actions and repo workflow automation | GitHub Actions · scripting · CI/CD |
-| **Birthday Bloom** | frontend interaction, motion, emotional UI | HTML · CSS · JavaScript |
-| **CODE** | browser IDE prototype for AI-assisted development | JavaScript · AI APIs · tooling |
-| **NS Fin** | finance dashboard with research-focused data flows | APIs · visualization · analytics |
+| **CODE** | Browser IDE prototype for AI-assisted development | JavaScript · AI APIs · tooling |
+| **NS Fin** | Finance dashboard with research-focused data flows | APIs · visualization · analytics |
 
 ---
 
@@ -122,9 +124,9 @@ Browser → Server → API → Device → Feedback
 
 ## Build log
 
-- **Today**: upgraded repository into a living lab with new visuals, system diagrams, and a cleaner structure.
-- **This week**: added hardware and system architecture diagrams, merged duplicate docs, and refocused the portfolio on active experimentation.
-- **Next**: wire a device dashboard concept, add real telemetry prototypes, and capture failure lessons in the log.
+- **Recent**: Shifted from building solo projects to maintaining open source (Birthday Bloom, Ghost Engine v5).
+- **Current**: Directing AI agent workflows and starting a new track in cybersecurity.
+- **Focus**: Studying physics, maths, and critical thinking. Questioning assumptions before I ship code.
 
 ---
 

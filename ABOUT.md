@@ -51,6 +51,25 @@ That shift turned quick experiments into stronger engineering, and it made every
 
 ---
 
+## From building to maintaining
+
+It is one thing to build a project. It is another to run an open source repository.
+I now actively maintain projects like Birthday Bloom and Ghost Engine v5.
+This means handling live contributor activity, PR labeling, documentation, and configuration.
+The work changed from writing solo scripts to managing projects that other people contribute to.
+
+---
+
+## Thinking before building
+
+I am learning to slow down.
+I spend deliberate time on physics, maths, and critical thinking.
+Instead of shipping the first idea that works, I question my assumptions.
+This sharper reasoning connects directly to how I work with AI. I direct agents to build workflows for me, which requires clear thinking over fast typing.
+I also started learning cybersecurity to understand how software holds up under pressure.
+
+---
+
 ## Fast facts
 
 - **Living portfolio**: experiments, projects, and lessons shared openly

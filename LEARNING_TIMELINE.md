@@ -44,10 +44,19 @@ A living timeline for a developer who is learning deeply and building publicly.
 
 ---
 
-## 6. Forward path
+## 6. Maintenance & reasoning phase
+
+- Shifted from building solo projects to maintaining open source (Birthday Bloom, Ghost Engine v5).
+- Deepened AI work: directing agents to build workflows instead of just testing prompts.
+- Started a new track in cybersecurity.
+- Dedicated real time to physics, maths, and critical thinking to build stronger mental models before writing code.
+
+---
+
+## 7. Forward path
 
 - Explore device communication, sensor data, and hardware-software bridges.
-- Build dashboards, control panels, and experiment tools.
+- Keep learning how to direct AI effectively and secure systems.
 - Share what works, what breaks, and what is learning-worthy.
 
 ---
